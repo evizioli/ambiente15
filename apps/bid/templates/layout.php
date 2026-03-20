@@ -71,6 +71,7 @@
         			<li><b>P.I.M.C.P.A.</b></li>          
         			<li<?php if($sf_context->getModuleName()=='bidg1i1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bidg1i1s/indicador')?>">Status reproductivo en el intermareal rocoso</a></li>          
         			<li<?php if($sf_context->getModuleName()=='bidg2i1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bidg2i1s/indicador')?>">Densidad mínima de individuos maduros / Éxito reproductivo</a></li>          
+        			<li<?php if($sf_context->getModuleName()=='bidg3i1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bidg3i1s/indicador')?>">Índice kilométrico de abundancia</a></li>          
        	            <li><hr class="dropdown-divider"></li>
         			<li><b>A.N.P.P.V.</b></li>          
    	           </ul>
