@@ -1,0 +1,43 @@
+.et-social-icons {
+	float: right;
+	list-style: none;
+}
+
+#main-footer {
+	    background-color: #222;
+}
+#footer-bottom {
+	    background-color: rgba(0,0,0,.32);
+    padding: 15px 0 5px;
+}
+.et-social-icons li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+element.style {
+}
+#footer-bottom a {
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.et-social-icon a {
+    display: inline-block;
+    font-size: 24px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: color .3s ease 0s;
+    transition: color .3s ease 0s;
+    color: #666;
+    text-decoration: none;
+}
+#footer-bottom a {
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+div.container-fluid div.row div.cien img {
+    width: 100%;
+}    
+body {
+	padding-top: 7.5em;
+}

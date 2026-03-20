@@ -1,0 +1,12 @@
+.modulo-menu {
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+.modulo-menu:hover {
+    transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+}
+.panel-heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}

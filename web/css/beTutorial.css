@@ -1,0 +1,22 @@
+@page { 
+	size: 21cm 29.7cm; 
+	margin-left: 3cm; 
+	margin-right: 3cm; 
+	margin-top: 2.5cm; 
+	margin-bottom: 1.25cm 
+}
+
+p { 
+	margin-bottom: 0.25cm; 
+	direction: ltr; 
+	line-height: 115%; 
+	text-align: left; 
+	orphans: 2; 
+	widows: 2; 
+	background: transparent 
+}
+
+a:link { 
+	color: #0000ff; 
+	text-decoration: underline 
+}

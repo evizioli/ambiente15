@@ -1,0 +1,46 @@
+body.menu {
+	padding-top: 3.5em;
+}
+.derecha {
+	text-align: right;
+}
+
+
+
+.caja-redondeada {
+    color: black;
+    text-align:justify; 
+    margin: 15px; 
+    padding: 15px; 
+    border-radius: 15px;
+}
+
+.verde {
+    background-color: white; 
+    background-image: linear-gradient( 180deg,#8ae28a, #aaffaa); 
+    border: 3px solid #3ACE3A; 
+}
+
+.azul {
+    color: white;
+    background-image: linear-gradient( 180deg,#5E437F, #7B57A5); 
+    border: 3px solid #4A7EBB; 
+}
+
+    
+.select2-container--default .select2-selection--single, .select2-container .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.rayado .row:nth-of-type(odd) div {
+background-color:#eeeeee;
+}
+.rayado .row:nth-of-type(even) div {
+background: #FFFFFF;
+}
+
+.select2 {
+  width:100%!important;
+}

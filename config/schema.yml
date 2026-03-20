@@ -1,0 +1,431 @@
+propel:
+  _attributes:
+    package: lib.model
+    defaultIdMethod: native
+  bid_conteo_indicador:
+    _attributes: { phpName: BidConteoIndicador, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    fecha: { phpName: Fecha, type: DATE, required: true }
+    sitio_id: { phpName: SitioId, type: INTEGER, required: true, foreignTable: bid_sitio, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    especie_id: { phpName: EspecieId, type: INTEGER, required: true, foreignTable: bid_especie, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    cantidad: { phpName: Cantidad, type: INTEGER, required: true }
+    observaciones: { phpName: Observaciones, type: LONGVARCHAR, required: false }
+    indicador: { phpName: Indicador, type: INTEGER, required: true }
+    _indexes: { bid_conteo_indicador_especie_id: [especie_id], bid_conteo_indicador_fecha: [fecha], bid_conteo_indicador_indicador: [indicador], bid_conteo_indicador_sitio_id: [sitio_id] }
+  bid_especie:
+    _attributes: { phpName: BidEspecie, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    smart_id: { phpName: SmartId, type: VARCHAR, required: false }
+    nombre_cientifico: { phpName: NombreCientifico, type: VARCHAR, size: '250', required: false }
+    _uniques: { bid_especie_nombre_key: [nombre] }
+  bid_especie_relevancia:
+    _attributes: { phpName: BidEspecieRelevancia, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    especie_id: { phpName: EspecieId, type: INTEGER, required: true, foreignTable: bid_especie, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    indicador: { phpName: Indicador, type: INTEGER, required: true }
+    _uniques: { bid_especie_relevancia_especie_i: [especie_id, indicador] }
+  bid_g1_i1:
+    _attributes: { phpName: BidG1I1, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    fecha: { phpName: Fecha, type: DATE, required: true }
+    sitio_id: { phpName: SitioId, type: INTEGER, required: true, foreignTable: bid_sitio, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    ambiente: { phpName: Ambiente, type: VARCHAR, required: true }
+    sexo: { phpName: Sexo, type: VARCHAR, required: true }
+    madurez: { phpName: Madurez, type: VARCHAR, required: true }
+    actividad_pesquera: { phpName: ActividadPesquera, type: BOOLEAN, required: true, defaultValue: false }
+    _indexes: { bid_g1_i1_ambiente: [ambiente], bid_g1_i1_fecha: [fecha], bid_g1_i1_madurez: [madurez], bid_g1_i1_sexo: [sexo], bid_g1_i1_sitio_id: [sitio_id] }
+  bid_g2_i1:
+    _attributes: { phpName: BidG2I1, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    fecha: { phpName: Fecha, type: DATE, required: true }
+    sitio_id: { phpName: SitioId, type: INTEGER, required: true, foreignTable: bid_sitio, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    ubicacion: { phpName: Ubicacion, type: VARCHAR, required: true }
+    numero_adultos: { phpName: NumeroAdultos, type: INTEGER, required: true }
+    numero_crias_clase1: { phpName: NumeroCriasClase1, type: INTEGER, required: true }
+    numero_crias_clase2: { phpName: NumeroCriasClase2, type: INTEGER, required: true }
+    numero_crias_clase3: { phpName: NumeroCriasClase3, type: INTEGER, required: true }
+    numero_crias_clase4: { phpName: NumeroCriasClase4, type: INTEGER, required: true }
+    observaciones: { phpName: Observaciones, type: LONGVARCHAR, required: false }
+    _indexes: { bid_g2_i1_fecha: [fecha], bid_g2_i1_sitio_id: [sitio_id] }
+  bid_g3_i1:
+    _attributes: { phpName: BidG3I1, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    fecha: { phpName: Fecha, type: DATE, required: true }
+    sitio_id: { phpName: SitioId, type: INTEGER, required: true, foreignTable: bid_sitio, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    parejas: { phpName: Parejas, type: INTEGER, required: false }
+    hembras: { phpName: Hembras, type: INTEGER, required: false }
+    machos: { phpName: Machos, type: INTEGER, required: false }
+    km_relevados: { phpName: KmRelevados, type: INTEGER, required: false }
+    _indexes: { bid_g3_i1_fecha: [fecha], bid_g3_i1_sitio_id: [sitio_id] }
+  bid_g5_i1:
+    _attributes: { phpName: BidG5I1, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    fecha: { phpName: Fecha, type: DATE, required: true }
+    sitio_id: { phpName: SitioId, type: INTEGER, required: true, foreignTable: bid_sitio, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    hembras: { phpName: Hembras, type: INTEGER, required: false }
+    crias_destetadas: { phpName: CriasDestetadas, type: INTEGER, required: false }
+    crias_lactantes: { phpName: CriasLactantes, type: INTEGER, required: false }
+    machos_adultos: { phpName: MachosAdultos, type: INTEGER, required: false }
+    machos_sub_adultos: { phpName: MachosSubAdultos, type: INTEGER, required: false }
+    juveniles: { phpName: Juveniles, type: INTEGER, required: false }
+    _indexes: { bid_g5_i1_fecha: [fecha], bid_g5_i1_sitio_id: [sitio_id] }
+  bid_g6_i1:
+    _attributes: { phpName: BidG6I1, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    fecha: { phpName: Fecha, type: DATE, required: true }
+    sitio_id: { phpName: SitioId, type: INTEGER, required: true, foreignTable: bid_sitio, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    hembras_adultas: { phpName: HembrasAdultas, type: INTEGER, required: true }
+    machos_adultos: { phpName: MachosAdultos, type: INTEGER, required: true }
+    machos_sub_adultos: { phpName: MachosSubAdultos, type: INTEGER, required: true }
+    juveniles: { phpName: Juveniles, type: INTEGER, required: true }
+    crias: { phpName: Crias, type: INTEGER, required: true }
+    hembras_juveniles: { phpName: HembrasJuveniles, type: INTEGER, required: true }
+    _indexes: { bid_g6_i1_fecha: [fecha], bid_g6_i1_sitio_id: [sitio_id] }
+  bid_g8_i1:
+    _attributes: { phpName: BidG8I1, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    fecha: { phpName: Fecha, type: DATE, required: true }
+    sitio_id: { phpName: SitioId, type: INTEGER, required: true, foreignTable: bid_sitio, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    condicion_del_mar: { phpName: CondicionDelMar, type: VARCHAR, required: true }
+    estado_marea: { phpName: EstadoMarea, type: VARCHAR, required: true }
+    porcentaje_de_nubes: { phpName: PorcentajeDeNubes, type: INTEGER, required: true }
+    velocidad_del_viento: { phpName: VelocidadDelViento, type: INTEGER, required: true }
+    direccion_del_viento: { phpName: DireccionDelViento, type: VARCHAR, required: true }
+    pares: { phpName: Pares, type: INTEGER, required: true }
+    crias_huerfanas: { phpName: CriasHuerfanas, type: INTEGER, required: true }
+    observador: { phpName: Observador, type: VARCHAR, required: true }
+    _indexes: { bid_g8_i1_fecha: [fecha], bid_g8_i1_sitio_id: [sitio_id] }
+  bid_g9_i1:
+    _attributes: { phpName: BidG9I1, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    fecha: { phpName: Fecha, type: DATE, required: true }
+    sitio_id: { phpName: SitioId, type: INTEGER, required: true, foreignTable: bid_sitio, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    refugios: { phpName: Refugios, type: INTEGER, required: true }
+    puestas: { phpName: Puestas, type: INTEGER, required: true }
+    _indexes: { bid_g9_i1_fecha: [fecha], bid_g9_i1_sitio_id: [sitio_id] }
+  bid_sitio:
+    _attributes: { phpName: BidSitio, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    the_geom: { phpName: TheGeom, type: VARCHAR, required: true }
+    area_protegida: { phpName: AreaProtegida, type: VARCHAR, required: false }
+    _uniques: { bid_sitio_nombre_key: [nombre] }
+  canal:
+    _attributes: { phpName: Canal, idMethod: native }
+    nombre: { phpName: Nombre, type: VARCHAR, size: '14', required: false }
+    layer: { phpName: Layer, type: VARCHAR, size: '15', required: false }
+    princ: { phpName: Princ, type: VARCHAR, size: '2', required: false }
+    secun: { phpName: Secun, type: INTEGER, required: false }
+    terc: { phpName: Terc, type: INTEGER, required: false }
+    prog: { phpName: Prog, type: DOUBLE, required: false }
+    obs: { phpName: Obs, type: VARCHAR, size: '50', required: false }
+    tomaproyec: { phpName: Tomaproyec, type: DOUBLE, required: false }
+    compuerta: { phpName: Compuerta, type: VARCHAR, size: '75', required: false }
+    estado: { phpName: Estado, type: VARCHAR, size: '50', required: false }
+    caudal_ent: { phpName: CaudalEnt, type: DOUBLE, required: false }
+    longitud: { phpName: Longitud, type: DOUBLE, required: false }
+    the_geom: { phpName: TheGeom, type: VARCHAR, required: false }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+  caudal:
+    _attributes: { phpName: Caudal, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    fecha: { phpName: Fecha, type: DATE, required: true }
+    caudal_aporte: { phpName: CaudalAporte, type: DECIMAL, size: '6', scale: '2', required: false }
+    nivel_embalse: { phpName: NivelEmbalse, type: DECIMAL, size: '6', scale: '2', required: false }
+    caudal_turbinado: { phpName: CaudalTurbinado, type: DECIMAL, size: '6', scale: '2', required: false }
+    caudal_vertido: { phpName: CaudalVertido, type: DECIMAL, size: '6', scale: '2', required: false }
+  credencial:
+    _attributes: { phpName: Credencial, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, size: '100', required: true }
+    descripcion: { phpName: Descripcion, type: VARCHAR, size: '250', required: false }
+    _uniques: { credencial_nombre_key: [nombre] }
+  credencial_grupo:
+    _attributes: { phpName: CredencialGrupo, idMethod: native }
+    credencial_id: { phpName: CredencialId, type: INTEGER, primaryKey: true, required: true, foreignTable: credencial, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    grupo_id: { phpName: GrupoId, type: INTEGER, primaryKey: true, required: true, foreignTable: grupo, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+  credencial_usuario:
+    _attributes: { phpName: CredencialUsuario, idMethod: native }
+    credencial_id: { phpName: CredencialId, type: INTEGER, primaryKey: true, required: true, foreignTable: credencial, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    usuario_id: { phpName: UsuarioId, type: INTEGER, primaryKey: true, required: true, foreignTable: usuario, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+  esquema:
+    _attributes: { phpName: Esquema, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    esquema_id: { phpName: EsquemaId, type: INTEGER, required: false, foreignTable: esquema, foreignReference: id, onDelete: 'SET NULL', onUpdate: CASCADE }
+    orden: { phpName: Orden, type: INTEGER, required: false }
+    archivo: { phpName: Archivo, type: VARCHAR, required: false }
+    mime: { phpName: Mime, type: VARCHAR, required: false }
+    nombre_original: { phpName: NombreOriginal, type: VARCHAR, required: false }
+    fuente: { phpName: Fuente, type: VARCHAR, required: false }
+    es_capa_base: { phpName: EsCapaBase, type: BOOLEAN, required: false, defaultValue: false }
+    color: { phpName: Color, type: VARCHAR, required: false }
+    _indexes: { esquema_es_capa_base: [es_capa_base], esquema_orden: [orden] }
+  estacion:
+    _attributes: { phpName: Estacion, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    descripcion: { phpName: Descripcion, type: LONGVARCHAR, required: false }
+    the_geom: { phpName: TheGeom, type: VARCHAR, required: true }
+    estado: { phpName: Estado, type: BOOLEAN, required: true }
+  girsu:
+    _attributes: { phpName: Girsu, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    descripcion: { phpName: Descripcion, type: LONGVARCHAR, required: false }
+    the_geom: { phpName: TheGeom, type: VARCHAR, required: true }
+    tipo: { phpName: Tipo, type: DECIMAL, required: true }
+    _indexes: { girsu_tipo: [tipo] }
+  grupo:
+    _attributes: { phpName: Grupo, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, size: '100', required: true }
+    descripcion: { phpName: Descripcion, type: VARCHAR, size: '250', required: true }
+    _uniques: { grupo_nombre_key: [nombre] }
+  grupo_localidad:
+    _attributes: { phpName: GrupoLocalidad, idMethod: native }
+    grupo_id: { phpName: GrupoId, type: INTEGER, primaryKey: true, required: true, foreignTable: grupo, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    localidad_id: { phpName: LocalidadId, type: INTEGER, primaryKey: true, required: true, foreignTable: localidad, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+  grupo_tipo:
+    _attributes: { phpName: GrupoTipo, idMethod: native }
+    grupo_id: { phpName: GrupoId, type: INTEGER, primaryKey: true, required: true, foreignTable: grupo, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    tipo_id: { phpName: TipoId, type: INTEGER, primaryKey: true, required: true, foreignTable: tipo_muestra, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+  kml:
+    _attributes: { phpName: Kml, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    descripcion: { phpName: Descripcion, type: LONGVARCHAR, required: false }
+    tipo: { phpName: Tipo, type: SMALLINT, required: true }
+    subtipo: { phpName: Subtipo, type: SMALLINT, required: false }
+    the_geom: { phpName: TheGeom, type: VARCHAR, required: true }
+    foto: { phpName: Foto, type: BLOB, required: false }
+    mime: { phpName: Mime, type: VARCHAR, required: false }
+    nombre_original: { phpName: NombreOriginal, type: VARCHAR, required: false }
+    esquema_id: { phpName: EsquemaId, type: INTEGER, required: false, foreignTable: esquema, foreignReference: id, onDelete: 'SET NULL', onUpdate: CASCADE }
+    _indexes: { kml_esquema_id: [esquema_id] }
+  localidad:
+    _attributes: { phpName: Localidad, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    _uniques: { localidad_nombre_key: [nombre] }
+  lugar_extraccion:
+    _attributes: { phpName: LugarExtraccion, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, size: '250', required: true }
+    the_geom: { phpName: TheGeom, type: VARCHAR, required: true }
+    localidad_id: { phpName: LocalidadId, type: INTEGER, required: true, foreignTable: localidad, foreignReference: id, onDelete: 'SET NULL', onUpdate: CASCADE }
+    tipo_id: { phpName: TipoId, type: INTEGER, required: false, foreignTable: tipo_muestra, foreignReference: id, onDelete: 'SET NULL', onUpdate: CASCADE }
+    _indexes: { lugar_extraccion_localidad_id: [localidad_id], lugar_extraccion_tipo_id: [tipo_id] }
+    _uniques: { lugar_extraccion_nombre_localida: [nombre, localidad_id] }
+  lugar_uso:
+    _attributes: { phpName: LugarUso, idMethod: native }
+    lugar_id: { phpName: LugarId, type: INTEGER, primaryKey: true, required: true, foreignTable: lugar_extraccion, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    uso_id: { phpName: UsoId, type: INTEGER, primaryKey: true, required: true, foreignTable: uso, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+  mineria:
+    _attributes: { phpName: Mineria, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    the_geom: { phpName: TheGeom, type: VARCHAR, required: true }
+    categoria: { phpName: Categoria, type: SMALLINT, required: true }
+    descripcion: { phpName: Descripcion, type: LONGVARCHAR, required: false }
+  muestra:
+    _attributes: { phpName: Muestra, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    numero: { phpName: Numero, type: INTEGER, required: false }
+    protocolo: { phpName: Protocolo, type: INTEGER, required: false }
+    tipo_id: { phpName: TipoId, type: SMALLINT, required: true, foreignTable: tipo_muestra, foreignReference: id, onDelete: RESTRICT, onUpdate: CASCADE }
+    the_geom: { phpName: TheGeom, type: VARCHAR, required: false }
+    fecha: { phpName: Fecha, type: DATE, required: true }
+    observaciones: { phpName: Observaciones, type: LONGVARCHAR, required: false }
+    nmp_coliformes_totales_100: { phpName: NmpColiformesTotales100, type: DECIMAL, size: '10', scale: '1', required: false }
+    nmp_coliformes_fecales_100: { phpName: NmpColiformesFecales100, type: DECIMAL, size: '10', scale: '1', required: false }
+    nmp_escherichia_coli_100: { phpName: NmpEscherichiaColi100, type: DECIMAL, size: '10', scale: '1', required: false }
+    nmp_enterococos_fecales_100: { phpName: NmpEnterococosFecales100, type: DECIMAL, size: '10', scale: '1', required: false }
+    temperatura: { phpName: Temperatura, type: DECIMAL, size: '6', scale: '1', required: false }
+    ph: { phpName: Ph, type: DECIMAL, size: '4', scale: '2', required: false }
+    conductividad_electrica: { phpName: ConductividadElectrica, type: INTEGER, required: false }
+    turbiedad_unt: { phpName: TurbiedadUnt, type: DECIMAL, size: '10', scale: '1', required: false }
+    od_mg_l: { phpName: OdMgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    od_porcentaje: { phpName: OdPorcentaje, type: DECIMAL, size: '10', scale: '1', required: false }
+    didymosphenia_geminata: { phpName: DidymospheniaGeminata, type: BOOLEAN, required: false }
+    dbo5_mg_l: { phpName: Dbo5MgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    dqo_mg_l: { phpName: DqoMgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    dureza_ca_co3_mg_l: { phpName: DurezaCaCo3MgL, type: INTEGER, required: false }
+    cloruros_mg_l: { phpName: ClorurosMgL, type: DECIMAL, size: '15', scale: '2', required: false }
+    sulfatos_mg_l: { phpName: SulfatosMgL, type: DECIMAL, size: '15', scale: '2', required: false }
+    calcio_mg_l: { phpName: CalcioMgL, type: DECIMAL, size: '15', scale: '2', required: false }
+    magnesio_mg_l: { phpName: MagnesioMgL, type: DECIMAL, size: '15', scale: '2', required: false }
+    sodio_mg_l: { phpName: SodioMgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    potasio_mg_l: { phpName: PotasioMgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    sol_sup_tot_103_105_mg_l: { phpName: SolSupTot103105MgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    solidos_sedimentables_10min_mg_l: { phpName: SolidosSedimentables10minMgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    solidos_sedimentables_1h_mg_l: { phpName: SolidosSedimentables1hMgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    solidos_sedimentables_2h_mg_l: { phpName: SolidosSedimentables2hMgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    sol_tot_105_mg_l: { phpName: SolTot105MgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    sol_totales_fijos_mg_l: { phpName: SolTotalesFijosMgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    sol_totales_volatiles_mg_l: { phpName: SolTotalesVolatilesMgL, type: DECIMAL, size: '10', scale: '1', required: false }
+    solicitado_por: { phpName: SolicitadoPor, type: VARCHAR, size: '250', required: false }
+    lugar_de_extraccion_id: { phpName: LugarDeExtraccionId, type: INTEGER, required: false, foreignTable: lugar_extraccion, foreignReference: id, onDelete: 'SET NULL', onUpdate: CASCADE }
+    sol_dis_tot: { phpName: SolDisTot, type: DECIMAL, size: '10', scale: '1', required: false }
+    sol_dis_fijos: { phpName: SolDisFijos, type: DECIMAL, size: '10', scale: '1', required: false }
+    sol_dis_volat: { phpName: SolDisVolat, type: DECIMAL, size: '10', scale: '1', required: false }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    created_by: { phpName: CreatedBy, type: INTEGER, required: false, foreignTable: usuario, foreignReference: id, onDelete: 'SET NULL', onUpdate: CASCADE }
+    updated_by: { phpName: UpdatedBy, type: INTEGER, required: false }
+    mostrar: { phpName: Mostrar, type: BOOLEAN, required: true, defaultValue: false }
+    responsable_id: { phpName: ResponsableId, type: INTEGER, required: false, foreignTable: responsable, foreignReference: id, onDelete: 'SET NULL', onUpdate: CASCADE }
+    fluoruros: { phpName: Fluoruros, type: VARCHAR, size: '50', required: false }
+    nitritos: { phpName: Nitritos, type: DECIMAL, size: '10', scale: '2', required: false }
+    nitratos: { phpName: Nitratos, type: DECIMAL, size: '10', scale: '2', required: false }
+    fosfatos: { phpName: Fosfatos, type: DECIMAL, size: '10', scale: '2', required: false }
+    nmp_coliformes_totales_100_lim: { phpName: NmpColiformesTotales100Lim, type: SMALLINT, required: false }
+    nmp_coliformes_fecales_100_lim: { phpName: NmpColiformesFecales100Lim, type: SMALLINT, required: false }
+    nmp_escherichia_coli_100_lim: { phpName: NmpEscherichiaColi100Lim, type: SMALLINT, required: false }
+    nmp_enterococos_fecales_100_lim: { phpName: NmpEnterococosFecales100Lim, type: SMALLINT, required: false }
+    cloruros_mg_l_lim: { phpName: ClorurosMgLLim, type: SMALLINT, required: false }
+    sulfatos_mg_l_lim: { phpName: SulfatosMgLLim, type: SMALLINT, required: false }
+    sodio_mg_l_lim: { phpName: SodioMgLLim, type: SMALLINT, required: false }
+    potasio_mg_l_lim: { phpName: PotasioMgLLim, type: SMALLINT, required: false }
+    ras: { phpName: Ras, type: DECIMAL, size: '10', scale: '1', required: false }
+    sol_sup_tot_103_105_mg_l_lim: { phpName: SolSupTot103105MgLLim, type: SMALLINT, required: false }
+    solidos_sedimentables_1h_mg_l_lim: { phpName: SolidosSedimentables1hMgLLim, type: SMALLINT, required: false }
+    solidos_sedimentables_2h_mg_l_lim: { phpName: SolidosSedimentables2hMgLLim, type: SMALLINT, required: false }
+    solidos_sedimentables_10min_mg_l_lim: { phpName: SolidosSedimentables10minMgLLim, type: SMALLINT, required: false }
+    fluoruros_lim: { phpName: FluorurosLim, type: SMALLINT, required: false }
+    nitritos_lim: { phpName: NitritosLim, type: SMALLINT, required: false }
+    nitratos_lim: { phpName: NitratosLim, type: SMALLINT, required: false }
+    rotulo_precinto: { phpName: RotuloPrecinto, type: VARCHAR, required: false }
+    ye: { phpName: Ye, type: INTEGER, required: true, defaultValue: '0' }
+    dbo5_mg_l_lim: { phpName: Dbo5MgLLim, type: SMALLINT, required: false }
+    dqo_mg_l_lim: { phpName: DqoMgLLim, type: SMALLINT, required: false }
+    sol_totales_volatiles_mg_l_lim: { phpName: SolTotalesVolatilesMgLLim, type: SMALLINT, required: false }
+    sol_totales_fijos_mg_l_lim: { phpName: SolTotalesFijosMgLLim, type: SMALLINT, required: false }
+    sol_tot_105_mg_l_lim: { phpName: SolTot105MgLLim, type: SMALLINT, required: false }
+    grasas_aceites: { phpName: GrasasAceites, type: DECIMAL, size: '10', scale: '2', required: false }
+    grasas_aceites_lim: { phpName: GrasasAceitesLim, type: SMALLINT, required: false }
+    fosforo_reactivo_disuelto_lim: { phpName: FosforoReactivoDisueltoLim, type: SMALLINT, required: false }
+    fosforo_reactivo_disuelto: { phpName: FosforoReactivoDisuelto, type: DECIMAL, size: '10', scale: '2', required: false }
+    detergentes_anionicos: { phpName: DetergentesAnionicos, type: DECIMAL, size: '10', scale: '2', required: false }
+    detergentes_anionicos_lim: { phpName: DetergentesAnionicosLim, type: SMALLINT, required: false }
+    alcalinidad_total: { phpName: AlcalinidadTotal, type: DECIMAL, size: '10', scale: '2', required: false }
+    alcalinidad_total_lim: { phpName: AlcalinidadTotalLim, type: SMALLINT, required: false }
+    bicarbonatos: { phpName: Bicarbonatos, type: DECIMAL, size: '10', scale: '2', required: false }
+    bicarbonatos_lim: { phpName: BicarbonatosLim, type: SMALLINT, required: false }
+    carbonatos: { phpName: Carbonatos, type: DECIMAL, size: '10', scale: '2', required: false }
+    carbonatos_lim: { phpName: CarbonatosLim, type: SMALLINT, required: false }
+    taxa: { phpName: Taxa, type: SMALLINT, required: false }
+    da1: { phpName: Da1, type: BOOLEAN, required: false }
+    da2: { phpName: Da2, type: BOOLEAN, required: false }
+    da3: { phpName: Da3, type: BOOLEAN, required: false }
+    da4: { phpName: Da4, type: BOOLEAN, required: false }
+    da5: { phpName: Da5, type: BOOLEAN, required: false }
+    ma_archivo: { phpName: MaArchivo, type: VARCHAR, size: '250', required: false }
+    ma_mime: { phpName: MaMime, type: VARCHAR, size: '250', required: false }
+    ma_nombre_original: { phpName: MaNombreOriginal, type: VARCHAR, size: '250', required: false }
+    codigo: { phpName: Codigo, type: VARCHAR, size: '20', required: false }
+    magnesio_mg_l_lim: { phpName: MagnesioMgLLim, type: SMALLINT, required: false }
+    alerta: { phpName: Alerta, type: BOOLEAN, required: false, defaultValue: false }
+    conductividad_electrica_unidad: { phpName: ConductividadElectricaUnidad, type: SMALLINT, required: false, defaultValue: '0' }
+    _indexes: { muestra_created_at: [created_at], muestra_created_by: [created_by], muestra_fecha: [fecha], muestra_le: [lugar_de_extraccion_id], muestra_mostrar: [mostrar], muestra_numero: [numero], muestra_protocolo: [protocolo], muestra_responsable_id: [responsable_id], muestra_tipo_id: [tipo_id], muestra_updated_at: [updated_at], muestra_updated_by: [updated_by] }
+  parque_eolico:
+    _attributes: { phpName: ParqueEolico, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    descripcion: { phpName: Descripcion, type: LONGVARCHAR, required: false }
+    the_geom: { phpName: TheGeom, type: VARCHAR, required: true }
+    estado: { phpName: Estado, type: INTEGER, required: false }
+  promotor_ambiental:
+    _attributes: { phpName: PromotorAmbiental, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    descripcion: { phpName: Descripcion, type: LONGVARCHAR, required: false }
+    the_geom: { phpName: TheGeom, type: VARCHAR, required: true }
+    foto: { phpName: Foto, type: BLOB, required: false }
+    mime: { phpName: Mime, type: VARCHAR, required: false }
+    nombre_original: { phpName: NombreOriginal, type: VARCHAR, required: false }
+    viejo: { phpName: Viejo, type: BOOLEAN, required: false, defaultValue: false }
+  responsable:
+    _attributes: { phpName: Responsable, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    _uniques: { responsable_nombre_key: [nombre] }
+  smart_observation:
+    _attributes: { phpName: SmartObservation, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    smart_waypoint_id: { phpName: SmartWaypointId, type: INTEGER, required: true, foreignTable: smart_waypoint, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    grupo_uuid: { phpName: GrupoUuid, type: VARCHAR, required: false }
+    uuid: { phpName: Uuid, type: VARCHAR, required: false }
+    category: { phpName: Category, type: VARCHAR, required: false }
+    _indexes: { smart_observation_category: [category], smart_observation_grupo: [grupo_uuid], smart_observation_uuid: [uuid], smart_observation_waypioint_id: [smart_waypoint_id] }
+  smart_observation_attributes:
+    _attributes: { phpName: SmartObservationAttributes, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    smart_observation_id: { phpName: SmartObservationId, type: INTEGER, required: true, foreignTable: smart_observation, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    json: { phpName: Json, type: VARCHAR, required: false }
+    attribute_key: { phpName: AttributeKey, type: VARCHAR, required: false }
+    attribute_value: { phpName: AttributeValue, type: VARCHAR, required: false }
+    _indexes: { smart_obs_attr_key: [attribute_key], smart_observation_id: [smart_observation_id] }
+  smart_waypoint:
+    _attributes: { phpName: SmartWaypoint, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    coordinates: { phpName: Coordinates, type: VARCHAR, required: false }
+    uuid: { phpName: Uuid, type: VARCHAR, required: false }
+    date: { phpName: Date, type: DATE, required: false }
+    conservation_area_uuid: { phpName: ConservationAreaUuid, type: VARCHAR, required: false }
+    source: { phpName: Source, type: VARCHAR, required: false }
+    time: { phpName: Time, type: TIME, required: false }
+    _indexes: { smart_waypoint_ca_id: [conservation_area_uuid], smart_waypoint_date: [date], smart_waypoint_source: [source], smart_waypoint_uuid: [uuid] }
+  spatial_ref_sys:
+    _attributes: { phpName: SpatialRefSys, idMethod: native }
+    srid: { phpName: Srid, type: INTEGER, primaryKey: true, required: true }
+    auth_name: { phpName: AuthName, type: VARCHAR, size: '256', required: false }
+    auth_srid: { phpName: AuthSrid, type: INTEGER, required: false }
+    srtext: { phpName: Srtext, type: VARCHAR, size: '2048', required: false }
+    proj4text: { phpName: Proj4text, type: VARCHAR, size: '2048', required: false }
+  tipo_muestra:
+    _attributes: { phpName: TipoMuestra, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    archivo: { phpName: Archivo, type: VARCHAR, required: false }
+    mime: { phpName: Mime, type: VARCHAR, required: false }
+    nombre_original: { phpName: NombreOriginal, type: VARCHAR, required: false }
+    _uniques: { tipo_muestra_nombre_key: [nombre] }
+  tolerancia:
+    _attributes: { phpName: Tolerancia, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    fecha: { phpName: Fecha, type: DATE, required: true }
+    maximo: { phpName: Maximo, type: DECIMAL, size: '15', scale: '2', required: true }
+    tipo: { phpName: Tipo, type: SMALLINT, required: true }
+    uso_no: { phpName: UsoNo, type: SMALLINT, required: false }
+    normativa: { phpName: Normativa, type: VARCHAR, size: '250', required: false }
+    uso_id: { phpName: UsoId, type: INTEGER, required: true, foreignTable: uso, foreignReference: id, onDelete: RESTRICT, onUpdate: CASCADE }
+    _indexes: { tolerancia_uso_id: [uso_id] }
+    _uniques: { index_fecha_tipo_unique: [fecha, tipo] }
+  tratamiento:
+    _attributes: { phpName: Tratamiento, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    descripcion: { phpName: Descripcion, type: LONGVARCHAR, required: false }
+    the_geom: { phpName: TheGeom, type: VARCHAR, required: true }
+    tipo: { phpName: Tipo, type: SMALLINT, required: true }
+  uso:
+    _attributes: { phpName: Uso, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    _uniques: { uso_nombre_key: [nombre] }
+  usuario:
+    _attributes: { phpName: Usuario, idMethod: native }
+    id: { phpName: Id, type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, required: true }
+    email: { phpName: Email, type: VARCHAR, required: true }
+    clave: { phpName: Clave, type: VARCHAR, required: false }
+    reset: { phpName: Reset, type: VARCHAR, required: false }
+    admin: { phpName: Admin, type: BOOLEAN, required: true, defaultValue: false }
+    deshabilitado: { phpName: Deshabilitado, type: BOOLEAN, required: true, defaultValue: false }
+    _uniques: { usuario_email_key: [email], usuario_nombre_key: [nombre] }
+  usuario_grupo:
+    _attributes: { phpName: UsuarioGrupo, idMethod: native }
+    usuario_id: { phpName: UsuarioId, type: INTEGER, primaryKey: true, required: true, foreignTable: usuario, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
+    grupo_id: { phpName: GrupoId, type: INTEGER, primaryKey: true, required: true, foreignTable: grupo, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE }
