@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Back to list</source>
+        <target>Volver al listado</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Are you sure?</source>
+        <target>¿Está seguro?</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

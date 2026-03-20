@@ -1,0 +1,66 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Muestra
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Muestra
+    plural:                Muestras
+    route_prefix:          muestra
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        numero: 
+          label:  Número de muestra
+      list:    
+        title: Muestras
+        query_methods: [leftJoinWithLugarExtraccion, innerJoinWithTipoMuestra]
+        sort: [Fecha, desc]
+        batch_actions: 
+          cambiar_visible: 
+            credentials: [muestras_abm]
+        object_actions: 
+          _edit: ~
+#          _edit:
+#            credentials: [muestras_abm]
+          view:
+            action: view
+            label: <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          protocolo: 
+            label: <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+            params:
+              title:  Vista de impresión del protocolo
+              target:  _blank
+        actions:
+          _new:
+            credentials: [muestras_abm]
+          exportar: 
+            label: <span class="glyphicon glyphicon-export" aria-hidden="true"></span>
+            params:
+              title:  Exportar a planilla de cálculo
+        fields:
+          fecha:
+            date_format: dd/MM/yyyy
+          lugar_extraccion:
+            is_sortable: true
+          tipo_muestra:
+            is_sortable: true
+      filter:  ~
+      form:  ~
+            
+      edit:    
+        title: Modificar muestra
+        actions:
+          _delete: ~
+          _list: ~
+          _save: ~
+          protocolo: 
+            params:
+              target: _blank
+          
+      new:     
+        title: Agregar muestra

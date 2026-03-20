@@ -1,0 +1,39 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           BidG2I1
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              BidG2I1
+    plural:                BidG2I1s
+    route_prefix:          bid_g2_i1
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        fecha: { date_format: dd/MM/yyyy }
+      list:    
+        title: Mara<br>Indicador: <i>Densidad mínima de individuos maduros</i>
+        with: [BidSitio]
+        batch_actions: {}
+        object_actions:
+          _edit: ~
+
+        display:
+          - fecha
+          - BidSitio
+          - numero_adultos 
+          - numero_crias_clase1 
+          - numero_crias_clase2 
+          - numero_crias_clase3 
+          - numero_crias_clase4 
+          - observaciones
+      filter: ~
+      form:    ~
+      edit:    
+        title: Mara<br>Indicador: <i>Densidad mínima de individuos maduros</i><br>Modificar registro
+      new:     
+        title: Mara<br>Indicador: <i>Densidad mínima de individuos maduros</i><br>Agregar registro

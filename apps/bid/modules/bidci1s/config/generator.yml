@@ -1,0 +1,38 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           BidConteoIndicador
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              BidConteoIndicador
+    plural:                BidConteoIndicadors
+    route_prefix:          bid_conteo_indicador
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        fecha: { date_format: dd/MM/yyyy }
+      list:    
+        title: Abundancia de Aves Playeras PIMCPA
+        batch_actions: {}
+        object_actions:
+          _edit: ~
+        with: [BidSitio,BidEspecie]  
+        query_methods: [soloAvesPlayerasPimcpa]
+        display:
+          - fecha
+          - BidSitio
+          - BidEspecie
+          - cantidad
+          - observaciones 
+      filter:  
+        class: BidCI1FormFilter 
+      form:    
+        class: BidCI1Form 
+      edit:    
+        title: Modificar registro
+      new:     
+        title:  Agregar registro

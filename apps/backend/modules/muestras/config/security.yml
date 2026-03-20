@@ -1,0 +1,11 @@
+index:
+  credentials: [muestras]
+view:
+  credentials: [muestras]
+new:
+  credentials: [muestras_abm]
+edit:
+  credentials: [muestras]
+delete:
+  credentials: [muestras_abm]
+  

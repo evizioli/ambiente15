@@ -1,0 +1,48 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           LugarExtraccion
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              LugarExtraccion
+    plural:                LugarExtraccions
+    route_prefix:          lugar_extraccion
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        lugar_uso_list:
+          label: Usos
+      list:    
+        fields:
+          localidad: 
+            is_sortable: true
+          tipo_muestra:
+            label: Tipo 
+            is_sortable: true
+        title: Lugares de extracci&oacute;n habituales
+        sort: [Nombre,asc]
+        query_methods: [leftJoinWithLocalidad, leftJoinWithTipoMuestra]
+        display: 
+          - =nombre
+          - localidad
+          - tipo_muestra
+        batch_actions: {}
+        object_actions: {}
+        actions:
+          _new:
+            credentials: [lugares_abm]
+          exportar: 
+            label: <span class="glyphicon glyphicon-export" aria-hidden="true"></span>
+            params:
+              title:  Exportar a planilla de cálculo
+      filter:  ~
+      form:    ~
+      edit:    
+        title: Modificar lugar de extracci&oacute;n
+      
+      new:     
+        title: Agregar lugar de extracci&oacute;n

@@ -1,0 +1,33 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Kml
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Kml
+    plural:                Kmls
+    route_prefix:          kml
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title:  Elementos de capas
+        display: 
+          - nombre
+          - descripcion
+          - esquema
+          
+        object_actions: 
+          _edit: ~
+        batch_actions: {}
+      filter:  ~
+      form:    ~
+      edit:    
+        title:   Modificar elemento
+      new:     
+        title:   Agregar elemento
+      

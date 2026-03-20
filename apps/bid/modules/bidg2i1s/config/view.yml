@@ -1,0 +1,17 @@
+indexSuccess:
+  stylesheets: 
+    - ../ol/ol.css
+    - bid_bidg2i1s
+  javascripts: 
+    - ../ol/ol.js
+    - ../ol/ol-layerswitcher.js
+    - bid_bidg2i1s
+
+indicadorSuccess:
+  stylesheets: 
+    - ../ol/ol.css
+    - bid_bidg2i1s
+  javascripts: 
+    - ../ol/ol.js
+    - ../ol/ol-layerswitcher.js
+    - bid_bidg2i1s

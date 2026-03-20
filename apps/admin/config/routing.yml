@@ -1,0 +1,133 @@
+esquema:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                Esquema
+    module:               esquemas
+    prefix_path:          /esquemas
+    column:               id
+    with_wildcard_routes: true
+
+tipo_kml:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                TipoKml
+    module:               tipos_kml
+    prefix_path:          /tipos_kml
+    column:               id
+    with_wildcard_routes: true
+
+kml:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                Kml
+    module:               kmls
+    prefix_path:          /kmls
+    column:               id
+    with_wildcard_routes: true
+
+mineria:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                Mineria
+    module:               minerias
+    prefix_path:          /minerias
+    column:               id
+    with_wildcard_routes: true
+
+tipo_muestra:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                TipoMuestra
+    module:               tipos_muestra
+    prefix_path:          /tipos_muestra
+    column:               id
+    with_wildcard_routes: true
+
+estacion:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                Estacion
+    module:               estaciones
+    prefix_path:          /estaciones
+    column:               id
+    with_wildcard_routes: true
+
+parque_eolico:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                ParqueEolico
+    module:               parques
+    prefix_path:          /parques
+    column:               id
+    with_wildcard_routes: true
+
+tratamiento:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                Tratamiento
+    module:               tratamientos
+    prefix_path:          /tratamientos
+    column:               id
+    with_wildcard_routes: true
+
+promotor_ambiental:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                PromotorAmbiental
+    module:               promotores
+    prefix_path:          /promotores
+    column:               id
+    with_wildcard_routes: true
+
+girsu:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                Girsu
+    module:               girsus
+    prefix_path:          /girsus
+    column:               id
+    with_wildcard_routes: true
+
+localidad:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                Localidad
+    module:               localidades
+    prefix_path:          /localidades
+    column:               id
+    with_wildcard_routes: true
+
+grupo:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                Grupo
+    module:               grupos
+    prefix_path:          /grupos
+    column:               id
+    with_wildcard_routes: true
+
+usuario:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                Usuario
+    module:               usuarios
+    prefix_path:          /usuarios
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: principal, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,30 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Biodiversidad
+    description:  Módulo de Biodiversidad - Secretaría de Ambiente y Control del Desarrollo Sustentable - Gobierno del Chubut
+    keywords:     indicadores, biodiversidad, ambiente, chubut
+    language:     es_AR
+    robots:       noindex, nofollow
+
+  stylesheets:    
+    - ../bootstrap/css/bootstrap.min.css: { media:all }
+    - ../bootstrap/css/bootstrap-theme.min.css: { media:all }
+    - ../select2/css/select2.min.css
+    - ../select2/css/select2-bootstrap.min.css
+    - main.css: { position: last }
+
+
+  javascripts:    
+    - ../jquery/jquery.min.js
+    - ../bootstrap/js/bootstrap.min.js
+    - ../select2/js/select2.min.js
+    - s2.js
+
+  has_layout:     true
+  layout:         layout

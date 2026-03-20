@@ -1,0 +1,36 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           BidG1I1
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              BidG1I1
+    plural:                BidG1I1s
+    route_prefix:          bid_g1_i1
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        fecha: { date_format: dd/MM/yyyy }
+        BidSitio: 
+          label: Sitio
+      list:    
+        title: Pulpo Colorado Patagónico<br/>Indicador: <i>Status reproductivo en el intermareal rocoso</i>
+        with: [BidSitio]
+        batch_actions: {}
+        object_actions: 
+          _edit: ~
+        display:
+          - fecha
+          - BidSitio
+          - _sexo_madurez
+          - actividad_pesquera
+      filter:  ~
+      form:    ~
+      edit:    
+        title: Pulpo Colorado Patagónico<br/>Indicador: <i>Status reproductivo en el intermareal rocoso</i><br/><small>Modificar registro</small>
+      new:     
+        title: Pulpo Colorado Patagónico<br/>Indicador: <i>Status reproductivo en el intermareal rocoso</i><br/><small>Agregar registro</small>

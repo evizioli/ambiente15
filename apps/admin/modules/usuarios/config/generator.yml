@@ -1,0 +1,45 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Usuario
+    theme:                 adminBS 
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Usuario
+    plural:                Usuarios
+    route_prefix:          usuario
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        usuario_grupo_list:
+          label: Grupos
+        credencial_usuario_list:
+          label: Permisos
+      list:    
+        title: Usuarios
+        batch_actions: {}
+        object_actions: 
+          reset:
+            label: <i class="glyphicon glyphicon-send"></i>
+            params:
+              title: Enviar acceso
+        display:
+          - =nombre
+          - email
+          - admin
+          - deshabilitado
+      filter:  
+        display:
+          - nombre
+          - usuario_grupo_list
+          - credencial_usuario_list
+          - admin
+          - deshabilitado
+      form:    ~
+      edit:    
+        title: Modificar usuario
+      new:     
+        title: Agregar usuario

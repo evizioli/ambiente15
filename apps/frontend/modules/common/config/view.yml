@@ -1,0 +1,46 @@
+mapasAmbientalesSuccess:
+  javascripts: [ ../ol/ol.js, ../ol/ol-layerswitcher.js, ../sidebar/js/ol3-sidebar.min.js, mapasAmbientales.js ]
+  stylesheets: [ ../ol/ol.css, ../ol/ol-layerswitcher.css, ../sidebar/css/ol3-sidebar.min.css, ../font-awesome/css/font-awesome.min.css, mapasAmbientales.css ]
+
+indexSuccess:
+  javascripts: [ ../ol/ol.js, ../ol/ol-layerswitcher.js, ../sidebar/js/ol3-sidebar.min.js, mapasAmbientales.js ]
+  stylesheets: [ ../ol/ol.css, ../ol/ol-layerswitcher.css, ../sidebar/css/ol3-sidebar.min.css, ../font-awesome/css/font-awesome.min.css, mapasAmbientales.css ]
+
+index2Success:
+  javascripts: 
+    - -*
+    - ../jquery/jquery.min.js
+    - ../bootstrap/js/bootstrap.min.js
+    - ../ol/ol.js
+    - ../ol/ol-layerswitcher.js
+    - ../sidebar/js/ol3-sidebar.min.js
+    - index2.js 
+  stylesheets: 
+    - -*
+    - ../bootstrap/css/bootstrap.min.css
+    - ../ol/ol.css
+    - ../ol/ol-layerswitcher.css
+    - ../sidebar/css/ol3-sidebar.min.css
+    - ../font-awesome/css/font-awesome.min.css
+    - index2.css
+    
+
+iframeSuccess:
+  layout: false
+  javascripts: 
+    - -*
+    - ../jquery/jquery.min.js
+#    - ../bootstrap/js/bootstrap.min.js
+    - ../ol/ol.js
+    - ../ol/ol-layerswitcher.js
+    - ../sidebar/js/ol3-sidebar.min.js
+    - index2.js 
+  stylesheets: 
+    - -*
+    - ../bootstrap/css/bootstrap.min.css
+    - ../ol/ol.css
+    - ../ol/ol-layerswitcher.css
+    - ../sidebar/css/ol3-sidebar.min.css
+    - ../font-awesome/css/font-awesome.min.css
+    - index2.css
+    

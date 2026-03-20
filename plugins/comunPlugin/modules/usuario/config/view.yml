@@ -1,0 +1,5 @@
+loginSuccess:
+  stylesheets:  [ ../comunPlugin/css/login.css ]
+  
+checkSuccess:
+  layout: layout_no_menu

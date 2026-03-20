@@ -1,0 +1,44 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Tolerancia
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Tolerancia
+    plural:                Tolerancias
+    route_prefix:          tolerancia
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        maximo: 
+          label: Superior
+        minimo: 
+          label: Inferior
+      list:    
+        title:  Niveles guía
+        display:
+          - _tipo
+          - fecha
+          - maximo
+          - uso
+          - normativa
+        object_actions: 
+          _edit: ~
+        batch_actions: {}
+        sort: [ Fecha, desc ]  
+        fields: 
+          fecha:
+            date_format: dd/MM/yyyy
+          uso:
+            is_sortable: true
+        with: [Uso]
+      filter:  ~
+      form: ~
+      edit:    
+        title:  Modificar  Nivel guía
+      new:     
+        title:  Agregar  Nivel guía

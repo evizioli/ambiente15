@@ -1,0 +1,27 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Esquema
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Esquema
+    plural:                Esquemas
+    route_prefix:          esquema
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title:  Jerarquía de capas
+        batch_actions: {}
+        object_actions: {}
+      filter:  
+        class: false
+      form:    ~
+      edit:    
+        title:  Modificar nodo
+      new:     
+        title:  Agregar nodo

@@ -1,0 +1,9 @@
+doLogin:
+  is_secure: false
+logout:
+  credentials:    []
+reset:
+  is_secure: false
+check:
+  is_secure: false
+  

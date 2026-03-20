@@ -1,0 +1,38 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           BidG5I1
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              BidG5I1
+    plural:                BidG5I1s
+    route_prefix:          bid_g5_i1
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        fecha: { date_format: dd/MM/yyyy }
+      list:    
+        title:   Elefante marino del sur
+        batch_actions: {}
+        object_actions:
+          _edit: ~
+        display:
+          - fecha
+          - BidSitio
+          - hembras
+          - crias_destetadas
+          - crias_lactantes
+          - machos_adultos
+          - machos_sub_adultos
+          - juveniles
+        
+      filter:  ~
+      form:    ~
+      edit:    
+        title: Modificar registro
+      new:     
+        title: Agregar registro

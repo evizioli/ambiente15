@@ -1,0 +1,41 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Caudal
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Caudal
+    plural:                Caudals
+    route_prefix:          caudal
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title:   Caudales Dique F. Ameghino
+        sort: [ fecha, asc ]
+        actions:
+          _new: ~
+          importar:
+            action: importar
+        batch_actions: {}
+        object_actions: {}
+        display:
+          - =fecha
+          - caudal_aporte
+          - nivel_embalse
+          - caudal_turbinado
+          - caudal_vertido
+          - caudal_emitido
+        fields:
+          fecha:
+            date_format: dd/MM/yyyy
+      filter: ~
+      form:    ~
+      edit:    
+        title:   Modificar caudal
+      new:     
+        title:    Agregar caudal

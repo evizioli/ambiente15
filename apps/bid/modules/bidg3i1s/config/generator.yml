@@ -1,0 +1,39 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           BidG3I1
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              BidG3I1
+    plural:                BidG3I1s
+    route_prefix:          bid_g3_i1
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        fecha: { date_format: dd/MM/yyyy }
+        BidSitio: 
+          label: Sitio
+      list:    
+        title: Pato Vapor Cabeza Blanca No Volador 
+        with: [BidSitio]
+        batch_actions: {}
+        object_actions:
+          _edit: ~
+
+        display:
+          - fecha
+          - BidSitio
+          - parejas 
+          - hembras 
+          - machos 
+          - km_relevados
+      filter: ~
+      form:    ~
+      edit:    
+        title: Modificar registro
+      new:     
+        title: Agregar registro

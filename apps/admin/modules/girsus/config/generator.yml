@@ -1,0 +1,33 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Girsu
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Girsu
+    plural:                Girsus
+    route_prefix:          girsu
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Lugares del G.I.R.S.U.
+        batch_actions: {}
+        object_actions: {}
+        display:
+          - =nombre
+          - descripcion
+          - _tipo
+      filter:  
+        display:
+          - nombre
+          - tipo
+      form:    ~
+      edit:    
+        title:  Modificar lugar
+      new:     
+        title:  Agregar lugar

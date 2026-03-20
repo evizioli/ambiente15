@@ -1,0 +1,42 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Grupo
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Grupo
+    plural:                Grupos
+    route_prefix:          grupo
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        usuario_grupo_list:
+          label: Usuarios
+        credencial_grupo_list:
+          label: Permisos
+        grupo_localidad_list:
+          label: Localidades
+        grupo_tipo_list:
+          label: Tipos de muestra
+      list:    
+        title: Grupos de usuarios
+        batch_actions: {}
+        object_actions: {}
+        display:
+          - =nombre
+          - descripcion
+      filter:  
+        display:
+          - nombre
+          - usuario_grupo_list
+          - credencial_grupo_list
+          - grupo_localidad_list
+      form:    ~
+      edit:    
+        title: Modificar grupo
+      new:     
+        title: Agregar grupo

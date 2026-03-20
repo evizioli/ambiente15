@@ -1,0 +1,33 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           TipoMuestra
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              TipoMuestra
+    plural:                TipoMuestras
+    route_prefix:          tipo_muestra
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        grupo_tipo_list:
+          label: Grupos
+      list:    
+        title: Tipos de lugares de tomas de muestras
+        batch_actions: {}
+        object_actions: {}
+        display:
+          - =nombre
+          - _imagen
+        sort: [nombre, asc]
+      filter:  
+        class:  false
+      form:    ~
+      edit:    
+        title:  Modificar Tipo
+      new:     
+        title:  Agregar Tipo

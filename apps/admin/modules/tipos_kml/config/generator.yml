@@ -1,0 +1,24 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           TipoKml
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              TipoKml
+    plural:                TipoKmls
+    route_prefix:          tipo_kml
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title:  Tipos de puntos del mapa
+        display: 
+          - nombre
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

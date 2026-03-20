@@ -1,0 +1,35 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Uso
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Uso
+    plural:                Usos
+    route_prefix:          uso
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Usos de Lugares de extracci&oacute;n
+        sort: [Nombre,asc]
+        display: 
+          - =nombre
+        batch_actions: {}
+        object_actions: {}
+        actions:
+          _new:
+            credentials: [lugares_abm]
+
+      filter:  
+        class: false
+      form:    ~
+      edit:    
+        title: Modificar lugar de extracci&oacute;n
+      
+      new:     
+        title: Agregar lugar de extracci&oacute;n

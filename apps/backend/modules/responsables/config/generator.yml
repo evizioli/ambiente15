@@ -1,0 +1,30 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Responsable
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Responsable
+    plural:                Responsables
+    route_prefix:          responsable
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Listado de responsables de carga de muestras
+        display:
+          - =nombre
+        object_actions: {}
+        batch_actions: {}
+        sort: [Nombre,asc]
+      filter:  
+        class: false
+      form:    ~
+      edit:    
+        title: Modificar responsable
+      new:     
+        title: Agregar responsable

@@ -1,0 +1,34 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           BidG9I1
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              BidG9I1
+    plural:                BidG9I1s
+    route_prefix:          bid_g9_i1
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        fecha: { date_format: dd/MM/yyyy }
+      list:    
+        title:   Pulpito Tehuelche
+        batch_actions: {}
+        object_actions:
+          _edit: ~
+        display:
+          - fecha
+          - BidSitio
+          - refugios 
+          - puestas
+        
+      filter:  ~
+      form:    ~
+      edit:    
+        title: Modificar registro
+      new:     
+        title: Agregar registro

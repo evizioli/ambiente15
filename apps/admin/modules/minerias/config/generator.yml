@@ -1,0 +1,29 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Mineria
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Mineria
+    plural:                Minerias
+    route_prefix:          mineria
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title:  Mapa minero
+        display: 
+          - =nombre
+          - _categoria
+        object_actions: {}
+        batch_actions: {}
+      filter:  ~
+      form:    ~
+      edit:    
+        title:   Modificar sitio
+      new:     
+        title:   Agregar sitio

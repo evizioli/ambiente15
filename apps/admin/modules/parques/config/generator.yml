@@ -1,0 +1,31 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           ParqueEolico
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ParqueEolico
+    plural:                ParqueEolicos
+    route_prefix:          parque_eolico
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Parques eólicos
+        batch_actions: {}
+        object_actions: {}
+        display:
+          - =nombre
+          - descripcion
+      filter:  
+        display:
+          - nombre
+      form:    ~
+      edit:    
+        title:  Modificar Parque eólico 
+      new:     
+        title:  Agregar Parque eólico 

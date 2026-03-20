@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Required.</source>
+        <target>Requerido</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>An object with the same "%column%" already exist.</source>
+        <target>Un registro con igual "%column%" ya existe</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Invalid.</source>
+        <target>Inválido</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Maquina</source>
+        <target>Máquina</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Numero</source>
+        <target>Número</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>"%value%" is not an integer.</source>
+        <target>"%value%" no es un número entero.</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>The begin date must be before the end date.</source>
+        <target>La fecha inicial no puede ser posterior a la fecha final. </target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Descripcion</source>
+        <target>Descripción</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Articulo</source>
+        <target>Artículo</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Categoria</source>
+        <target>Categoría</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Funcion</source>
+        <target>Función</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>"%value%" is not a number.</source>
+        <target>"%value%" no es un número</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Telefonos</source>
+        <target>Teléfonos</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Codigo postal</source>
+        <target>Código postal</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Titulo</source>
+        <target>Título</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Maximo</source>
+        <target>Máximo</target>
+      </trans-unit>
+      <trans-unit id="17">
+		    <source>Nmp coliformes totales 100</source>
+		    <target>NMP Coliformes totales / 100 ml</target>
+		</trans-unit>
+		<trans-unit id="18">
+		    <source>Nmp coliformes fecales 100</source>
+		    <target>NMP Coliformes fecales / 100 ml</target>
+		</trans-unit>
+		<trans-unit id="19">
+		    <source>Nmp escherichia coli 100</source>
+		    <target>NMP Escherichia coli / 100 ml</target>
+		</trans-unit>
+		<trans-unit id="20">
+		    <source>Nmp enterococos fecales 100</source>
+		    <target>NMP Enterococos fecales / 100 ml</target>
+		</trans-unit>
+		<trans-unit id="21">
+		    <source>Ph</source>
+		    <target>pH</target>
+		</trans-unit>
+		<trans-unit id="22">
+		    <source>Conductividad electrica</source>
+		    <target>Conductividad eléctrica</target>
+		</trans-unit>
+		<trans-unit id="23">
+		    <source>Turbiedad unt</source>
+		    <target>Turbiedad (UNT)</target>
+		</trans-unit>
+		<trans-unit id="24">
+		    <source>Od mg l</source>
+		    <target>Oxígeno Disuelto (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="25">
+		    <source>Od porcentaje</source>
+		    <target>Oxígeno Disuelto (%)</target>
+		</trans-unit>
+		<trans-unit id="26">
+		    <source>Dbo5 mg l</source>
+		    <target>DBO 5 (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="27">
+		    <source>Dqo mg l</source>
+		    <target>D.Q.O. (mg O2/L)</target>
+		</trans-unit>
+		<trans-unit id="28">
+		    <source>Dureza ca co3 mg l</source>
+		    <target>Dureza (mg CaCO3/L)</target>
+		</trans-unit>
+		<trans-unit id="29">
+		    <source>Cloruros mg l</source>
+		    <target>Cloruros (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="30">
+		    <source>Sulfatos mg l</source>
+		    <target>Sulfatos (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="31">
+		    <source>Calcio mg l</source>
+		    <target>Calcio (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="32">
+		    <source>Magnesio mg l</source>
+		    <target>Magnesio (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="33">
+		    <source>Sodio mg l</source>
+		    <target>Sodio (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="34">
+		    <source>Potasio mg l</source>
+		    <target>Potasio (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="35">
+		    <source>Sol sup tot 103 105 mg l</source>
+		    <target>Sólidos Susp. Tot. 103°C-105°C (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="36">
+		    <source>Solidos sedimentables 10min mg l</source>
+		    <target>Sólidos Sedimentables 10 min (ml/L)</target>
+		</trans-unit>
+		<trans-unit id="37">
+		    <source>Solidos sedimentables 1h mg l</source>
+		    <target>Sólidos Sedimentables 1 h (ml/L)</target>
+		</trans-unit>
+		<trans-unit id="38">
+		    <source>Solidos sedimentables 2h mg l</source>
+		    <target>Sólidos Sedimentables 2 h (ml/L)</target>
+		</trans-unit>
+		<trans-unit id="39">
+		    <source>Sol tot 105 mg l</source>
+		    <target>Sólidos Totales 105°C (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="40">
+		    <source>Sol totales fijos mg l</source>
+		    <target>Sólidos Totales Fijos (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="41">
+		    <source>Sol totales volatiles mg l</source>
+		    <target>Sólidos Totales Volátiles (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="42">
+		    <source>Sol dis tot</source>
+		    <target>Sólidos Disueltos Totales (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="43">
+		    <source>Sol dis fijos</source>
+		    <target>Sólidos Disueltos Fijos (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="44">
+		    <source>Sol dis volat</source>
+		    <target>Sólidos Disueltos Volátiles (mg/L)</target>
+		</trans-unit>
+		<trans-unit id="45">
+		    <source>Rotulo precinto</source>
+		    <target>Rótulo / Precinto</target>
+		</trans-unit>
+      <trans-unit id="46">
+            <source>Nmp coliformes totales 100 con lim</source>
+            <target>NMP Coliformes totales / 100 ml</target>
+        </trans-unit>
+        <trans-unit id="47">
+            <source>Nmp coliformes fecales 100 con lim</source>
+            <target>NMP Coliformes fecales / 100 ml</target>
+        </trans-unit>
+        <trans-unit id="48">
+            <source>Nmp escherichia coli 100 con lim</source>
+            <target>NMP Escherichia coli / 100 ml</target>
+        </trans-unit>
+        <trans-unit id="49">
+            <source>Nmp enterococos fecales 100 con lim</source>
+            <target>NMP Enterococos fecales / 100 ml</target>
+        </trans-unit>
+        <trans-unit id="50">
+            <source>Ye</source>
+            <target>Año</target>
+        </trans-unit>
+        <trans-unit id="51">
+            <source>Ras</source>
+            <target>RAS</target>
+        </trans-unit>
+        <trans-unit id="52">
+            <source>Categoria</source>
+            <target>Categoría</target>
+        </trans-unit>
+        <trans-unit id="53">
+            <source>Grasas aceites</source>
+            <target>Grasas y Aceites (Sust. Sol. en Hexano) (mg/L)</target>
+        </trans-unit>
+        <trans-unit id="54">
+            <source>Fosforo reactivo disuelto</source>
+            <target>Fósforo reactivo disuelto (mg/L)</target>
+        </trans-unit>
+        <trans-unit id="55">
+            <source>Detergentes anionicos</source>
+            <target>Detergentes aniónicos (mg/L)</target>
+        </trans-unit>
+        <trans-unit id="56">
+            <source>Alcalinidad total</source>
+            <target>Alcalinidad total (mg/l)</target>
+        </trans-unit>
+        <trans-unit id="57">
+            <source>Bicarbonatos</source>
+            <target>Bicarbonatos (mg/l)</target>
+        </trans-unit>
+        <trans-unit id="58">
+            <source>Carbonatos</source>
+            <target>Carbonatos (mg/l)</target>
+        </trans-unit>
+        <trans-unit id="59">
+            <source>Taxa</source>
+            <target>Cantidad de Taxa</target>
+        </trans-unit>
+        <trans-unit id="60">
+            <source>Da1</source>
+            <target>Diatomeas (Bacillariophyta)</target>
+        </trans-unit>
+        <trans-unit id="61">
+            <source>Da2</source>
+            <target>Algas Verdes (Chlorophyceae)</target>
+        </trans-unit>
+        <trans-unit id="62">
+            <source>Da3</source>
+            <target>Algas Pardo Doradas (Chrysophyta)</target>
+        </trans-unit>
+        <trans-unit id="63">
+            <source>Da4</source>
+            <target>Dinoflagelados (Dinophyta)</target>
+        </trans-unit>
+        <trans-unit id="64">
+            <source>Da5</source>
+            <target>Cianobacterias (Cyanobacteria)</target>
+        </trans-unit>
+        <trans-unit id="65">
+            <source>Da obs</source>
+            <target>Observaciones</target>
+        </trans-unit>
+        <trans-unit id="66">
+          <source>Codigo</source>
+          <target>Código</target>
+        </trans-unit>
+        <trans-unit id="67">
+          <source>Ma archivo</source>
+          <target>Informe Microalgas</target>
+        </trans-unit>
+        <trans-unit id="68">
+          <source>The geom</source>
+          <target>Ubicación geográfica</target>
+        </trans-unit>
+        <trans-unit id="69">
+            <source>Conductividad electrica unidad</source>
+            <target>Conductividad eléctrica, UNIDAD</target>
+        </trans-unit>
+        <trans-unit id="70">
+            <source>Conductividad electrica 0</source>
+            <target>Conductividad eléctrica µS/cm</target>
+        </trans-unit>
+        <trans-unit id="71">
+            <source>Conductividad electrica 1</source>
+            <target>Conductividad eléctrica mS/cm</target>
+        </trans-unit>
+      
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,38 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           BidG6I1
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              BidG6I1
+    plural:                BidG6I1s
+    route_prefix:          bid_g6_i1
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        fecha: { date_format: dd/MM/yyyy }
+      list:    
+        title:   Lobo marino de un pelo
+        batch_actions: {}
+        object_actions:
+          _edit: ~
+        display:
+          - fecha
+          - BidSitio
+          - hembras_adultas
+          - machos_adultos
+          - machos_sub_adultos
+          - juveniles
+          - crias
+          - hembras_juveniles
+        
+      filter:  ~
+      form:    ~
+      edit:    
+        title: Modificar registro
+      new:     
+        title: Agregar registro

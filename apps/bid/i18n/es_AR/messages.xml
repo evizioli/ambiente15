@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+      <trans-unit>
+        <source>Ubicacion</source>
+        <target>Ubicación</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Numero adultos</source>
+        <target>Número adultos</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Numero crias clase1</source>
+        <target>Número crías clase 1</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Numero crias clase2</source>
+        <target>Número crías clase 2</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Numero crias clase3</source>
+        <target>Número crías clase 3</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Numero crias clase4</source>
+        <target>Número crías clase 4</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Bid sitio</source>
+        <target>Sitio</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Bid especie</source>
+        <target>Especie</target>
+      </trans-unit>
+      
+      
+      <trans-unit>
+        <source>Crias destetadas</source>
+        <target>Crías destetadas</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Crias</source>
+        <target>Crías</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Hembras juveniles</source>
+        <target>Hembras + juveniles</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Machos sub adultos</source>
+        <target>Machos sub-adultos</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Crias lactantes</source>
+        <target>Crías lactantes</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Condicion del mar</source>
+        <target>Condición del mar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Estado marea</source>
+        <target>Estado de la marea</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Direccion del viento</source>
+        <target>Dirección del viento</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Pares</source>
+        <target>Número de pares madre-cría</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Crias huerfanas</source>
+        <target>Crías huérfanas</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Refugios</source>
+        <target>Número total de refugios</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Puestas</source>
+        <target>Número de refugios con puestas</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

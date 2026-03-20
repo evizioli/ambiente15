@@ -1,0 +1,30 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           BidEspecie
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              BidEspecie
+    plural:                BidEspecies
+    route_prefix:          bid_especie
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        smart_id: 
+          label:  Id SMART
+      list:    
+        title: Especies
+        batch_actions: {}
+        object_actions: {}
+        display:
+          - =nombre
+      filter:  ~
+      form:    ~
+      edit:    
+        title: Modificar especie
+      new:     
+        title: Agregar especie

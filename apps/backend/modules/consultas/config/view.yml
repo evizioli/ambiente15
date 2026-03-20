@@ -1,0 +1,74 @@
+ganaderiaSuccess:
+  javascripts: 
+    - ../ol/ol.js
+    - ../ol/ol-layerswitcher.js
+    - beConsultasGanaderia.js 
+  stylesheets: 
+    - ../ol/ol.css
+    - ../ol/ol-layerswitcher.css
+#    - beConsultasGanaderia.css 
+
+canalesSuccess:
+  javascripts:
+#    - ../jquery/jquery-ui.min.js
+    - patch_scroll_openlayers.js
+    - ../OpenLayers/OpenLayers.min.js
+    - ../OpenLayers/Lang.js
+    - ../OpenLayers/Lang/es.js
+#    - ../bootstrap/js/bootstrap-table.min.js
+#    - ../bootstrap/js/bootstrap-table-fixed-columns.min.js
+    - beConsultasCanales.js
+  stylesheets:
+#    - ../jquery/jquery-ui.min.css
+#    - ../bootstrap/css/bootstrap-table.min.css
+#    - ../bootstrap/css/bootstrap-table-fixed-columns.min.css
+    - beConsultasMapa 
+    - ../OpenLayers/theme/default/style.css
+    - ../OpenLayers/theme/default/style.mobile.css
+    - ../OpenLayers/theme/default/google.css
+
+mapaTipoSuccess:
+  javascripts:
+    - ../jquery/jquery-ui.min.js
+#    - patch_scroll_openlayers.js
+#    - ../OpenLayers/OpenLayers.min.js
+#    - ../OpenLayers/Lang.js
+#    - ../OpenLayers/Lang/es.js
+    - ../ol/ol.js
+
+    - ../bootstrap/js/bootstrap-table.min.js
+    - ../bootstrap/js/bootstrap-table-fixed-columns.min.js
+    - beConsultasMapaTipo.js
+  stylesheets:
+    - ../jquery/jquery-ui.min.css
+    - ../bootstrap/css/bootstrap-table.min.css
+    - ../bootstrap/css/bootstrap-table-fixed-columns.min.css
+    - ../ol/ol.css
+    - beConsultasMapa
+
+  
+graficosSuccess:
+  javascripts: [ ../jquery/jquery.canvasjs.min.js, beConsultasGraficos.js ]
+
+graficosTiempoSuccess:
+  javascripts: [ ../jquery/jquery.canvasjs.min.js, beConsultasGraficosTiempo.js ]
+  
+caudalesSuccess:
+  javascripts: [ ../jquery/jquery.canvasjs.min.js, beConsultasCaudales.js ]
+  
+tutorialSuccess:
+  stylesheets: [ beTutorial ]
+  
+algasSuccess:
+  javascripts: 
+    - ../bootstrap/js/bootstrap-table.min.js
+    - ../bootstrap/js/bootstrap-table-fixed-columns.min.js
+    - ../jquery/jquery.canvasjs.min.js
+    - beConsultasAlgas 
+  stylesheets: 
+    - ../jquery/jquery-ui.min.css
+    - ../bootstrap/css/bootstrap-table.min.css
+    - ../bootstrap/css/bootstrap-table-fixed-columns.min.css
+    - beConsultasMapa
+    
+ 

@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Ministerio de Ambiente y Control del Desarrollo Sustentable - Gobierno del Chubut
+    description:  Ministerio de Ambiente y Control del Desarrollo Sustentable - Gobierno del Chubut
+    keywords:     Ambiente, Chubut, spia
+    language:     es_AR
+    robots:       index, follow
+
+  stylesheets:    
+    - divi.css: { media: all }
+    - fonts-google.css: { media: all }
+    - frontend.css: { media: all }
+
+  javascripts:    
+    - frontend.js
+
+  has_layout:     true
+  layout:         layout

@@ -1,0 +1,30 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Localidad
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Localidad
+    plural:                Localidads
+    route_prefix:          localidad
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title:  Localidades
+        batch_actions: {}
+        object_actions: {}
+        display:
+          - =nombre
+        sort: [nombre, asc]
+      filter:  
+        class: false
+      form:    ~
+      edit:    
+        title:  Modificar localidad
+      new:     
+        title:  Agregarlocalidad

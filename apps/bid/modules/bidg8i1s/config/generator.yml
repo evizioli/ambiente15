@@ -1,0 +1,41 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           BidG8I1
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              BidG8I1
+    plural:                BidG8I1s
+    route_prefix:          bid_g8_i1
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        fecha: { date_format: dd/MM/yyyy }
+      list:    
+        title:   Ballena Franca Austral
+        batch_actions: {}
+        object_actions:
+          _edit: ~
+        display:
+          - fecha
+          - BidSitio
+          - condicion_del_mar 
+          - estado_marea 
+          - porcentaje_de_nubes 
+          - velocidad_del_viento 
+          - direccion_del_viento 
+          - pares 
+          - crias_huerfanas 
+          - observador
+        
+      filter:  ~
+      form:    ~
+      edit:    
+        title: Modificar registro
+      new:     
+        title: Agregar registro
+      

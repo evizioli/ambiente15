@@ -1,0 +1,38 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           BidConteoIndicador
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              BidConteoIndicador
+    plural:                BidConteoIndicadors
+    route_prefix:          bid_conteo_indicador_bidci3s
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        fecha: { date_format: dd/MM/yyyy }
+      list:    
+        title: Ensamble de mamíferos carnívoros terrestres
+        batch_actions: {}
+        object_actions:
+          _edit: ~
+        with: [BidSitio,BidEspecie]  
+        query_methods: [soloMamiferosCarnivoros]
+        display:
+          - fecha
+          - BidSitio
+          - BidEspecie
+          - cantidad
+          - observaciones 
+      filter:  
+        class: BidCI3FormFilter 
+      form:    
+        class: BidCI3Form 
+      edit:    
+        title: Modificar registro
+      new:     
+        title:  Agregar registro

@@ -1,0 +1,10 @@
+index:
+  credentials: [lugares]
+view:
+  credentials: [lugares]
+new:
+  credentials: [lugares_abm]
+edit:
+  credentials: [lugares_abm]
+delete:
+  credentials: [lugares_abm]

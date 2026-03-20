@@ -1,0 +1,16 @@
+#all:
+#  credentials: [backend]
+  
+ganaderia:  
+  credentials: [reportes_ganaderia]
+canales:  
+  credentials: [reportes_canales]
+graficos:
+  credentials: [reportes_graficos]
+graficosTiempo:
+  credentials: [reportes_graficos]
+mapa:
+  credentials: [reportes_mapa]
+algas:
+  credentials: [reportes_algas]
+  

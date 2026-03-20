@@ -1,0 +1,32 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Estacion
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Estacion
+    plural:                Estacions
+    route_prefix:          estacion
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Estaciones de Servicio
+        batch_actions: {}
+        object_actions: {}
+        display:
+          - =nombre
+          - descripcion
+          - estado
+      filter:  
+        display:
+          - nombre
+      form:    ~
+      edit:    
+        title:  Modificar Estación de Servicio 
+      new:     
+        title:  Agregar Estación de Servicio

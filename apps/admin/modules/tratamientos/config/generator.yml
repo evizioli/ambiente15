@@ -1,0 +1,33 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Tratamiento
+    theme:                 adminBS
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Tratamiento
+    plural:                Tratamientos
+    route_prefix:          tratamiento
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Plantas de tratamiento de líquidos cloacales de ARU
+        batch_actions: {}
+        object_actions: {}
+        display:
+          - =nombre
+          - descripcion
+          - _tipo
+      filter:  
+        display:
+          - nombre
+          - tipo
+      form:    ~
+      edit:    
+        title:  Modificar Planta de tratamiento 
+      new:     
+        title:  Agregar Planta de tratamiento 
