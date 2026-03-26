@@ -110,7 +110,7 @@ class ProjectConfiguration extends sfProjectConfiguration
   const PIMCPA='PIMCPA';
   const ANPPV='ANPPV';
   public static $areas=array(
-      self::ANPPV=>'Área Nacional Protegida Península Valdés',
+      self::ANPPV=>'Área Natural Protegida Península Valdés',
       self::PIMCPA=>'Parque Interjurisdiccional Marino Costero Patagonia Austral',
   );
   

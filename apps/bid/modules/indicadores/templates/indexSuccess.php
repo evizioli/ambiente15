@@ -6,7 +6,7 @@
           <p class="lead text-muted">Gesti&oacute;n de indicadores de estado y evoluci&oacute;n de recursos relevantes para el medio ambiente</p>
           <!-- 
           <p>
-            <a href="#" class="btn btn-primary my-2">&Aacute;rea Nacional Protegida Pen&iacute;nsula Vald&eacute;s</a>
+            <a href="#" class="btn btn-primary my-2">&Aacute;rea Natural Protegida Pen&iacute;nsula Vald&eacute;s</a>
             <a href="#" class="btn btn-secondary my-2">Parque Interjurisdiccional Marino Costero Patagonia Austral</a>
           </p>
            -->
@@ -67,7 +67,7 @@
                 </div>
             </div>
     </div>
-<h2>&Aacute;rea Nacional Protegida Pen&iacute;nsula Vald&eacute;s</h2>
+<h2>&Aacute;rea Natural Protegida Pen&iacute;nsula Vald&eacute;s</h2>
     <div class="row">
 
             <div class="col-sm-6 col-md-4">
