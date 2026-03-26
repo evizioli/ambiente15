@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: af135f5c4e71eea0c306f028a6d5ac7b86be1d08 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -30,7 +30,7 @@ require_once 'phing/tasks/system/condition/ConditionBase.php';
  * @author    Hans Lellelid <hans@xmpl.org>
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @copyright 2001,2002 THYRELL. All rights reserved
- * @version   $Id: af135f5c4e71eea0c306f028a6d5ac7b86be1d08 $
+ * @version   $Id$
  * @package   phing.tasks.system.condition
  */
 class AndCondition extends ConditionBase implements Condition {

@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: a6b1f9af32db9ce789d4769fe0eb32dcaad8298b $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ require_once 'phing/system/io/FileWriter.php';
  *
  * @author   Knut Urdalen <knut.urdalen@telio.no>
  * @author   Stefan Priebsch <stefan.priebsch@e-novative.de>
- * @version  $Id: a6b1f9af32db9ce789d4769fe0eb32dcaad8298b $
+ * @version  $Id$
  * @package  phing.tasks.ext
  */
 class PhpLintTask extends Task {

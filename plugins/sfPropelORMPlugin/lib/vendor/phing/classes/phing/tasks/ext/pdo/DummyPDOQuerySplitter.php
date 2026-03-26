@@ -17,7 +17,7 @@
  * and is licensed under the LGPL. For more information please see
  * <http://phing.info>.
  *
- * @version $Id: 387dcdf7805b82cf91df4a9a2eadc9d253ce88e9 $
+ * @version $Id$
  * @package phing.tasks.ext.pdo
  */
 
@@ -29,7 +29,7 @@ require_once 'phing/tasks/ext/pdo/PDOQuerySplitter.php';
  * 
  * @author  Michiel Rook <mrook@php.net>
  * @package phing.tasks.ext.pdo
- * @version $Id: 387dcdf7805b82cf91df4a9a2eadc9d253ce88e9 $
+ * @version $Id$
  */
 class DummyPDOQuerySplitter extends PDOQuerySplitter
 {

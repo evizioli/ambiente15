@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!--
 // {{{ Header
--File         $Id: 24f65abf75dfd680dbdc92f2249f602470715abd $
+-File         $Id$
 -License      LGPL (http://www.gnu.org/copyleft/lesser.html)
 -Copyright    2002, The Turing Studio, Inc.
 -Author       alex black, enigma@turingstudio.com

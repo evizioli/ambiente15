@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: c1edd0170575a0db69c7a9b9dc20de60f1166da0 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -24,7 +24,7 @@
  *
  * @package phing.tasks.ext.phpcpd.formatter
  * @author  Benjamin Schultz <bschultz@proqrent.de>
- * @version $Id: c1edd0170575a0db69c7a9b9dc20de60f1166da0 $
+ * @version $Id$
  */
 abstract class PHPCPDResultFormatter
 {

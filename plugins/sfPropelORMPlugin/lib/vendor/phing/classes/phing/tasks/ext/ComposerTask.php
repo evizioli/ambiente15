@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: 4dc0098e06183c52f5b3809e596b63929860ac9a $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -29,7 +29,7 @@ require_once "phing/types/Commandline.php";
  *
  * @author nuno costa <nuno@francodacosta.com>
  * @license MIT
- * @version $Id: 4dc0098e06183c52f5b3809e596b63929860ac9a $
+ * @version $Id$
  * @package phing.tasks.ext
  */
 class ComposerTask extends Task

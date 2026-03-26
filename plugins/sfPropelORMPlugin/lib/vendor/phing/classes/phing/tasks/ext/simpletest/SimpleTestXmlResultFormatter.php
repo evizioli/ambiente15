@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: fd1fcbf19c5a83b5e3f4d5de1b341cea90986d7c $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ require_once 'simpletest/xml.php';
  * Prints plain text output of the test to a specified Writer.
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: fd1fcbf19c5a83b5e3f4d5de1b341cea90986d7c $
+ * @version $Id$
  * @package phing.tasks.ext.simpletest
  * @since 2.2.0
  */

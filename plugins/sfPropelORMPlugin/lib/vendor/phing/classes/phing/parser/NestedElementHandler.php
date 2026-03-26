@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 7de5f0460ff0affada2fb5f321b9c981c5f6141c $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -31,7 +31,7 @@ include_once 'phing/TaskContainer.php';
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @copyright 2001,2002 THYRELL. All rights reserved
- * @version   $Id: 7de5f0460ff0affada2fb5f321b9c981c5f6141c $
+ * @version   $Id$
  * @access    public
  * @package   phing.parser
  */

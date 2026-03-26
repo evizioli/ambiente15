@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: c8a91784f86aaf53a05721f320e63adf65ece692 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @author    Hans Lellelid <hans@xmpl.org> 
- * @version   $Id: c8a91784f86aaf53a05721f320e63adf65ece692 $
+ * @version   $Id$
  * @package   phing
  */
 abstract class ProjectComponent {

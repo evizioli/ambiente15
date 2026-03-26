@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: e286ce07fd866767ca1e48b282f5e32a085cf46d $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ require_once 'phing/Task.php';
  * Wrapper to disable PHPCS's destructor
  *
  * @author  Michiel Rook <mrook@php.net>
- * @version $Id: e286ce07fd866767ca1e48b282f5e32a085cf46d $
+ * @version $Id$
  * @package phing.tasks.ext
  */
 class PhpCodeSnifferTask_Wrapper extends PHP_CodeSniffer {

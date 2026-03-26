@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: b448058c7244156ae7eb314c64618de82ff831cc $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ require_once 'phing/util/DataStore.php';
  * This class is based on Knut Urdalen's PhpLintTask.
  *
  * @author Stefan Priebsch <stefan.priebsch@e-novative.de>
- * @version $Id: b448058c7244156ae7eb314c64618de82ff831cc $
+ * @version $Id$
  * @package phing.tasks.ext
  */
 class JslLintTask extends Task

@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: ff8a03f8cc28e5b496d2d6de458315313e8f8c77 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ require_once 'phing/Task.php';
  *
  * @package phing.tasks.ext
  * @author  Ole Markus With <o.with@sportradar.com>
- * @version $Id: ff8a03f8cc28e5b496d2d6de458315313e8f8c77 $
+ * @version $Id$
  */
 class HttpGetTask extends Task
 {

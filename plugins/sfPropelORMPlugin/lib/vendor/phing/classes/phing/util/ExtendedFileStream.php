@@ -3,7 +3,7 @@
     include_once 'phing/system/io/PhingFile.php';
 
     /**
-     * $Id: 463342405fce9caca61181db7e4412c3e1c6a91f $
+     * $Id$
      *
      * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
      * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@
      * Extended file stream wrapper class which auto-creates directories
      *
      * @author Michiel Rook <mrook@php.net>
-     * @version $Id: 463342405fce9caca61181db7e4412c3e1c6a91f $
+     * @version $Id$
      * @package phing.util
      */
     class ExtendedFileStream

@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 8b60315832cd55c546da4dc230827372a05081e8 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ require_once dirname(__FILE__) . '/GitTestsHelper.php';
 
 /**
  * @author Victor Farazdagi <simple.square@gmail.com>
- * @version $Id: 8b60315832cd55c546da4dc230827372a05081e8 $
+ * @version $Id$
  * @package phing.tasks.ext
  */
 class GitCloneTaskTest extends BuildFileTest { 

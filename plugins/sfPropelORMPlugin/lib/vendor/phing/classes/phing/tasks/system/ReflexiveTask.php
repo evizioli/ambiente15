@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: e36076a0a71cec6ea6309990b317ad84ed928b49 $  
+ *  $Id$  
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -43,7 +43,7 @@ require_once 'phing/Task.php';
  * </code>
  * 
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version   $Id: e36076a0a71cec6ea6309990b317ad84ed928b49 $
+ * @version   $Id$
  * @package   phing.tasks.system
  */
 class ReflexiveTask extends Task {

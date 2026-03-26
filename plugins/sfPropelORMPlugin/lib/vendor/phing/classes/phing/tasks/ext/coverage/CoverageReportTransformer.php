@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: c1667521b5959687560a1bf015905d627785a3c6 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -29,7 +29,7 @@ require_once 'phing/util/ExtendedFileStream.php';
  * The default transformation generates an html report in framed style.
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: c1667521b5959687560a1bf015905d627785a3c6 $
+ * @version $Id$
  * @package phing.tasks.ext.coverage
  * @since 2.1.0
  */

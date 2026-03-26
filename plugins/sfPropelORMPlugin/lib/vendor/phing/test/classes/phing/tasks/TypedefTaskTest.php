@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 9567001f52df000a3f3346fc9fe89b09641d739c $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -24,7 +24,7 @@ require_once 'phing/BuildFileTest.php';
 /**
  * @author Hans Lellelid <hans@xmpl.org> (Phing)
  * @author Stefan Bodewig <stefan.bodewig@epost.de> (Ant)
- * @version $Id: 9567001f52df000a3f3346fc9fe89b09641d739c $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class TypedefTaskTest extends BuildFileTest { 

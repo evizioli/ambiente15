@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 28b697644dd5924298e7f35d716b23a06a6a2410 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -23,7 +23,7 @@
  * ConfigurationException is thrown by Phing during the configuration and setup phase of the project.
  *
  * @author   Hans Lellelid <hans@xmpl.org>
- * @version  $Id: 28b697644dd5924298e7f35d716b23a06a6a2410 $
+ * @version  $Id$
  * @package  phing
  */
 class ConfigurationException extends Exception {

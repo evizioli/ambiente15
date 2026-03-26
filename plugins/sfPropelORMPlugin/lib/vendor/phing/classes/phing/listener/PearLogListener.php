@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: b50b4c71a28ca859af1301f9b3eab3d6b90e2673 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -36,7 +36,7 @@ require_once 'phing/BuildListener.php';
  * </code>
  * 
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version   $Id: b50b4c71a28ca859af1301f9b3eab3d6b90e2673 $
+ * @version   $Id$
  * @see       BuildEvent
  * @package   phing.listener
  */

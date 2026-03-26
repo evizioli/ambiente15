@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 4e5e33bd5784d9b68fab402fb7c75d980c2fbbf4 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -33,7 +33,7 @@ include_once 'phing/parser/CustomChildCreator.php';
  * @author  Hans Lellelid <hans@xmpl.org>
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @copyright 2001,2002 THYRELL. All rights reserved
- * @version   $Id: 4e5e33bd5784d9b68fab402fb7c75d980c2fbbf4 $
+ * @version   $Id$
  * @package   phing.tasks.system.condition
  */
 abstract class ConditionBase extends ProjectComponent

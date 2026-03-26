@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: 0d2ea9810b4c3d8b8e0c3c65787508cedcb2dbee $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -30,7 +30,7 @@ require_once 'phing/system/util/Timer.php';
  * with the property <code>XmlLogger.file</code>.
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: 0d2ea9810b4c3d8b8e0c3c65787508cedcb2dbee $
+ * @version $Id$
  * @package phing.listener
  */ 
 class XmlLogger implements BuildLogger {

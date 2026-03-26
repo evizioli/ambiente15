@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: 0af7c6184c3983815d06a732d5153739ac197b16 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ include_once 'phing/system/io/ConsoleReader.php';
  *
  * @author Hans Lellelid <hans@xmpl.org> (Phing)
  * @author Stefan Bodewig <stefan.bodewig@epost.de> (Ant)
- * @version $Id: 0af7c6184c3983815d06a732d5153739ac197b16 $
+ * @version $Id$
  * @package phing.input
  */
 class DefaultInputHandler implements InputHandler {

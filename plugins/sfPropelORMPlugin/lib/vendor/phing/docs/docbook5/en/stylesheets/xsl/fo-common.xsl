@@ -3,7 +3,7 @@
     * ==============================================================================
     * Customization layer for fo XSL Docbook5 used to produce PDF output
     *    
-    * Revision: $Id: d991b6a81e2f15f09719193ea8e6f3350e5f897e $
+    * Revision: $Id$
     * ==============================================================================    
 -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"

@@ -22,7 +22,7 @@ require_once 'phing/tasks/ext/liquibase/AbstractLiquibaseTask.php';
  * Task to create a changelog file.
  *
  * @author Stephan Hochdoerfer <S.Hochdoerfer@bitExpert.de>
- * @version $Id: 77fb97d2f9c739a2ad75a76e31a347dabdc176ca $
+ * @version $Id$
  * @since 2.4.10
  * @package phing.tasks.ext.liquibase
  */

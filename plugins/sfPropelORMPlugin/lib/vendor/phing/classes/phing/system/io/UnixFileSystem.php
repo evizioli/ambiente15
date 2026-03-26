@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 6902c2574836413d625f5d74f8156f5774c74fd9 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -39,7 +39,7 @@ include_once 'phing/system/io/FileSystem.php';
  *  - Error handling reduced to min, error are handled by PhingFile mainly
  *
  * @author    Andreas Aderhold, andi@binarycloud.com
- * @version   $Id: 6902c2574836413d625f5d74f8156f5774c74fd9 $
+ * @version   $Id$
  * @package   phing.system.io
  */
 class UnixFileSystem extends FileSystem {

@@ -17,7 +17,7 @@
  * and is licensed under the LGPL. For more information please see
  * <http://phing.info>.
  *
- * @version SVN: $Id: 4dc9872d61e6e9f1067eedfd813cfd1502afa7ab $
+ * @version SVN: $Id$
  * @package phing.tasks.ext
  */
 

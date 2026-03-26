@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: ecd3ffdd85b7585144000bbc7222a48c4fe8cba8 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ require_once 'phing/tasks/ext/phpunit/formatter/PHPUnitResultFormatter.php';
  * Prints short summary output of the test to Phing's logging system.
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: ecd3ffdd85b7585144000bbc7222a48c4fe8cba8 $
+ * @version $Id$
  * @package phing.tasks.ext.formatter
  * @since 2.1.0
  */ 

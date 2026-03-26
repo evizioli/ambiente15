@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 69dc7789090e0600674855cfd424b1fa0bf2caa3 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -62,7 +62,7 @@ include_once 'phing/util/DirectoryScanner.php';
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version    $Id: 69dc7789090e0600674855cfd424b1fa0bf2caa3 $
+ * @version    $Id$
  * @see        ProjectComponent
  * @package    phing.types
  */

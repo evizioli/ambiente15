@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: f208c3a241200074c51baabd548aa9e315845db0 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -31,7 +31,7 @@ include_once 'phing/util/StringHelper.php';
  * @author    Stefano Mazzocchi <stefano@apache.org> (Ant)
  * @author    Stefan Bodewig <stefan.bodewig@epost.de> (Ant)
  * @author    Magesh Umasankar
- * @version   $Id: f208c3a241200074c51baabd548aa9e315845db0 $
+ * @version   $Id$
  * @package   phing.tasks.ext
  */
 class TarTask extends MatchingTask {

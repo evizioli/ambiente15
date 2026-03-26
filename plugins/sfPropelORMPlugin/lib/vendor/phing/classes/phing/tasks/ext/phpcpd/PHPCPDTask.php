@@ -1,6 +1,6 @@
 <?php
 /**
- *  $Id: ab8fa9ac364fa88a1703b6c1dd5324a360585261 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -29,7 +29,7 @@ require_once 'phing/tasks/ext/phpcpd/PHPCPDFormatterElement.php';
  *
  * @package phing.tasks.ext.phpcpd
  * @author  Benjamin Schultz <bschultz@proqrent.de>
- * @version $Id: ab8fa9ac364fa88a1703b6c1dd5324a360585261 $
+ * @version $Id$
  */
 class PHPCPDTask extends Task
 {

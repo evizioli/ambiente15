@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: a5f66cb89b42d7e1dd4fc28a5ab86d90e45af770 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ require_once 'phing/tasks/ext/phpunit/formatter/PHPUnitResultFormatter.php';
  * Prints Clover XML output of the test
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: a5f66cb89b42d7e1dd4fc28a5ab86d90e45af770 $
+ * @version $Id$
  * @package phing.tasks.ext.formatter
  * @since 2.4.0
  */

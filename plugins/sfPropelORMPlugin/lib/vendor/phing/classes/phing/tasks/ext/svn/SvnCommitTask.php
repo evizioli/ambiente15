@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: 8cd7abbdca0ff87d68b92a702bdea68d4a752d63 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ require_once 'phing/tasks/ext/svn/SvnBaseTask.php';
  * Commits changes in a local working copy to the repository
  *
  * @author Johan Persson <johanp@aditus.nu>
- * @version $Id: 8cd7abbdca0ff87d68b92a702bdea68d4a752d63 $
+ * @version $Id$
  * @package phing.tasks.ext.svn
  * @since 2.4.0
  */

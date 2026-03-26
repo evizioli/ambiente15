@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: e778ea5c41202d1f04594858ef59b30b98d2334c $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -24,7 +24,7 @@ require_once dirname(__FILE__) . '/../GitTasks/GitTestsHelper.php';
 
 /**
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: e778ea5c41202d1f04594858ef59b30b98d2334c $
+ * @version $Id$
  * @package phing.tasks.ext
  */
 class SvnSwitchTaskTest extends BuildFileTest { 

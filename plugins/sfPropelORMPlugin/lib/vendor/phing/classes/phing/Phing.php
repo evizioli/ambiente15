@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: 6a792d7bc81f6ac4c1bb3afc7e2e50b6f81ae378 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -58,7 +58,7 @@ include_once 'phing/system/util/Register.php';
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version   $Id: 6a792d7bc81f6ac4c1bb3afc7e2e50b6f81ae378 $
+ * @version   $Id$
  * @package   phing
  */
 class Phing {

@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: c5e4104449ea7a663c3d1fe5b0716681aa160971 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@ require_once 'phing/system/util/Properties.php';
  *
  * @author Michiel Rook <mrook@php.net>
  * @package phing.system.util
- * @version $Id: c5e4104449ea7a663c3d1fe5b0716681aa160971 $
+ * @version $Id$
  */
 class PropertiesTest extends PHPUnit_Framework_TestCase
 {

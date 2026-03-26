@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: e092ad3bc1b2a28320f23b721bea34a6c89719c4 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -110,7 +110,7 @@ include_once 'phing/types/selectors/SelectorUtils.php';
  * @author   Magesh Umasankar, umagesh@rediffmail.com
  * @author   Andreas Aderhold, andi@binarycloud.com
  *
- * @version   $Id: e092ad3bc1b2a28320f23b721bea34a6c89719c4 $
+ * @version   $Id$
  * @package   phing.util
  */
 class DirectoryScanner implements SelectorScanner {

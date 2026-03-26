@@ -1,7 +1,7 @@
 <?php
 
 /*
- * $Id: 565d694798b9660ff80ee9af6afbdcc621e9d02b $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -34,7 +34,7 @@ include_once 'phing/types/Path.php';
  * </code>
  * 
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version   $Id: 565d694798b9660ff80ee9af6afbdcc621e9d02b $
+ * @version   $Id$
  * @package   phing.tasks.system
  */
 class IncludePathTask extends Task {

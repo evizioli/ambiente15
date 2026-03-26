@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: 83946a1e9027210192d1ac26821331c7bd4794c6 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ include_once 'phing/tasks/system/condition/ContainsCondition.php';
  *
  * @author Hans Lellelid <hans@xmpl.org> (Phing)
  * @author Stefan Bodewig <stefan.bodewig@epost.de> (Ant)
- * @version $Id: 83946a1e9027210192d1ac26821331c7bd4794c6 $
+ * @version $Id$
  * @package phing.tasks.system.condition
  */
 class ContainsConditionTest extends PHPUnit_Framework_TestCase {

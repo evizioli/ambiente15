@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: e53afe6034fcf9626effd77d6a2b84fed0c41c7e $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ require_once 'phing/tasks/ext/git/GitBaseTask.php';
  * Wrapper around git-checkout
  *
  * @author Victor Farazdagi <simple.square@gmail.com>
- * @version $Id: e53afe6034fcf9626effd77d6a2b84fed0c41c7e $
+ * @version $Id$
  * @package phing.tasks.ext.git
  * @see VersionControl_Git
  * @since 2.4.3

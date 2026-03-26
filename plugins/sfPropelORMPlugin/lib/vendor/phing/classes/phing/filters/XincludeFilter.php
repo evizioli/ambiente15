@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: 6c47e03d52cf26c183b05e347dac83735dd8c8dd $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -29,7 +29,7 @@ include_once 'phing/filters/ChainableReader.php';
  * Uses PHP DOM XML support
  * 
  * @author    Bill Karwin <bill@karwin.com>
- * @version   $Id: 6c47e03d52cf26c183b05e347dac83735dd8c8dd $
+ * @version   $Id$
  * @see       FilterReader
  * @package   phing.filters
  */

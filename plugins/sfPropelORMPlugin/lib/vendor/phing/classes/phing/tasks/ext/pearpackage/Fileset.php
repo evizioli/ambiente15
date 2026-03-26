@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 02feea959e30c5f2af3e9d07fdbe62c5df3764e0 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -30,7 +30,7 @@ include_once 'phing/system/io/PhingFile.php';
  * @author   Greg Beaver 
  * @author   Hans Lellelid <hans@xmpl.org>
  * @package  phing.tasks.ext.pearpackage
- * @version  $Id: 02feea959e30c5f2af3e9d07fdbe62c5df3764e0 $
+ * @version  $Id$
  */
 class PEAR_PackageFileManager_Fileset {
 

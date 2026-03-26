@@ -1,6 +1,6 @@
 <?php
 /**
- *  $Id: 35668c2c6fbf1ca87fab21c26fd55ef630458fc7 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ require_once 'phing/tasks/ext/phpmd/PHPMDFormatterElement.php';
  *
  * @package phing.tasks.ext.phpmd
  * @author  Benjamin Schultz <bschultz@proqrent.de>
- * @version $Id: 35668c2c6fbf1ca87fab21c26fd55ef630458fc7 $
+ * @version $Id$
  * @since   2.4.1
  */
 class PHPMDTask extends Task

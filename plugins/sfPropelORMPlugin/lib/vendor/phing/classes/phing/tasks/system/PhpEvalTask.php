@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 5ec099dfc17dddc605cc05a83637c1cf324167b3 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -29,7 +29,7 @@ require_once 'phing/Task.php';
  *        modify internal Phing classes unless you know what you are doing.
  *
  * @author   Hans Lellelid <hans@xmpl.org>
- * @version  $Id: 5ec099dfc17dddc605cc05a83637c1cf324167b3 $
+ * @version  $Id$
  * @package  phing.tasks.system
  *
  * @todo Add support for evaluating expressions

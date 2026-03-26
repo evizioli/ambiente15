@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: 3ec612d658603abac1c2ad2c90e9b72283b5cafd $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ include_once 'phing/tasks/system/condition/EqualsCondition.php';
  * 
  * @author Hans Lellelid <hans@xmpl.org> (Phing)
  * @author Stefan Bodewig <stefan.bodewig@epost.de> (Ant)
- * @version $Id: 3ec612d658603abac1c2ad2c90e9b72283b5cafd $
+ * @version $Id$
  * @package phing.tasks.system.condition
  */
 class EqualsConditionTest extends PHPUnit_Framework_TestCase {

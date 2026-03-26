@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: f8844430c9e30d1c603452d8763fbd1114d80051 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ require_once 'phing/tasks/ext/svn/SvnBaseTask.php';
  * Checks out a repository to a local directory
  *
  * @author Andrew Eddie <andrew.eddie@jamboworks.com>
- * @version $Id: f8844430c9e30d1c603452d8763fbd1114d80051 $
+ * @version $Id$
  * @package phing.tasks.ext.svn
  * @since 2.3.0
  */

@@ -26,7 +26,7 @@ require_once 'phing/system/io/FileSystem.php';
  *
  * @author  Joakim Bodin <joakim.bodin+phing@gmail.com>
  * @author  George Miroshnikov <laggy.luke@gmail.com>
- * @version $Id: 1426cf907f0d953fe0a1d732b4a677bca0b7f6cc $
+ * @version $Id$
  * @package phing.tasks.ext
  */
 class UnzipTask extends ExtractBaseTask

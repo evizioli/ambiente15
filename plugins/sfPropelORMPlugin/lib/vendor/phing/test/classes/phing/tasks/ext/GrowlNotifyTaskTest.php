@@ -33,7 +33,7 @@
  *
  * @category   Tasks
  * @package    phing.tasks.ext
- * @version    $Id: 0b77e3edb4ff45397532db7de98bb2bf71d95d13 $
+ * @version    $Id$
  * @author     Laurent Laville <pear@laurent-laville.org>
  * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
  * @link       https://github.com/llaville/phing-GrowlNotifyTask
@@ -44,7 +44,7 @@
  *
  * @category   Tasks
  * @package    phing.tasks.ext
- * @version    $Id: 0b77e3edb4ff45397532db7de98bb2bf71d95d13 $
+ * @version    $Id$
  * @author     Laurent Laville <pear@laurent-laville.org>
  * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
  * @link       https://github.com/llaville/phing-GrowlNotifyTask

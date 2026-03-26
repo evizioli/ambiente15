@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 1d93fb4a9dd7c74eb44babdf974c1a4e29b69cdf $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ include_once 'phing/system/io/Reader.php';
  * Convenience class for reading files.
  *
  * @author    <a href="mailto:yl@seasonfive.com">Yannick Lecaillez</a>
- * @version   $Id: 1d93fb4a9dd7c74eb44babdf974c1a4e29b69cdf $
+ * @version   $Id$
  * @access    public
  * @see       FilterReader
  * @package   phing.system.io

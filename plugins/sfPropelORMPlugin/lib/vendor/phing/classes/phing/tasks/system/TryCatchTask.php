@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: acc9e5d431141ae13ea43c1ed1d3177a4fb60bf9 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ include_once 'phing/Task.php';
  * Inspired by {@link http://ant-contrib.sourceforge.net/tasks/tasks/trycatch.html}
  *
  * @author   Michiel Rook <mrook@php.net>
- * @version  $Id: acc9e5d431141ae13ea43c1ed1d3177a4fb60bf9 $
+ * @version  $Id$
  * @package  phing.tasks.system
  */
 class TryCatchTask extends Task

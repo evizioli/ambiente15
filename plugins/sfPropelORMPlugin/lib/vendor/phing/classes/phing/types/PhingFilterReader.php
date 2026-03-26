@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 15f9003a0a0b8f012f06b56771922eae9de6ebfd $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@ include_once 'phing/types/Parameter.php';
  * and configuration of a Configurable FilterReader.
  *
  * @author    Yannick Lecaillez <yl@seasonfive.com>
- * @version   $Id: 15f9003a0a0b8f012f06b56771922eae9de6ebfd $
+ * @version   $Id$
  * @see       FilterReader
  * @package   phing.types
  */

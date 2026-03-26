@@ -6,7 +6,7 @@ require_once 'phing/BuildFileTest.php';
  * Tests the Chown Task
  *
  * @author  Michiel Rook <mrook@php.net>
- * @version $Id: 5a44b1f2e064ef4e05edc8dcefc2da4f55d65f08 $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class ChownTaskTest extends BuildFileTest

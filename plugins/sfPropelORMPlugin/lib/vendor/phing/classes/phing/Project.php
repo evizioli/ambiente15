@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 747f836b665364f27fc2f8fa777d882a877a9743 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -35,7 +35,7 @@ include_once 'phing/types/PropertyValue.php';
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version   $Id: 747f836b665364f27fc2f8fa777d882a877a9743 $
+ * @version   $Id$
  * @package   phing
  */
 class Project {

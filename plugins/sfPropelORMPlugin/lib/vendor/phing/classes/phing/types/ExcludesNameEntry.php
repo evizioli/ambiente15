@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: a1098700b4f205baacfd5adf5434e5a4803a6a3f $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -24,7 +24,7 @@
  *
  * @package phing.types
  * @author  Benjamin Schultz <bschultz@proqrent.de>
- * @version $Id: a1098700b4f205baacfd5adf5434e5a4803a6a3f $
+ * @version $Id$
  * @since   2.4.6
  */
 class ExcludesNameEntry

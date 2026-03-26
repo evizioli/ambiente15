@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: c442b1d9b3907e24b3bb259074f2a23b5ede7a03 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ include_once 'phing/tasks/system/PropertyTask.php';
  * Task for setting properties from an XML file in buildfiles.
  * 
  * @author    Jonathan Bond-Caron <jbondc@openmv.com>
- * @version   $Id: c442b1d9b3907e24b3bb259074f2a23b5ede7a03 $
+ * @version   $Id$
  * @package   phing.tasks.ext
  * @since     2.4.0
  * @link      http://ant.apache.org/manual/CoreTasks/xmlproperty.html

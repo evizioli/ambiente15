@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: b88d6fa4ca4717177b562a0475c81d92c161d9b4 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -32,7 +32,7 @@ require_once 'phing/util/ExtendedFileStream.php';
  * different packages or testcases since it is a Javadoc like report.
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: b88d6fa4ca4717177b562a0475c81d92c161d9b4 $
+ * @version $Id$
  * @package phing.tasks.ext.phpunit
  * @since 2.1.0
  */

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * $Id: e0024c74d3c76136830db84eb0ee41220412f6a3 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@
  * WARNING: this task is highly experimental!
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: e0024c74d3c76136830db84eb0ee41220412f6a3 $
+ * @version $Id$
  * @package phing.tasks.ext
  * @see https://github.com/phpdocumentor/Parallel
  * @since 2.4.10

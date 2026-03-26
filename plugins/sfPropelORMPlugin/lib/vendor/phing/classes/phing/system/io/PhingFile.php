@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: aa9e601342201eab334a91cdf4e3b20c15913ca8 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ include_once 'phing/system/lang/NullPointerException.php';
 /**
  * An abstract representation of file and directory pathnames.
  *
- * @version   $Id: aa9e601342201eab334a91cdf4e3b20c15913ca8 $
+ * @version   $Id$
  * @package   phing.system.io
  */
 class PhingFile {

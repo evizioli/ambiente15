@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 334f64383dde9b06cc259690e391c2b85cc90477 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -24,7 +24,7 @@ require_once dirname(dirname(__FILE__)) . '/S3.php';
 /**
  * Stores an object on S3
  * 
- * @version $Id: 334f64383dde9b06cc259690e391c2b85cc90477 $
+ * @version $Id$
  * @package phing.tasks.ext
  * @author Andrei Serdeliuc <andrei@serdeliuc.ro>
  * @extends Service_Amazon_S3

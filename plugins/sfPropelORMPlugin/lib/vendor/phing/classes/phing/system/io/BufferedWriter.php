@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 98a4ac2bbd5353baba13e0b9cf669789d63ac13b $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ include_once 'phing/system/io/Writer.php';
  * Convenience class for writing files.
  *
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version   $Id: 98a4ac2bbd5353baba13e0b9cf669789d63ac13b $
+ * @version   $Id$
  * @package   phing.system.io 
  */
 class BufferedWriter extends Writer {

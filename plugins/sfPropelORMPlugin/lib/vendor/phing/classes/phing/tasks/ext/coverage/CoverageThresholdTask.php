@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: ed00d6f1d05bb5dc7c9967c9ec67fa6f958682ec $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ require_once 'phing/types/Excludes.php';
  * Stops the build if any of the specified coverage threshold was not reached
  *
  * @author  Benjamin Schultz <bschultz@proqrent.de>
- * @version $Id: ed00d6f1d05bb5dc7c9967c9ec67fa6f958682ec $
+ * @version $Id$
  * @package phing.tasks.ext.coverage
  * @since   2.4.1
  */

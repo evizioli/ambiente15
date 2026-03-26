@@ -8,7 +8,7 @@
  * @package  phing.util
  * @author   Christian Weiske <cweiske@cweiske.de>
  * @license  LGPL v3 or later http://www.gnu.org/licenses/lgpl.html
- * @version  SVN: $Id: 8cea12e109f07ebae32ca45a52da0f1f6323c339 $
+ * @version  SVN: $Id$
  * @link     http://www.phing.info/
  */
 require_once 'phing/util/DirectoryScanner.php';

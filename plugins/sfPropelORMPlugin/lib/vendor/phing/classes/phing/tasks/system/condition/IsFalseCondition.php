@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: f7d355bdf8f7aa539afb572e2fe033ffd3bcd89b $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@ require_once 'phing/tasks/system/condition/Condition.php';
  * 
  * @author Hans Lellelid (Phing)
  * @author Steve Loughran (Ant)
- * @version $Id: f7d355bdf8f7aa539afb572e2fe033ffd3bcd89b $
+ * @version $Id$
  * @package phing.tasks.system.condition
  */
 class IsFalseCondition extends ProjectComponent implements Condition {

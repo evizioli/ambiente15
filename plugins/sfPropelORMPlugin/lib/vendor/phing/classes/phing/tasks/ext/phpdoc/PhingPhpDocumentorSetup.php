@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: cde99d501839daf8c9dd9df61ee6cce7caad6b3e $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -30,7 +30,7 @@ require_once 'PhpDocumentor/phpDocumentor/Setup.inc.php';
  * PhpDocumentor design. 
  * 
  * @author Hans Lellelid <hans@xmpl.org>@author hans
- * @version $Id: cde99d501839daf8c9dd9df61ee6cce7caad6b3e $
+ * @version $Id$
  * @package phing.tasks.ext.phpdoc
  */
 class PhingPhpDocumentorSetup extends phpDocumentor_setup {

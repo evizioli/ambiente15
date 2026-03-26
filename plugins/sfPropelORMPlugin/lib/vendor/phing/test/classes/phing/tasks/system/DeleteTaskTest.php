@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: a79a9a60f4d4065fd941c2083f6f77e7f20aed5b $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ require_once 'phing/BuildFileTest.php';
  * Tests the Delete Task
  * 
  * @author  Michiel Rook <mrook@php.net>
- * @version $Id: a79a9a60f4d4065fd941c2083f6f77e7f20aed5b $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class DeleteTaskTest extends BuildFileTest 

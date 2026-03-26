@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: b33e197d709f1c1ea159f03c5a2f9d3ae982b57f $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -23,7 +23,7 @@
  * Various utility functions
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: b33e197d709f1c1ea159f03c5a2f9d3ae982b57f $
+ * @version $Id$
  * @package phing.tasks.ext.phpunit
  * @since 2.1.0
  */

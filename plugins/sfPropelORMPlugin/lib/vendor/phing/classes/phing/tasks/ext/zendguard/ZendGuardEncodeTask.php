@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: 10b4a94d7b4b5fd0c08de77c0d9fda898009dbde $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -29,7 +29,7 @@ include_once 'phing/util/StringHelper.php';
  * Encodes files using Zeng Guard Encoder
  *
  * @author    Petr Rybak <petr@rynawe.net>
- * @version   $Id: 10b4a94d7b4b5fd0c08de77c0d9fda898009dbde $
+ * @version   $Id$
  * @package   phing.tasks.ext.zendguard
  * @since     2.4.3
  */

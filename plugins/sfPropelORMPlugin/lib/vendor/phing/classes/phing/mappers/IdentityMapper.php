@@ -1,6 +1,6 @@
 <?php
 /* 
- *  $Id: 1ef1328ec43b2129c3ddb503e6a58d2c8c31c660 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ require_once 'phing/mappers/FileNameMapper.php';
  * 
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version   $Id: 1ef1328ec43b2129c3ddb503e6a58d2c8c31c660 $
+ * @version   $Id$
  * @package   phing.mappers
  */
 class IdentityMapper implements FileNameMapper {

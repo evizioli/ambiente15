@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: ae9b63bef4c1423d88bb36ddfc5196763828123e $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -35,7 +35,7 @@ include_once 'phing/IntrospectionHelper.php';
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @copyright 2001,2002 THYRELL. All rights reserved
- * @version   $Id: ae9b63bef4c1423d88bb36ddfc5196763828123e $
+ * @version   $Id$
  * @access    public
  * @package   phing.parser
  */

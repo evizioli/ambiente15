@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: d988d44e126710106d2db9f9ee40b34d52ca127b $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ require_once 'phing/tasks/ext/svn/SvnBaseTask.php';
  * Stores the number of the last revision of a workingcopy in a property
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: d988d44e126710106d2db9f9ee40b34d52ca127b $
+ * @version $Id$
  * @package phing.tasks.ext.svn
  * @see VersionControl_SVN
  * @since 2.1.0

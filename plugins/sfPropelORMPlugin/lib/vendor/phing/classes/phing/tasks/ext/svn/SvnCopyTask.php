@@ -23,7 +23,7 @@ require_once 'phing/tasks/ext/svn/SvnBaseTask.php';
 /**
  * Copies a repository from the repository url to another
  *
- * @version $Id: 6f39598901c83ecaf8e7fcb9d4065f70b38324cb $
+ * @version $Id$
  * @package phing.tasks.ext.svn
  * @since 2.3.0
  */

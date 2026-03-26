@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: 8cab290f038a5f02170da9272ee9603bb233e331 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -23,7 +23,7 @@
  * Wrapper for comments for ionCube tasks
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: 8cab290f038a5f02170da9272ee9603bb233e331 $
+ * @version $Id$
  * @package phing.tasks.ext.ioncube
  * @since 2.2.0
  */

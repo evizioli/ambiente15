@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: 70cd33a5157fb4756de29c25d18731afd7f1b0d7 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ include_once 'phing/system/util/Properties.php';
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version   $Id: 70cd33a5157fb4756de29c25d18731afd7f1b0d7 $
+ * @version   $Id$
  * @package   phing.tasks.system
  */
 class PropertyTask extends Task {

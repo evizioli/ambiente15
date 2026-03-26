@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: 737cde901b66cc6297932a927a0bb1646b7aab49 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ include_once 'phing/system/util/Properties.php';
  *
  * @author     Michiel Rook <mrook@php.net>
  * @package    phing.listener
- * @version    $Id: 737cde901b66cc6297932a927a0bb1646b7aab49 $
+ * @version    $Id$
  */
 class MailLogger extends DefaultLogger
 {

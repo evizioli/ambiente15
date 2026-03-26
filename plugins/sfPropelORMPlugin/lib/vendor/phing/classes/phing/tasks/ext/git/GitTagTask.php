@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 127d4af12e159083935466773d1af788e46acd4e $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@ require_once 'phing/tasks/ext/git/GitBaseTask.php';
  *
  * @author Evan Kaufman <evan@digitalflophouse.com>
  * @author Victor Farazdagi <simple.square@gmail.com>
- * @version $Id: 127d4af12e159083935466773d1af788e46acd4e $
+ * @version $Id$
  * @package phing.tasks.ext.git
  * @see VersionControl_Git
  * @since 2.4.5

@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 05cc97815c28aeefe9ae9013bd7be441086a7c36 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ require_once 'phing/BuildFileTest.php';
  * Tests the LoadFile Task
  * 
  * @author  Michiel Rook <mrook@php.net>
- * @version $Id: 05cc97815c28aeefe9ae9013bd7be441086a7c36 $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class LoadFileTaskTest extends BuildFileTest 

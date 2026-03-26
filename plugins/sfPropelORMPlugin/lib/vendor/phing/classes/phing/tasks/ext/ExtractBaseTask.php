@@ -24,7 +24,7 @@ require_once 'phing/tasks/system/MatchingTask.php';
  * Base class for extracting tasks such as Unzip and Untar.
  *
  * @author    Joakim Bodin <joakim.bodin+phing@gmail.com>
- * @version   $Id: 8aa7996b72792da30f1ec94174f09b9c612bcc1a $
+ * @version   $Id$
  * @package   phing.tasks.ext
  * @since     2.2.0
  */

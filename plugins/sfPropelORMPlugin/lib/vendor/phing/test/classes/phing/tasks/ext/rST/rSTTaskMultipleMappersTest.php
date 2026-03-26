@@ -10,7 +10,7 @@
  * @author     Christian Weiske <cweiske@cweiske.de>
  * @license    LGPL v3 or later http://www.gnu.org/licenses/lgpl.html
  * @link       http://www.phing.info/
- * @version    SVN: $Id: 5a65c3d874b22d7fbd6ba5296506d9cb47239284 $
+ * @version    SVN: $Id$
  */
 
 require_once 'phing/BuildFileTest.php';

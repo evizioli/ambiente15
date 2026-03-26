@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: ce8b824dcd9d31029d9a6cf442643cbe3a4cf23a $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -39,7 +39,7 @@ include_once 'phing/filters/ChainableReader.php';
  * </pre>
  * 
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version   $Id: ce8b824dcd9d31029d9a6cf442643cbe3a4cf23a $
+ * @version   $Id$
  * @access    public
  * @see       BaseFilterReader
  * @package   phing.filters

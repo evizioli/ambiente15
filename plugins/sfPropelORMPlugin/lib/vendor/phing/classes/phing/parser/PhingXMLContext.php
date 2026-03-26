@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: 52e30e103179a5fb01df0bcf3c1a7e72fed034bc $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -23,7 +23,7 @@
  * Track the current state of the Xml parse operation.
  *
  * @author    Bryan Davis <bpd@keynetics.com>
- * @version   $Id: 52e30e103179a5fb01df0bcf3c1a7e72fed034bc $
+ * @version   $Id$
  * @access    public
  * @package   phing.parser
  */

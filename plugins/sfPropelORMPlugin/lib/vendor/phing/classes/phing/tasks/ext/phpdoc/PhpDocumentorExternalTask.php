@@ -1,7 +1,7 @@
 <?php
 
 /**
- * $Id: 5bcd73085da50e853a3f6dc6317fb2f5ef3c2687 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -31,7 +31,7 @@ require_once 'phing/tasks/ext/phpdoc/PhpDocumentorTask.php';
  *
  * @author Michiel Rook <mrook@php.net>
  * @author Markus Fischer <markus@fischer.name>
- * @version $Id: 5bcd73085da50e853a3f6dc6317fb2f5ef3c2687 $
+ * @version $Id$
  * @package phing.tasks.ext.phpdoc
  */ 
 class PhpDocumentorExternalTask extends PhpDocumentorTask

@@ -1,7 +1,7 @@
 <?php
 
 /**
- *  $Id: 2c92cd320562d21560dff67ae0b5697bff865de8 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ require_once 'phing/Task.php';
  * @author  Andreas Aderhold <andi@binarycloud.com>
  * @author  Hans Lellelid <hans@xmpl.org>
  * @author  Christian Weiske <cweiske@cweiske.de>
- * @version $Id: 2c92cd320562d21560dff67ae0b5697bff865de8 $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class ExecTask extends Task

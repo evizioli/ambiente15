@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: af4d193fb5a784ffcea55c9599c68a4fccb2a773 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ include_once 'phing/system/io/PhingFile.php';
  * Task to create a directory.
  *
  * @author   Andreas Aderhold, andi@binarycloud.com
- * @version  $Id: af4d193fb5a784ffcea55c9599c68a4fccb2a773 $
+ * @version  $Id$
  * @package  phing.tasks.system
  */
 class MkdirTask extends Task {

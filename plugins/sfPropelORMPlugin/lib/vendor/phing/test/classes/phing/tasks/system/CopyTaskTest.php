@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 781cc3c1528464ff75e30899eaa591282af7014b $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ require_once 'phing/BuildFileTest.php';
  * Tests the Copy Task
  * 
  * @author  Michiel Rook <mrook@php.net>
- * @version $Id: 781cc3c1528464ff75e30899eaa591282af7014b $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class CopyTaskTest extends BuildFileTest 

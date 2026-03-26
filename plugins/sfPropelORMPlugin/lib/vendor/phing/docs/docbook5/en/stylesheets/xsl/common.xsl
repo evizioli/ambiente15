@@ -3,7 +3,7 @@
     * ==============================================================================
     * Common XSL Docbook5 customization for all stylesheets
     *    
-    * Revision: $Id: 95ba1294addcdf9c06be8455c3844c85d97406ac $
+    * Revision: $Id$
     * ==============================================================================    
 -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">

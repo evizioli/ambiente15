@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: deedf622789bd9f692006877fa19a124ff0cf06c $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ require_once 'phing/BuildFileTest.php';
  * Tests the Touch Task
  * 
  * @author  Michiel Rook <mrook@php.net>
- * @version $Id: deedf622789bd9f692006877fa19a124ff0cf06c $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class TouchTaskTest extends BuildFileTest 

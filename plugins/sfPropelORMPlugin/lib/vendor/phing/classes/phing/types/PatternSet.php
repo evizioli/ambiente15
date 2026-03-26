@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: af3bd3709d79ad0299bf6ec0130a8a244ee325ab $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@ include_once 'phing/types/DataType.php';
  * for the patternset stuff.
  *
  * @author   Andreas Aderhold, andi@binarycloud.com
- * @version  $Id: af3bd3709d79ad0299bf6ec0130a8a244ee325ab $
+ * @version  $Id$
  * @package  phing.types
  */
 class PatternSet extends DataType {

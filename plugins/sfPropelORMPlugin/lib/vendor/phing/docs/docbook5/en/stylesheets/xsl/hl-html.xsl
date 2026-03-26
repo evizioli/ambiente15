@@ -6,7 +6,7 @@
   * stylesheet since we need to set encoding to utf-8 which is not possible in
   * HTML stylesheet.
   *    
-  * Revision: $Id: d05f72932425e9eef1e74fe5d73dc6a608bd09f6 $
+  * Revision: $Id$
   * ==============================================================================    
 -->
 <xsl:stylesheet xmlns:d="http://docbook.org/ns/docbook"

@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: f63388b05d838082c81498058ce37fa8a1c9c899 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ require_once 'phing/tasks/ext/git/GitBaseTask.php';
  * Wrapper aroung git-merge
  *
  * @author Victor Farazdagi <simple.square@gmail.com>
- * @version $Id: f63388b05d838082c81498058ce37fa8a1c9c899 $
+ * @version $Id$
  * @package phing.tasks.ext.git
  * @see VersionControl_Git
  * @since 2.4.3

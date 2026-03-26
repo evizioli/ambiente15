@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 11e8e04d563d560b31b09eda2aef8835ee3ce4c3 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -24,7 +24,7 @@ require_once 'phing/tasks/ext/svn/AbstractSvnTaskTest.php';
 
 /**
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: 11e8e04d563d560b31b09eda2aef8835ee3ce4c3 $
+ * @version $Id$
  * @package phing.tasks.ext.svn
  */
 class SvnExportTaskTest extends AbstractSvnTaskTest { 

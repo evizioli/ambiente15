@@ -2,7 +2,7 @@
 
 rem *********************************************************************
 rem ** the phing build script for Windows based systems
-rem ** $Id: ea310470cedab26473d08c7a65839a1de7e6ee21 $
+rem ** $Id$
 rem *********************************************************************
 
 rem This script will do the following:

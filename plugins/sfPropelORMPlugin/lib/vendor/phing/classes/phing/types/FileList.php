@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: c01c5e39a4d97750025337e31f1285677e15d828 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -41,7 +41,7 @@ include_once 'phing/system/io/PhingFile.php';
  * (or a mixture of files="" and listfile="" can be used)
  * 
  * @author Hans Lellelid <hans@xmpl.org>
- * @version $Id: c01c5e39a4d97750025337e31f1285677e15d828 $
+ * @version $Id$
  * @package phing.types
  */
 class FileList extends DataType {

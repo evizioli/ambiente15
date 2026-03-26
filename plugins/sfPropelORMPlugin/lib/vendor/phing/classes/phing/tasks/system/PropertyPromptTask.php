@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: cac8845ae2192d411a718ba149b71670c3102897 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -31,7 +31,7 @@ include_once 'phing/input/InputRequest.php';
  * 
  * @author    Hans Lellelid <hans@xmpl.org> (Phing)
  * @author    Anthony J. Young-Garner <ajyoung@alum.mit.edu> (Ant)
- * @version   $Id: cac8845ae2192d411a718ba149b71670c3102897 $
+ * @version   $Id$
  * @package   phing.tasks.system
  * @deprecated - in favor of the more capable InputTask
  */ 

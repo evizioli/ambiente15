@@ -1,6 +1,6 @@
 <?php
 /* 
- *  $Id: 0e7e5309e727425aa9405bc4663c804519f12e36 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ require_once 'phing/mappers/FileNameMapper.php';
  * Removes any directory information from the passed path.
  *
  * @author   Andreas Aderhold <andi@binarycloud.com>
- * @version  $Id: 0e7e5309e727425aa9405bc4663c804519f12e36 $
+ * @version  $Id$
  * @package  phing.mappers
  */
 class FlattenMapper implements FileNameMapper {

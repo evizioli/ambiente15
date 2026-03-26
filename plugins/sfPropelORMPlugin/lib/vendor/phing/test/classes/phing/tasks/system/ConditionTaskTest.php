@@ -6,7 +6,7 @@ require_once 'phing/BuildFileTest.php';
  * Tests the Condition Task
  *
  * @author  Michiel Rook <mrook@php.net>
- * @version $Id: 63519c21d2c560a80bbbef8bf9a4fbeb53c6291b $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class ConditionTaskTest extends BuildFileTest

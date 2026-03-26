@@ -1,7 +1,7 @@
 <?php
 
 /*
- * $Id: e207371223210753190ac25f1586e7a8bd4e66cf $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -30,7 +30,7 @@ require_once 'phing/types/selectors/BaseSelector.php';
  *
  * @author    Hans Lellelid <hans@xmpl.org> (Phing)
  * @author    Bruce Atherton <bruce@callenish.com> (Ant)
- * @version   $Id: e207371223210753190ac25f1586e7a8bd4e66cf $
+ * @version   $Id$
  * @package   phing.types.selectors
  */
 class DependSelector extends BaseSelector {

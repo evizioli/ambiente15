@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 940741d8377306f23bb29048dd874e99298ffbd2 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -35,7 +35,7 @@ include_once 'phing/system/io/IOException.php';
  * Source files and directories are only deleted when the file or
  * directory has been copied to the destination successfully.
  *
- * @version $Id: 940741d8377306f23bb29048dd874e99298ffbd2 $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class MoveTask extends CopyTask {

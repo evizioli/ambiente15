@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: 922141577d9d8dfcc0e089ccd1cc303ba89be38b $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ include_once 'phing/system/io/StringReader.php';
  * Base class for core filter readers.
  *
  * @author    <a href="mailto:yl@seasonfive.com">Yannick Lecaillez</a>
- * @version   $Id: 922141577d9d8dfcc0e089ccd1cc303ba89be38b $
+ * @version   $Id$
  * @access    public
  * @see       FilterReader
  * @package   phing.filters

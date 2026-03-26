@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: f8f62d67a784faced2621d2ffc3b1c92e8703b05 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -49,7 +49,7 @@ include_once 'phing/system/io/StringReader.php';
  * @author    Michael McCallum <gholam@xtra.co.nz> (Ant)
  * @author    Tim Stephenson <tim.stephenson@sybase.com> (Ant)
  * @package   phing.tasks.ext.creole
- * @version   $Id: f8f62d67a784faced2621d2ffc3b1c92e8703b05 $
+ * @version   $Id$
  */
 class CreoleSQLExecTask extends CreoleTask {
 

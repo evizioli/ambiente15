@@ -6,7 +6,7 @@ require_once 'phing/BuildFileTest.php';
  * Tests the Echo Task
  *
  * @author  Christian Weiske <cweiske@cweiske.de>
- * @version $Id: 0133f9f16b867582418a33645b2ed15cda6a866b $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class EchoTaskTest extends BuildFileTest

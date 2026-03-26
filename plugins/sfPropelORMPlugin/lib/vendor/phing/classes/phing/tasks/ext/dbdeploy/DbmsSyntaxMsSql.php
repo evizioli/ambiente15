@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 64f054364844586a914cf0441ef356401e9fd03e $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -23,7 +23,7 @@
  * Utility class for generating necessary server-specific SQL commands
  *
  * @author   Luke Crouch at SourceForge (http://sourceforge.net)
- * @version  $Id: 64f054364844586a914cf0441ef356401e9fd03e $
+ * @version  $Id$
  * @package  phing.tasks.ext.dbdeploy
  */
 class DbmsSyntaxMsSql extends DbmsSyntax 

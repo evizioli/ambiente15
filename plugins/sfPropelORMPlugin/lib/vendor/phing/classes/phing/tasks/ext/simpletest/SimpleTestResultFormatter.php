@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: d3e9ae73345170432c954d76022c6b385a9da8ef $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@ require_once 'phing/system/io/Writer.php';
  * This abstract class describes classes that format the results of a SimpleTest testrun.
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: d3e9ae73345170432c954d76022c6b385a9da8ef $
+ * @version $Id$
  * @package phing.tasks.ext.simpletest
  * @since 2.2.0
  */

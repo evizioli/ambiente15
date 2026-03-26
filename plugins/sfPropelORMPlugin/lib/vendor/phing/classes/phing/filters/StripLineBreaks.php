@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: fde0fb48d867a28c3c4a17a32a4ea2ff25459f94 $  
+ *  $Id$  
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -36,7 +36,7 @@ include_once 'phing/filters/ChainableReader.php';
  *
  * @author    <a href="mailto:yl@seasonfive.com">Yannick Lecaillez</a>
  * @author    hans lellelid, hans@velum.net
- * @version   $Id: fde0fb48d867a28c3c4a17a32a4ea2ff25459f94 $
+ * @version   $Id$
  * @access    public
  * @see       BaseParamFilterReader
  * @package   phing.filters

@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 31210f167bb4c7c42dab84a9c1975c4d9e6666d0 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -31,7 +31,7 @@ require_once 'phing/Task.php';
  * Subclasses exist for conveniently declaring and registering tasks and types.
  * 
  * @author   Hans Lellelid <hans@xmpl.org>
- * @version  $Id: 31210f167bb4c7c42dab84a9c1975c4d9e6666d0 $
+ * @version  $Id$
  * @package  phing.tasks.system
  */
 class AdhocTask extends Task {

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * $Id: 0aa51582adb6390414e02935f468cf2919f54737 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@ include_once 'phing/parser/ExpatParseException.php';
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @copyright 2001,2002 THYRELL. All rights reserved
- * @version   $Id: 0aa51582adb6390414e02935f468cf2919f54737 $
+ * @version   $Id$
  * @package   phing.parser
  */
 abstract class AbstractHandler {

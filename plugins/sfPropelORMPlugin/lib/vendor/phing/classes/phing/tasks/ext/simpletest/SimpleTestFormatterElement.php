@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: ecc0e33abc5d524e7630f82a75ac182a7cb488e6 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ require_once 'phing/tasks/ext/phpunit/FormatterElement.php';
  * formatter classes for SimpleTest
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: ecc0e33abc5d524e7630f82a75ac182a7cb488e6 $
+ * @version $Id$
  * @package phing.tasks.ext.simpletest
  * @since 2.2.0
  */

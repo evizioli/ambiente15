@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: 2beb14d928ee47f36cceb9467b4a2ac9d2c81ef4 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ require_once 'phing/tasks/ext/svn/SvnBaseTask.php';
  * Switches a repository at a given local directory to a different location
  *
  * @author Dom Udall <dom.udall@clock.co.uk>
- * @version $Id: 2beb14d928ee47f36cceb9467b4a2ac9d2c81ef4 $
+ * @version $Id$
  * @package phing.tasks.ext.svn
  * @since 2.4.3
  */

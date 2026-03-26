@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: ae986f84ca9d952b0e14f2df9f21657213ef5e47 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -31,7 +31,7 @@ include_once 'phing/input/MultipleChoiceInputRequest.php';
  * @author    Hans Lellelid <hans@xmpl.org> (Phing)
  * @author    Ulrich Schmidt <usch@usch.net> (Ant)
  * @author    Stefan Bodewig <stefan.bodewig@epost.de> (Ant)
- * @version   $Id: ae986f84ca9d952b0e14f2df9f21657213ef5e47 $
+ * @version   $Id$
  * @package   phing.tasks.system
  */
 class InputTask extends Task {

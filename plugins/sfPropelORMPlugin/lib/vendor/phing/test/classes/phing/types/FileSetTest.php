@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: 107c8450ca46410959c04d5eacf143fd279e8698 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@ include_once 'phing/types/FileSet.php';
  * Unit tests for FileSet -- including Selectors.
  * 
  * @author Hans Lellelid <hans@xmpl.org>
- * @version $Id: 107c8450ca46410959c04d5eacf143fd279e8698 $
+ * @version $Id$
  * @package phing.types
  */
 class FileSetTest extends AbstractFileSetTest {

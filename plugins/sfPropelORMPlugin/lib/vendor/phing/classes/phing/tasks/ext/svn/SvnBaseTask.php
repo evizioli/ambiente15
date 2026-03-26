@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 2b84128cc6830a785fdc766e35edd00326fe487a $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ include_once 'phing/Task.php';
  *
  * @author Michiel Rook <mrook@php.net>
  * @author Andrew Eddie <andrew.eddie@jamboworks.com> 
- * @version $Id: 2b84128cc6830a785fdc766e35edd00326fe487a $
+ * @version $Id$
  * @package phing.tasks.ext.svn
  * @see VersionControl_SVN
  * @since 2.2.0

@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 642c6947fa58e02a8c7893c8c4dfab2debfdd51d $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -35,7 +35,7 @@ include_once 'phing/types/Commandline.php';
  * @author stefano@apache.org (Ant)
  * @author Wolfgang Werner <wwerner@picturesafe.de> (Ant)
  * @author Kevin Ross <kevin.ross@bredex.com> (Ant)
- * @version $Id: 642c6947fa58e02a8c7893c8c4dfab2debfdd51d $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class CvsTask extends Task {

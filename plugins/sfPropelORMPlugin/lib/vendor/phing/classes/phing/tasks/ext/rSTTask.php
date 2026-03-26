@@ -10,7 +10,7 @@
  * @author     Christian Weiske <cweiske@cweiske.de>
  * @license    LGPL v3 or later http://www.gnu.org/licenses/lgpl.html
  * @link       http://www.phing.info/
- * @version    SVN: $Id: bc420f25ab51443575d2064ebc8b2d633a4b2f65 $
+ * @version    SVN: $Id$
  */
 
 require_once 'phing/Task.php';

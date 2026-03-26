@@ -448,8 +448,10 @@ class PropelPDO extends PDO
      *
      * @return PDOStatement
      */
-/*
-    public function query()
+
+//     public function query()
+    #[\ReturnTypeWillChange]
+    public function query(string $query, ?int $fetchMode = null, mixed ...$fetchModeArgs)
     {
         if ($this->useDebug) {
             $debug = $this->getDebugSnapshot();
@@ -469,24 +471,6 @@ class PropelPDO extends PDO
             $this->incrementQueryCount();
         }
 
-        return $return;
-    }
-*/
-    #[\ReturnTypeWillChange]
-    public function query(string $query, ?int $fetchMode = null, mixed ...$fetchModeArgs)
-    {
-        if ($this->useDebug) {
-            $debug = $this->getDebugSnapshot();
-        }
-        
-        $return = parent::query($query, $fetchMode, $fetchModeArgs );
-        
-        if ($this->useDebug) {
-            
-            $this->log($query, null, __METHOD__, $debug);
-            $this->setLastExecutedQuery($query);
-            $this->incrementQueryCount();
-        }
         return $return;
     }
     

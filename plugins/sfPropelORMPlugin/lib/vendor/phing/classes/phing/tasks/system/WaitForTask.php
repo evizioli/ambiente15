@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: f23a973d147d0bd47769e7085056670e9bf58d21 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -40,7 +40,7 @@ require_once 'phing/Task.php';
  *  limitations under the License.
  *
  * @author    Michiel Rook <mrook@php.net>
- * @version   $Id: f23a973d147d0bd47769e7085056670e9bf58d21 $
+ * @version   $Id$
  * @package   phing.tasks.system
  */
 class WaitForTask extends ConditionBase

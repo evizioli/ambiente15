@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: f4e92d98e6607c40a11d6f7f7b71ee81c5c6b995 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -95,7 +95,7 @@ include_once 'phing/system/util/Properties.php';
  * @author     Hans Lellelid <hans@xmpl.org> (Phing)
  * @author     Magesh Umasankar (Ant)
  * @package    phing.listener
- * @version    $Id: f4e92d98e6607c40a11d6f7f7b71ee81c5c6b995 $
+ * @version    $Id$
  */
 class AnsiColorLogger extends DefaultLogger {
 

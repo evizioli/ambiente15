@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: fd200642ecee5eeea38f9379fdd0fec88d5194d1 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ require_once 'phing/Task.php';
  *
  * @author    Michiel Rook <mrook@php.net>
  * @author    Johan Van den Brande <johan@vandenbrande.com>
- * @version   $Id: fd200642ecee5eeea38f9379fdd0fec88d5194d1 $
+ * @version   $Id$
  * @package   phing.tasks.ext
  */
 

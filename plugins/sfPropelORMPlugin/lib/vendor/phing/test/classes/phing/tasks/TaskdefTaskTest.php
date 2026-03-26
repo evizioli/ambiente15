@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: d8aafc3fec04d354a7932d6588a50e9747fa4151 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -22,7 +22,7 @@
 require_once 'phing/BuildFileTest.php';
 
 /**
- * @version $Id: d8aafc3fec04d354a7932d6588a50e9747fa4151 $
+ * @version $Id$
  * @package phing.tasks.system
  */
 class TaskdefTaskTest extends BuildFileTest { 

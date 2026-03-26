@@ -1,7 +1,7 @@
 <?php
 
     /**
-     * $Id: b3f9c38659deaf5703e2ee689277a7baccbaaf13 $
+     * $Id$
      *
      * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
      * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@
      * Extends the Writer class to output messages to Phing's log
      *
      * @author Michiel Rook <mrook@php.net>
-     * @version $Id: b3f9c38659deaf5703e2ee689277a7baccbaaf13 $
+     * @version $Id$
      * @package phing.util
      */
     class LogWriter extends Writer

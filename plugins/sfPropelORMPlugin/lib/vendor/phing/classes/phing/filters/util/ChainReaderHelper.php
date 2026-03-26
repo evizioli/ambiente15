@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: e9939cae5df5ba2792eb98d5692132b272060cf6 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -61,7 +61,7 @@ include_once 'phing/filters/ChainableReader.php';
  * TODO: Implement the classPath feature.
  *
  * @author    <a href="mailto:yl@seasonfive.com">Yannick Lecaillez</a>
- * @version   $Id: e9939cae5df5ba2792eb98d5692132b272060cf6 $
+ * @version   $Id$
  * @access    public
  * @package   phing.filters.util
 */

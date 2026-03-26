@@ -1,6 +1,6 @@
 <?php
 /**
- *  $Id: 945d98b37a431c9d6b64faaa4be1d039f840c08d $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@
  *
  *  @author    Andreas Aderhold <andi@binarycloud.com>
  *  @copyright 2001,2002 THYRELL. All rights reserved
- *  @version   $Id: 945d98b37a431c9d6b64faaa4be1d039f840c08d $
+ *  @version   $Id$
  *  @access    public
  *  @package   phing
  */

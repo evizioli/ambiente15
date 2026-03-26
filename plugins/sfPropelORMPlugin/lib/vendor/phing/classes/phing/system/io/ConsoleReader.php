@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: c9dfdf68f7fba038727285f2e744c44caec3f513 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ include_once 'phing/system/io/Reader.php';
  * 
  * @author Hans Lellelid <hans@xmpl.org>
  * @author Matthew Hershberger <matthewh@lightsp.com>
- * @version $Id: c9dfdf68f7fba038727285f2e744c44caec3f513 $
+ * @version $Id$
  * @package phing.system.io
  */
 class ConsoleReader extends Reader {

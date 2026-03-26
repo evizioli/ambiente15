@@ -1,6 +1,6 @@
 <?php
 /* 
- *  $Id: 132f5b18c5018ababae8649c7285f9a4aaf373df $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@
  * 
  * @author Hans Lellelid <hans@velum.net>
  * @package phing.util.regexp
- * @version $Id: 132f5b18c5018ababae8649c7285f9a4aaf373df $
+ * @version $Id$
  */
 interface RegexpEngine {
     

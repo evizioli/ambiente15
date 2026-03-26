@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 5d02fa25dc18b56093884ae756b1720aafb42937 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -41,7 +41,7 @@ require_once 'phing/Task.php';
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @copyright 2001,2002 THYRELL. All rights reserved
- * @version   $Id: 5d02fa25dc18b56093884ae756b1720aafb42937 $
+ * @version   $Id$
  * @access    public
  * @package   phing.tasks.system
  */

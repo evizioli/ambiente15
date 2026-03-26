@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: a18dcc42815330eee22555dbce0fd1470812e49f $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -28,7 +28,7 @@ require_once 'phing/system/io/FileWriter.php';
  *
  * @package phing.util
  * @author  Michiel Rook <mrook@php.net>
- * @version $Id: a18dcc42815330eee22555dbce0fd1470812e49f $
+ * @version $Id$
  */
 class DataStore
 {

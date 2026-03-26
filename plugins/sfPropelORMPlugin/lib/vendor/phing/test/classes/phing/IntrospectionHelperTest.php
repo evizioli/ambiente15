@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: b1288f8c3bc14f4c6e011a2d2b81bdc0781b773f $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@ include_once 'phing/tasks/system/condition/OsCondition.php';
  * 
  * @author Hans Lellelid <hans@xmpl.org> (Phing)
  * @author Stefan Bodewig <stefan.bodewig@epost.de> (Ant)
- * @version $Id: b1288f8c3bc14f4c6e011a2d2b81bdc0781b773f $
+ * @version $Id$
  * @package phing
  */
 class IntrospectionHelperTest extends PHPUnit_Framework_TestCase {

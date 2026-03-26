@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: f3d59c24662880df95fe047ba10c594219b4ab7a $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -23,7 +23,7 @@
  * Utility class for generating necessary server-specific SQL commands
  *
  * @author   Remy BREUILS
- * @version  $Id: f3d59c24662880df95fe047ba10c594219b4ab7a $
+ * @version  $Id$
  * @package  phing.tasks.ext.dbdeploy
  */
 class DbmsSyntaxPgSQL extends DbmsSyntax 

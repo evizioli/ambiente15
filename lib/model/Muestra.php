@@ -1,6 +1,6 @@
 <?php
 
-require ProjectConfiguration::guessRootDir().'/plugins/comunPlugin/lib/vendor/autoload.php';
+// require ProjectConfiguration::guessRootDir().'/plugins/comunPlugin/lib/vendor/autoload.php';
 
 
 class Muestra extends BaseMuestra {

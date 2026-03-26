@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 885e3a9f611a36cac6a00e882b4d2d146d42add8 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -25,7 +25,7 @@ require_once 'phing/BuildFileTest.php';
  * Tests the Zip and Unzip tasks
  * 
  * @author  Michiel Rook <mrook@php.net>
- * @version $Id: 885e3a9f611a36cac6a00e882b4d2d146d42add8 $
+ * @version $Id$
  * @package phing.tasks.ext
  */
 class ZipUnzipTaskTest extends BuildFileTest 

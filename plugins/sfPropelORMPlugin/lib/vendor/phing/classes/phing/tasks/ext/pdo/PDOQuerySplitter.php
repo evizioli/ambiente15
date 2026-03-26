@@ -17,7 +17,7 @@
  * and is licensed under the LGPL. For more information please see
  * <http://phing.info>.
  *
- * @version $Id: 6495638448065ad0fb8da3f3def65aa3fd3199be $
+ * @version $Id$
  * @package phing.tasks.ext.pdo
  */
 
@@ -26,7 +26,7 @@
  *
  * @author  Alexey Borzov <avb@php.net>
  * @package phing.tasks.ext.pdo
- * @version $Id: 6495638448065ad0fb8da3f3def65aa3fd3199be $
+ * @version $Id$
  */
 abstract class PDOQuerySplitter
 {

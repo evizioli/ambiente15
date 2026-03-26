@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: aba1d73cc012ecc9885d6950db7a9340a01c7ed4 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -31,7 +31,7 @@ require_once 'phing/Task.php';
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version   $Id: aba1d73cc012ecc9885d6950db7a9340a01c7ed4 $
+ * @version   $Id$
  * @package   phing
  */
 class UnknownElement extends Task {

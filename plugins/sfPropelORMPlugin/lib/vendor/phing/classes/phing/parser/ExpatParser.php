@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: 1f700744690a73ed42feae0fb6974553a2d42bc4 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -36,7 +36,7 @@ include_once 'phing/system/io/FileReader.php';
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @copyright 2001,2002 THYRELL. All rights reserved
- * @version   $Id: 1f700744690a73ed42feae0fb6974553a2d42bc4 $
+ * @version   $Id$
  * @access    public
  * @package   phing.parser
  */

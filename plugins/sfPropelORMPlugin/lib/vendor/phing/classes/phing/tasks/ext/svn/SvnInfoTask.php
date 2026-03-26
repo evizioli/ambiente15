@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: 2681aa7a1f3448a70c94b8b61d4de6b57975faa8 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -26,7 +26,7 @@ require_once 'phing/tasks/ext/svn/SvnBaseTask.php';
  * Parses the output of 'svn info --xml' and
  *
  * @author Michiel Rook <mrook@php.net>
- * @version $Id: 2681aa7a1f3448a70c94b8b61d4de6b57975faa8 $
+ * @version $Id$
  * @package phing.tasks.ext.svn
  * @see VersionControl_SVN
  * @since 2.4.9

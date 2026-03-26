@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: eb618227e8be1350b130f8dd38264cc402cebb89 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@ require_once "phing/types/DataType.php";
  *
  * @author nuno costa <nuno@francodacosta.com>
  * @license GPL
- * @version $Id: eb618227e8be1350b130f8dd38264cc402cebb89 $
+ * @version $Id$
  * @package phing.tasks.ext.symfony
  */
 class Arg extends DataType

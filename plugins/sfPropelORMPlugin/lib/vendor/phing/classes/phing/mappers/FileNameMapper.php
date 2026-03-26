@@ -1,6 +1,6 @@
 <?php
 /* 
- *  $Id: 8dfea4c0ac7a3f0d59505f36ddae6614e3031ba1 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -24,7 +24,7 @@
  *
  * @author Andreas Aderhold, andi@binarycloud.com
  * @author Hans Lellelid <hans@xmpl.org>
- * @version $Id: 8dfea4c0ac7a3f0d59505f36ddae6614e3031ba1 $
+ * @version $Id$
  * @package phing.mappers
  */
 interface FileNameMapper {

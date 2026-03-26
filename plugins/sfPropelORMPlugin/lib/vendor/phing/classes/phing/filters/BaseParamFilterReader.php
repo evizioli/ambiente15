@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  $Id: 47304165121029790cb65ab42cece43eee1d6014 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -29,7 +29,7 @@ include_once 'phing/types/Parameter.php';
  *
  * @author    <a href="mailto:yl@seasonfive.com">Yannick Lecaillez</a>
  * @copyright 2003 seasonfive. All rights reserved
- * @version   $Id: 47304165121029790cb65ab42cece43eee1d6014 $
+ * @version   $Id$
  * @access    public
  * @see       FilterReader
  * @package   phing.filters

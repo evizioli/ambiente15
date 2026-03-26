@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: 73c919ab2044bf6582f52bd7ccb0184019d52f53 $
+ * $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -33,7 +33,7 @@ require_once 'PhpDocumentor/phpDocumentor/Errors.inc';
  * PhpDocumentor design. 
  * 
  * @author Timo A. Hummel <privat@timohummel.com> @author felicitus
- * @version $Id: 73c919ab2044bf6582f52bd7ccb0184019d52f53 $
+ * @version $Id$
  * @package phing.tasks.ext.phpdoc
  */ 
 class PhingPhpDocumentorErrorTracker extends ErrorTracker {

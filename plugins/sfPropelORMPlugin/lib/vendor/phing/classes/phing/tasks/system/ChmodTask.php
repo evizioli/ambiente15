@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: fad30caf32ff1ee9ff98f63849d61053ab88f645 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -27,7 +27,7 @@ include_once 'phing/types/FileSet.php';
  *
  * @author    Manuel Holtgrewe <grin@gmx.net>
  * @author    Hans Lellelid <hans@xmpl.org>
- * @version   $Id: fad30caf32ff1ee9ff98f63849d61053ab88f645 $
+ * @version   $Id$
  * @package   phing.tasks.system
  */
 class ChmodTask extends Task {

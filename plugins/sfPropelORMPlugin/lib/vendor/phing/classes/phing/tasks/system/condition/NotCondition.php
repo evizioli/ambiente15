@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: ef6fe783a698a1646e2c687c4cfa6c066129f6d7 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -29,7 +29,7 @@ require_once 'phing/tasks/system/condition/ConditionBase.php';
  *
  * @author    Andreas Aderhold <andi@binarycloud.com>
  * @copyright 2001,2002 THYRELL. All rights reserved
- * @version   $Id: ef6fe783a698a1646e2c687c4cfa6c066129f6d7 $
+ * @version   $Id$
  * @access    public
  * @package   phing.tasks.system.condition
  */

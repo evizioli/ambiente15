@@ -1,6 +1,6 @@
 <?php
 /*
- *  $Id: fcb63867ba7e7718eceb991f4c17e33798bf49a4 $
+ *  $Id$
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -31,7 +31,7 @@ include_once 'phing/util/regexp/Regexp.php';
  * regular expression type you are using.
  *
  * @author    <a href="mailto:yl@seasonfive.com">Yannick Lecaillez</a>
- * @version   $Id: fcb63867ba7e7718eceb991f4c17e33798bf49a4 $
+ * @version   $Id$
  * @access    public
  * @see       phing.util.regex.RegexMatcher
  * @package   phing.types
