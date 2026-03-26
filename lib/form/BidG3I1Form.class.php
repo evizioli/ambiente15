@@ -15,6 +15,7 @@ class BidG3I1Form extends BaseBidG3I1Form
         $this->widgetSchema['sitio_id']->setOption('add_empty', true);
         $this->widgetSchema['sitio_id']->setAttribute('class', 's2');
         $this->widgetSchema['sitio_id']->setOption('criteria', BidSitioQuery::create()->filterByAreaProtegida(ProjectConfiguration::PIMCPA));
-        
+      $this->validatorSchema['km_relevados']->setOption('min', 0.01);  
+      $this->validatorSchema['km_relevados']->setOption('required', true);  
   }
 }

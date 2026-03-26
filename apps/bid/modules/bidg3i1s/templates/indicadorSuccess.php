@@ -93,7 +93,7 @@ var urltofepng  = "'.image_path('bidg3i1',true).'";
         <?php $anterior=null; foreach( $resultado as  $data): ?>
       	<?php 
       	$clase='';
-      	$actual =($data['parejas']+$data['hembras']+$data['machos'])/$data['km_relevados']*100; 
+      	$actual =($data['parejas']+$data['hembras']+$data['machos'])/$data['km_relevados']; 
       	 if($anterior ){
       	     if($anterior >$actual){
       	         if($anterior >0 && $actual/$anterior>.2) $clase='rojo';
