@@ -287,6 +287,14 @@
             <source>Conductividad electrica 1</source>
             <target>Conductividad eléctrica mS/cm</target>
         </trans-unit>
+        <trans-unit id="72">
+            <source>"%value%" must be at least %min%.</source>
+            <target>"%value%" debe ser al menos %min%.</target>
+        </trans-unit>
+        <trans-unit id="73">
+            <source>"%value%" must be at most %max%.</source>
+            <target>"%value%" debe ser como máximo %max%.</target>
+        </trans-unit>
       
     </body>
   </file>

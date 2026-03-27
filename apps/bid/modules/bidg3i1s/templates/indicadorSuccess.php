@@ -86,6 +86,7 @@ var urltofepng  = "'.image_path('bidg3i1',true).'";
           <th class="bs_admin_text">Hembras</th>
           <th class="bs_admin_text">Machos</th>
           <th class="bs_admin_text">Km relevados</th>
+          <th class="bs_admin_text">Densidad</th>
 
         </tr>
       </thead>
@@ -111,7 +112,7 @@ var urltofepng  = "'.image_path('bidg3i1',true).'";
           	<td><?php echo $data['hembras'];?></td>
           	<td><?php echo $data['machos'];?></td>
           	<td><?php echo $data['km_relevados'];?></td>
-          	<td class="<?php echo $clase ?>"><?php echo format_currency($actual,'%');  ?></td>
+          	<td class="<?php echo $clase ?>"><?php echo format_currency($actual,'');  ?></td>
           </tr>
         <?php $anterior=$actual; endforeach; ?>
       </tbody>

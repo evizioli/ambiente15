@@ -11,6 +11,14 @@
         <source>Are you sure?</source>
         <target>¿Está seguro?</target>
       </trans-unit>
+        <trans-unit id="3">
+            <source>"%value%" must be at least %min%.</source>
+            <target>"%value%" debe ser al menos %min.</target>
+        </trans-unit>
+        <trans-unit id="4">
+            <source>"%value%" must be at most %min.</source>
+            <target>"%value%" debe ser como máximo %min.</target>
+        </trans-unit>
     </body>
   </file>
 </xliff>
