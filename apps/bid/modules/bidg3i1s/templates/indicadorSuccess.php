@@ -3,9 +3,11 @@
 <?php use_stylesheets_for_form($filters) ?>
 <?php use_javascripts_for_form($filters) ?>
 <div class="container-fluid">
-  <h1>PATO VAPOR CABEZA BLANCA NO VOLADOR<br/>Indicador: <i>Status reproductivo en el intermareal rocoso</i></h1>
+  <h1>Pato Vapor Cabeza Blanca No Volador (Tachyeres leucocephalus)<br/><small class="text-muted">Indicador: Índice kilométrico de abundancia</small></h1>
 
-  <?php include_partial('bidg3i1s/flashes') ?>
+  <p class="lead">
+  Estima el tamaño poblacional y su tendencia relacionando la cantidad de parejas, hembras y machos en relación a lo distancia relevada
+  </p>
     
 
   <div id="bs_admin_content">

@@ -1,13 +1,12 @@
 <?php use_helper('I18N', 'Date', 'Number') ?>
 <?php include_partial('bidg2i1s/assets') ?>
 <div class="container-fluid">
-  <h1><?php echo __('Mara Patagónica', array(), 'messages') ?></h1>
 
-  <?php include_partial('bidg2i1s/flashes') ?>
-<!-- 
-  <div class="page_header">
-  </div>
- -->
+  <h1>Mara (Dolichotis patagonum)<br/><small class="text-muted">Indicadores: Densidad mínima de individuos maduros / Éxito reproductivo</small></h1>
+
+  <p class="lead">
+Estima el éxito reproductivo a partir de la proporción de crías de clase 2 (dos semanas) observadas en la madriguera que llegan a clase 3 (cinco semanas)
+  </p>
     
 
   <div id="bs_admin_content">
@@ -97,7 +96,7 @@ var urltofepng  = "'.image_path('bidg2i1',true).'";
         <?php $anterior=null; foreach( $resultado as  $BidG2I1): ?>
       	<?php 
       	$clase='';
-      	 $actual =$BidG2I1['adultos']/$BidG2I1['hectareas']*100; 
+      	 $actual =round($BidG2I1['adultos']/$BidG2I1['hectareas'],4); 
       	 if($anterior ){
       	     if($anterior >$actual){
       	         if($anterior >0 && $actual/$anterior>.3) $clase='rojo';
@@ -113,7 +112,7 @@ var urltofepng  = "'.image_path('bidg2i1',true).'";
           	<td><?php echo $BidG2I1['ye'];?></td>
           	<td><?php echo format_currency($BidG2I1['hectareas'], '');?></td>
           	<td><?php echo $BidG2I1['adultos'];?></td>
-          	<td class="<?php echo $clase ?>"><?php echo format_currency($actual,'%');  ?></td>
+          	<td class="<?php echo $clase ?>"><?php echo format_number($actual );  ?></td>
           </tr>
         <?php $anterior=$actual; endforeach; ?>
       </tbody>

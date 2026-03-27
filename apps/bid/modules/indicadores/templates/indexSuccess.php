@@ -37,7 +37,7 @@
                         <p>
                             <a href="<?php echo url_for('@bid_g2_i1')?>" class="btn btn-default btn-block">Carga de datos</a>
                         </p>
-                        <a href="<?php echo url_for('bidg2i1s/indicador')?>" class="btn btn-primary btn-block">Densidad mínima de individuos maduros / Éxito reproductivo</a>
+                        <a href="<?php echo url_for('bidg2i1s/indicador')?>" class="btn btn-primary btn-block">Densidad mínima de individuos maduros</a>
                         <a href="<?php echo url_for('bidg2i1s/indicador')?>" class="btn btn-primary btn-block">Éxito reproductivo</a>
                     </div>
                 </div>

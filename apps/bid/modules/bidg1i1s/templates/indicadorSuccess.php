@@ -2,15 +2,13 @@
 <?php include_partial('bidg1i1s/assets') ?>
 
 <div class="container-fluid">
-  <h1><?php echo __('Pulpo Colorado Patagónico<br/>Indicador: <i>Status reproductivo en el intermareal rocoso</i>', array(), 'messages') ?></h1>
 
-  <?php include_partial('bidg1i1s/flashes') ?>
-<!-- 
-  <div class="page_header">
-  </div>
- -->
-    
 
+  <h1>Pulpo Colorado Patagónico (Enteroctopus megalocyathus)<br/><small class="text-muted">Indicador: Status reproductivo en el intermareal rocoso</small></h1>
+
+  <p class="lead">
+Mide el status reproductivo de machos y hembras de E. megalocyathus provenientes del ambiente intermareal rocoso del PIMCPA y/o zonas contiguas en dos momentos del año: al comienzo y al fin de la temporada de pesca  </p>
+   
   <div id="bs_admin_content">
 	<div class="row">
 	  
