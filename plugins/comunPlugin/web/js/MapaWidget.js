@@ -86,7 +86,7 @@ $(document).ready(function() {
         view: new ol.View({
               center: ol.proj.fromLonLat([-67.8, -44]),
               zoom: 6.9,
-              maxZoom:22
+              maxZoom:21
           }),
     });
     
@@ -196,7 +196,7 @@ function especificar(){
 			ll=ol.proj.transform([lon, lat], 'EPSG:4326', mapas[id].getView().getProjection());
 			
       vector[id].addFeatures([ wkt.readFeature('POINT( '+ll.join(' ')+' )') ]);
-      mapas[id].getView().fit(vector[id].getExtent(),{ maxZoom:22 });
+      mapas[id].getView().fit(vector[id].getExtent(),{ maxZoom:21 });
 		}
 		
 	}

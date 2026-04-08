@@ -72,8 +72,15 @@
         			<li<?php if($sf_context->getModuleName()=='bidg1i1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bidg1i1s/indicador')?>">Status reproductivo en el intermareal rocoso</a></li>          
         			<li<?php if($sf_context->getModuleName()=='bidg2i1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bidg2i1s/indicador')?>">Densidad mínima de individuos maduros / Éxito reproductivo</a></li>          
         			<li<?php if($sf_context->getModuleName()=='bidg3i1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bidg3i1s/indicador')?>">Índice kilométrico de abundancia</a></li>          
+        			<li<?php if($sf_context->getModuleName()=='bidci1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bid_conteo_indicador_collection', array('action' => 'indicador')) ?>">Abundancia de aves playeras</a></li>          
        	            <li><hr class="dropdown-divider"></li>
         			<li><b>A.N.P.P.V.</b></li>          
+        			<li<?php if($sf_context->getModuleName()=='bidci2s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bid_conteo_indicador_bidci2s_collection', array('action' => 'indicador')) ?>">Abundancia de aves playeras</a></li>          
+        			<li<?php if($sf_context->getModuleName()=='bidg5i1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bidg5i1s/indicador')?>">Producción de crías</a></li>          
+        			<li<?php if($sf_context->getModuleName()=='bidg6i1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bidg6i1s/indicador')?>">Número total de individuos por clase de edad</a></li>          
+        			<li<?php if($sf_context->getModuleName()=='bidci3s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bid_conteo_indicador_bidci3s_collection', array('action' => 'indicador')) ?>">Presencia/ Ausencia de carnívoros</a></li>          
+        			<li<?php if($sf_context->getModuleName()=='bidg8i1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bidg8i1s/indicador')?>">Abundancia de pares madre-cría</a></li>          
+        			<li<?php if($sf_context->getModuleName()=='bidg9i1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bidg9i1s/indicador')?>">Actividad de desove</a></li>          
    	           </ul>
             </li>
             

@@ -12,7 +12,8 @@ class BidEspecieFormFilter extends BaseBidEspecieFormFilter
   public function configure()
   {
       $this->useFields(array(
-          'nombre'
+          'nombre',
+          'nombre_cientifico'
       ));
       
       $this->widgetSchema['indicador']= new sfWidgetFormChoice(array(

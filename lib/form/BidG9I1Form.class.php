@@ -15,6 +15,8 @@ class BidG9I1Form extends BaseBidG9I1Form
       $this->widgetSchema['sitio_id']->setOption('add_empty', true);
       $this->widgetSchema['sitio_id']->setAttribute('class', 's2');
       $this->widgetSchema['sitio_id']->setOption('criteria', BidSitioQuery::create()->filterByAreaProtegida(ProjectConfiguration::ANPPV));
-      
+      $this->validatorSchema['refugios']->setOption('min', 1);
+      $this->validatorSchema['puestas']->setOption('min', 0);
+      $this->mergePostValidator(new BidG9I1FormPostValidator());
   }
 }

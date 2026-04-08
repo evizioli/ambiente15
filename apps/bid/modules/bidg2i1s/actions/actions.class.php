@@ -21,14 +21,6 @@ class bidg2i1sActions extends autoBidg2i1sActions
     
     }
     public function executeIndicador(sfWebRequest $request) {
-        /*
-        
-        
-        ;
-        
-        select sitio_id, ubicacion, max(numero_adultos)mad from bid_g2_i1 group by sitio_id, ubicacion;
-
-         */
         $this->filters = $this->configuration->getFilterForm($this->getFilters());
         if($request->isMethod('post')){
             if ($request->hasParameter('_reset'))

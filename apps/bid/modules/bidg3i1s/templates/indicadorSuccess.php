@@ -23,7 +23,7 @@
     <?php echo $filters->renderGlobalErrors() ?>
   <?php endif; ?>
 
-  <form action="<?php echo url_for('bid_g2_i1_collection', array('action' => 'indicador')) ?>" method="post">
+  <form action="<?php echo url_for('bid_g3_i1_collection', array('action' => 'indicador')) ?>" method="post">
     
     
     <?php foreach ($configuration->getFormFilterFields($filters) as $name => $field): ?>

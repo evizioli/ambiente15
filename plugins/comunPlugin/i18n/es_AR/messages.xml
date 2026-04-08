@@ -295,6 +295,10 @@
             <source>"%value%" must be at most %max%.</source>
             <target>"%value%" debe ser como máximo %max%.</target>
         </trans-unit>
+        <trans-unit id="74">
+            <source>Nombre cientifico</source>
+            <target>Nombre científico</target>
+        </trans-unit>
       
     </body>
   </file>

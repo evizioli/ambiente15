@@ -62,7 +62,7 @@
                         <p>
                             <a href="<?php echo url_for('@bid_conteo_indicador')?>" class="btn btn-default btn-block">Carga de datos</a>
                         </p>
-                        <a href="#" class="btn btn-primary btn-block">Abundancia de aves playeras</a>
+                        <a href="<?php echo url_for('bid_conteo_indicador_collection', array('action' => 'indicador')) ?>" class="btn btn-primary btn-block">Abundancia de aves playeras</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                         <p>
                             <a href="<?php echo url_for('@bid_conteo_indicador_bidci2s')?>" class="btn btn-default btn-block">Carga de datos</a>
                         </p>
-                        <a href="#" class="btn btn-primary btn-block">Abundancia de aves playeras</a>
+                        <a href="<?php echo url_for('bid_conteo_indicador_bidci2s_collection', array('action' => 'indicador')) ?>" class="btn btn-primary btn-block">Abundancia de aves playeras</a>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                         <p>
                             <a href="<?php echo url_for('@bid_g5_i1')?>" class="btn btn-default btn-block">Carga de datos</a>
                         </p>
-                        <a href="#" class="btn btn-primary btn-block">Producción de crías</a>
+                        <a href="<?php echo url_for('bid_g5_i1_collection', array('action' => 'indicador')) ?>" class="btn btn-primary btn-block">Producción de crías</a>
                     </div>
                 </div>
             </div>
@@ -101,8 +101,8 @@
                         <p>
                             <a href="<?php echo url_for('@bid_g6_i1')?>" class="btn btn-default btn-block">Carga de datos</a>
                         </p>
-                        <a href="#" class="btn btn-primary btn-block">Número total de individuos por clase de edad</a>
-                        <a href="#" class="btn btn-primary btn-block">Número de crías nacidas por año</a>
+                        <a href="<?php echo url_for('bid_g6_i1_collection', array('action' => 'indicador')) ?>" class="btn btn-primary btn-block">Número total de individuos por clase de edad</a>
+                        <a href="<?php echo url_for('bid_g6_i1_collection', array('action' => 'indicador')) ?>" class="btn btn-primary btn-block">Número de crías nacidas por año</a>
                     </div>
                 </div>
             </div>
@@ -114,9 +114,9 @@
                         <p>
                             <a href="<?php echo url_for('@bid_conteo_indicador_bidci3s')?>" class="btn btn-default btn-block">Carga de datos</a>
                         </p>
-                        <a href="#" class="btn btn-primary btn-block">Presencia/ausencia de carnívoros</a>
-                        <a href="#" class="btn btn-primary btn-block">Riqueza específica de especies de carnívoros</a>
-                        <a href="#" class="btn btn-primary btn-block">Abundancia relativa de cada especie de carnívoros	</a>
+                        <a href="<?php echo url_for('bid_conteo_indicador_bidci3s_collection', array('action' => 'indicador')) ?>" class="btn btn-primary btn-block">Presencia/ausencia de carnívoros</a>
+                        <a href="<?php echo url_for('bid_conteo_indicador_bidci3s_collection', array('action' => 'indicador')) ?>" class="btn btn-primary btn-block">Riqueza específica de especies de carnívoros</a>
+                        <a href="<?php echo url_for('bid_conteo_indicador_bidci3s_collection', array('action' => 'indicador')) ?>" class="btn btn-primary btn-block">Abundancia relativa de cada especie de carnívoro</a>
                     </div>
                 </div>
             </div>
@@ -128,19 +128,19 @@
                         <p>
                             <a href="<?php echo url_for('@bid_g8_i1')?>" class="btn btn-default btn-block">Carga de datos</a>
                         </p>
-                        <a href="#" class="btn btn-primary btn-block">Abundancia de pares madre-cría</a>
+                        <a href="<?php echo url_for('bid_g8_i1_collection', array('action' => 'indicador')) ?>" class="btn btn-primary btn-block">Abundancia de pares madre-cría</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-4">
                 <div class="panel panel-primary modulo-menu">
-                    <div class="panel-heading">pulpito tehuelche</div>
+                    <div class="panel-heading">PULPITO TEHUELCHE</div>
                     <div class="panel-body text-center">
                         <p>
                             <a href="<?php echo url_for('@bid_g9_i1')?>" class="btn btn-default btn-block">Carga de datos</a>
                         </p>
-                        <a href="#" class="btn btn-primary btn-block">Actividad de desove</a>
+                        <a href="<?php echo url_for('bid_g9_i1_collection', array('action' => 'indicador')) ?>" class="btn btn-primary btn-block">Actividad de desove</a>
                     </div>
                 </div>
             </div>

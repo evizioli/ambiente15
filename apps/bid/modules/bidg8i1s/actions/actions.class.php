@@ -13,4 +13,48 @@ require_once dirname(__FILE__).'/../lib/bidg8i1sGeneratorHelper.class.php';
  */
 class bidg8i1sActions extends autoBidg8i1sActions
 {
+    public function executeIndicador(sfWebRequest $request) {
+        
+        $this->filters = $this->configuration->getFilterForm($this->getFilters());
+        if($request->isMethod('post')){
+            if ($request->hasParameter('_reset'))
+            {
+                $this->setFilters($this->configuration->getFilterDefaults());
+                
+                $this->redirect('bidg8i1s/indicador');
+            }
+            $this->filters = $this->configuration->getFilterForm($this->getFilters());
+            
+            $this->filters->bind($request->getParameter($this->filters->getName()));
+            if ($this->filters->isValid())
+            {
+                $this->setFilters($this->filters->getValues());
+                
+                $this->redirect('bidg8i1s/indicador');
+            }
+            
+        }
+        
+        $query = $this->buildQuery();
+        $query
+        ->select(array(
+            'sitio',
+            'ye',
+            'pares',
+            'crias_huerfanas'
+        ))
+        ->useBidSitioQuery()
+            ->withColumn('nombre','sitio')
+            ->groupByNombre()
+            ->orderByNombre()
+        ->endUse()
+        ->withColumn("date_part('year', fecha )",'ye')
+        ->withColumn('sum(pares)','pares')
+        ->withColumn('sum(crias_huerfanas)','crias_huerfanas')
+        ->groupBy('ye')
+        ->orderBy('ye');
+        
+        $this->resultado= $query->find();
+    }
+    
 }

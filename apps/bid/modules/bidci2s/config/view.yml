@@ -1,0 +1,3 @@
+indicadorSuccess:
+  javascripts: [ ../jquery/jquery.canvasjs.min.js, bidci1indicador.js ]
+  
