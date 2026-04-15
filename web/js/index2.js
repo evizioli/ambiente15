@@ -356,6 +356,7 @@ function lateral(mostrar){
                             }
 
                             break;
+/*
                         case '135':
 //                            aux+='<dt>'+decodeURIComponent(escape(o[x].features[y].properties.get('Nombre')))+'</dt><dd>';
                             aux+='<dt>'+decodeURIComponent(escape(o[x].features[y].properties.Nombre ))+'</dt><dd>';
@@ -365,6 +366,7 @@ function lateral(mostrar){
                             aux+=decodeURIComponent(escape(o.ANP.features[y].properties.Num_Ley )).replace(/(?:\r\n|\r|\n)/g, '<br>');
                             aux+='</dd>';
                             break;
+*/
                         default:
                             if(o[x].features[y] instanceof ol.Feature){
                                 aux+='<dt>'+o[x].features[y].get('nombre')+'</dt><dd>';

@@ -70,133 +70,261 @@ class Muestra extends BaseMuestra {
         return $this->da5;
     }
     
-    
-    public function postDelete(PropelPDO $con = null)
+    /*
+     public function postDelete(PropelPDO $con = null)
+     {
+     parent::postDelete($con);
+     $body ='Este es un mensaje automático para informar que la muestra n° '.$this->getNumero().
+     ' (protocolo '.$this->getProtocoloYe().') ha sido eliminada de la base de datos por el usuario '.
+     sfContext::getInstance()->getUser()->getNombre().
+     ' el día '.date('d/m/Y').' a las '.date('H:i');
+     
+     $this->notificar( 'Muestra ELIMINADA', $body);
+     }
+     
+     public function postUpdate(PropelPDO $con = null)
+     {
+     parent::postUpdate($con);
+     $body ='Este es un mensaje automático para informar que la muestra n° '.$this->getNumero().
+     ' (protocolo '.$this->getProtocoloYe().') ha sido modificada en la base de datos por el usuario '.
+     sfContext::getInstance()->getUser()->getNombre().
+     ' el día '.date('d/m/Y').' a las '.date('H:i');
+     
+     $this->notificar( 'Muestra MODIFICADA', $body);
+     }
+     
+     public function postInsert(PropelPDO $con = null)
+     {
+     parent::postInsert($con);
+     $body =sprintf('Este mensaje automático es para informarle que la muestra N° %d (protocolo %s) que corresponde al sitio %s ha sido ingresada en la base de datos del SPIA el día %s a las %s por el usuario %s',
+     $this->getNumero(),
+     $this->getProtocoloYe(),
+     $this->getLugarExtraccion(),
+     date('d/m/Y'),
+     date('H:i'),
+     sfContext::getInstance()->getUser()->getNombre()
+     );
+     $this->notificar( 'Muestra AGREGADA', $body);
+     }
+     */
+    protected function doSave(PropelPDO $con)
     {
-        parent::postDelete($con);
-        $body ='Este es un mensaje automático para informar que la muestra n° '.$this->getNumero().
-        ' (protocolo '.$this->getProtocoloYe().') ha sido eliminada de la base de datos por el usuario '.
-        sfContext::getInstance()->getUser()->getNombre().
-        ' el día '.date('d/m/Y').' a las '.date('H:i');
-        
-        $this->notificar( 'Muestra ELIMINADA', $body);
-    }
-    
-    public function postUpdate(PropelPDO $con = null) 
-    { 
-        parent::postUpdate($con);
-        $body ='Este es un mensaje automático para informar que la muestra n° '.$this->getNumero().
-        ' (protocolo '.$this->getProtocoloYe().') ha sido modificada en la base de datos por el usuario '.
-        sfContext::getInstance()->getUser()->getNombre().
-        ' el día '.date('d/m/Y').' a las '.date('H:i');
-        
-        $this->notificar( 'Muestra MODIFICADA', $body);
-    }
-    
-    public function postInsert(PropelPDO $con = null)
-    {
-        parent::postInsert($con);
-        $body ='Este es un mensaje automático para informar que la muestra n° '.$this->getNumero().
-        ' (protocolo '.$this->getProtocoloYe().') ha sido insertada en la base de datos por el usuario '.
-        sfContext::getInstance()->getUser()->getNombre().
-        ' el día '.date('d/m/Y').' a las '.date('H:i');
-        
-        $this->notificar( 'Muestra AGREGADA', $body);
-    }
-    
-    public function postSave(PropelPDO $con = null) { 
-        parent::postSave($con);
-        if($this->getAlerta()){
-            
-            $mailer=sfContext::getInstance()->getMailer();
-            
-            $emails = array();
-            $estos= UsuarioQuery::create()->useUsuarioGrupoQuery()->filterByGrupoId(GrupoPeer::ALERTAR)->endUse()->find();
-            foreach($estos as $u){
-                $emails[$u->getEmail()]=$u->getNombre();
-            }
-            $body=sprintf('Este es un mensaje automático para informar que la muestra n° %d (protocolo %d) tiene una ALERTA informada en la base de datos por el usuario %s el día %s a las %s. Lugar de la muestra: %s',
-                $this->getNumero(),
-                $this->getProtocoloYe(),
-                sfContext::getInstance()->getUser()->getNombre(),
-                date('d/m/Y'),
-                date('H:i'),
-                $this->getLugarExtraccion()
-            );
-            $m = $mailer->compose(
-                ProjectConfiguration::EMAIL,
-                $emails,
-                'Alerta de muestra - '.ProjectConfiguration::NOMBRE_ENTIDAD,
-                $body
-                );
-            $m->addPart( nl2br( htmlentities( $body )), 'text/html' );
+        if ($this->isNew() ) {
+            if(!sfContext::getInstance()->getUser()->hasCredential(CredencialPeer::MUESTRA_NOTIFICAR)){
                 
-            try {
-                $mailer->send($m);
-            } catch (Exception $e) {
+                $mailer=sfContext::getInstance()->getMailer();
+                
+                $emails = array();
+                foreach(UsuarioQuery::create()->usuariosConCredencial(CredencialPeer::MUESTRA_NOTIFICAR) as $u){
+                    $emails[$u->getEmail()]=$u->getNombre();
+                }
+                $body =sprintf('Este mensaje automático es para informarle que la muestra N° %d (protocolo %s) que corresponde al sitio %s ha sido ingresada en la base de datos del SPIA el día %s a las %s por el usuario %s',
+                    $this->getNumero(),
+                    $this->getProtocoloYe(),
+                    $this->getLugarExtraccion(),
+                    date('d/m/Y'),
+                    date('H:i'),
+                    sfContext::getInstance()->getUser()->getNombre()
+                    );
+                $m = $mailer->compose(
+                    ProjectConfiguration::EMAIL,
+                    $emails,
+                    'Carca de nueva muestra',
+                    $body
+                    );
+                $m->addPart( nl2br( htmlentities( $body )), 'text/html' );
+                
+                try {
+                    $mailer->send($m);
+                } catch (Exception $e) {
+                    sfContext::getInstance()->getLogger()->err($e);
+                }
+            }
+        } else {
+            if($this->getMostrar()){
+                $mailer=sfContext::getInstance()->getMailer();
+                $emails = array();
+                $u=UsuarioQuery::create()->findPk($this->getCreatedBy());
+                $emails[$u->getEmail()]=$u->getNombre();
+                $emails[$u->getEmail()]=$u->getNombre();
+                $q=sprintf('SELECT usuario.nombre, usuario.email
+                    FROM grupo_tipo
+                    inner join usuario_grupo on grupo_tipo.grupo_id= usuario_grupo.grupo_id
+                    inner join grupo_localidad on grupo_localidad.grupo_id = grupo_tipo.grupo_id
+                    inner join usuario on usuario.id=usuario_grupo.usuario_id
+                    where tipo_id=%d
+                        and grupo_localidad.localidad_id=%d
+                        and usuario.id != %d
+                        ', $this->getTipoId(),
+                    $this->getLugarExtraccion()->getLocalidadId(),
+                    $this->getCreatedBy()
+                    );
+                $rs=Propel::getConnection()->query($q);
+                while ( $r=$rs->fetch(PDO::FETCH_ASSOC)){
+                    $emails[$r['email']]=$r['nombre'];
+                }
+                if($this->getAlerta()){
+                    $body=sprintf('Este mensaje automático es para informarle que el dia %s a las %s se agregó la muestra N° %d (protocolo %d) que corresponde al sitio %s y contiene una ALERTA indicando que alguno de los parámetros analizados superan un nivel guía establecido por normativa ambiental vigente',
+                        date('d/m/Y'),
+                        date('H:i'),
+                        $this->getNumero(),
+                        $this->getProtocoloYe(),
+                        $this->getLugarExtraccion()
+                        );
+                    $asunto='Alerta muestra SAyCDS - SPIA';
+                } else {
+                    $body=sprintf('Este mensaje automático es para informarle que la muestra N° %d (protocolo %d) que corresponde al sitio %s ha sido ingresada en la base de datos del SPIA en día %s as las %s',
+                        $this->getNumero(),
+                        $this->getProtocoloYe(),
+                        $this->getLugarExtraccion(),
+                        date('d/m/Y'),
+                        date('H:i')
+                        );
+                    $asunto='Nueva muestra agregada al SPIA';
+                }
+                $m = $mailer->compose(
+                    ProjectConfiguration::EMAIL,
+                    $emails,
+                    $asunto,
+                    $body
+                    );
+                $m->addPart( nl2br( htmlentities( $body )), 'text/html' );
+                
+                try {
+                    $mailer->send($m);
+                } catch (Exception $e) {
+                }
+                
             }
         }
+        /*
+         if(in_array(MuestraPeer::ALERTA, $this->getModifiedColumns()) ){
+         
+         $mailer=sfContext::getInstance()->getMailer();
+         
+         $emails = array();
+         //             $estos= UsuarioQuery::create()->useUsuarioGrupoQuery()->filterByGrupoId(GrupoPeer::ALERTAR)->endUse()->find();
+         $estos= UsuarioQuery::create()->usuariosConCredencial(CredencialPeer::MUESTRA_ALERTAR);
+         foreach($estos as $u){
+         if(!$u->esMunicipio() || UsuarioQuery::create()->filterByLocalidadId($this->getLugarExtraccion()->getLocalidadId())->count()>0){
+         $emails[$u->getEmail()]=$u->getNombre();
+         }
+         }
+         $body=sprintf('Este mensaje automático es para informarle que la muestra N° %d (protocolo %d) que corresponde al sitio %s contiene una ALERTA indicando que alguno de los parámetros analizados superan un nivel guía establecido por normativa ambiental vigente.<br>Saludos Maite',
+         $this->getNumero(),
+         $this->getProtocoloYe(),
+         $this->getLugarExtraccion()
+         );
+         $m = $mailer->compose(
+         ProjectConfiguration::EMAIL,
+         $emails,
+         'Alerta muestra SAyCDS - SPIA',
+         $body
+         );
+         $m->addPart( nl2br( htmlentities( $body )), 'text/html' );
+         
+         try {
+         $mailer->send($m);
+         } catch (Exception $e) {
+         }
+         }
+         if(in_array(MuestraPeer::MOSTRAR, $this->getModifiedColumns()) && $this->getMostrar() ){
+         
+         $mailer=sfContext::getInstance()->getMailer();
+         
+         $emails = array();
+         //             $estos= UsuarioQuery::create()->useUsuarioGrupoQuery()->filterByGrupoId(GrupoPeer::ALERTAR)->endUse()->find();
+         $estos= UsuarioQuery::create()->usuariosConCredencial(CredencialPeer::MUESTRA_VISIBLE);
+         foreach($estos as $u){
+         if(!$u->esMunicipio() || UsuarioQuery::create()->filterByLocalidadId($this->getLugarExtraccion()->getLocalidadId())->count()>0){
+         $emails[$u->getEmail()]=$u->getNombre();
+         }
+         }
+         $body=sprintf('Este mensaje automático es para informarle que la muestra N° %d (protocolo %d) que corresponde al sitio %s ha sido ingresada en la base de datos del SPIA el día %s a las %s.',
+         $this->getNumero(),
+         $this->getProtocoloYe(),
+         $this->getLugarExtraccion(),
+         date('d/m/Y'),
+         date('H:i')
+         );
+         $m = $mailer->compose(
+         ProjectConfiguration::EMAIL,
+         $emails,
+         'muestra agregada SAyCDS - SPIA',
+         $body
+         );
+         $m->addPart( nl2br( htmlentities( $body )), 'text/html' );
+         
+         try {
+         $mailer->send($m);
+         } catch (Exception $e) {
+         }
+         }
+         */
+        parent::doSave($con);
     }
     
-    protected function notificar( $subject, $body)
-    {
-        $mailer=sfContext::getInstance()->getMailer();
-        
-        $emails = array();
-        $estos= UsuarioQuery::create()->useUsuarioGrupoQuery()->filterByGrupoId(GrupoPeer::NOTIFICAR)->endUse()->find();
-        foreach($estos as $u){
-            $emails[$u->getEmail()]=$u->getNombre();
-        }
-
-        
-        $m = $mailer->compose(
-            ProjectConfiguration::EMAIL,
-            $emails,
-            $subject.'- '.ProjectConfiguration::NOMBRE_ENTIDAD,
-            $body
-            );
-        $m->addPart( nl2br( htmlentities( $body )), 'text/html' );
-            
-        try {
-            $mailer->send($m);
-        } catch (Exception $e) {
-        }
-//             US
-//--------------------
-//              and them
-        
-        $emails = array();
-        $estos= UsuarioQuery::create()
-        ->useUsuarioGrupoQuery()
-            ->useGrupoQuery()
-                ->useGrupoLocalidadQuery()
-                ->filterByLocalidadId($this->getLugarExtraccion()?$this->getLugarExtraccion()->getLocalidadId() :null)
-                ->endUse()
-            ->endUse()
-        ->endUse()
-        ->groupById()
-        ->find();
-        
-        foreach ($estos as $u){
-            $emails[$u->getEmail()]=$u->getNombre();
-        }
-        
-        $body2="La Dirección de Ry SIA le informa que ha sido actualizada la base del Sist Prov de Información Ambiental con nuevos datos pertenecientes a su ejido.";        
-        $m = $mailer->compose(
-            ProjectConfiguration::EMAIL,
-            $emails,
-            $subject.'- '.ProjectConfiguration::NOMBRE_ENTIDAD,
-            $body2
-            );
-        $m->addPart( nl2br( htmlentities( $body2 )), 'text/html' );
-            
-        try {
-            $mailer->send($m);
-        } catch (Exception $e) {
-        }
-        
-    }
-    
+    /*
+     protected function notificar( $subject, $body)
+     {
+     $mailer=sfContext::getInstance()->getMailer();
+     
+     $emails = array();
+     //         $estos= UsuarioQuery::create()->useUsuarioGrupoQuery()->filterByGrupoId(GrupoPeer::NOTIFICAR)->endUse()->find();
+     $estos= UsuarioQuery::create()->usuariosConCredencial(CredencialPeer::MUESTRA_NOTIFICAR);
+     foreach($estos as $u){
+     $emails[$u->getEmail()]=$u->getNombre();
+     }
+     
+     
+     $m = $mailer->compose(
+     ProjectConfiguration::EMAIL,
+     $emails,
+     $subject.'- '.ProjectConfiguration::NOMBRE_ENTIDAD,
+     $body
+     );
+     $m->addPart( nl2br( htmlentities( $body )), 'text/html' );
+     
+     try {
+     $mailer->send($m);
+     } catch (Exception $e) {
+     }
+     //             US
+     //--------------------
+     //              and them
+     
+     $emails = array();
+     $estos= UsuarioQuery::create()
+     ->useUsuarioGrupoQuery()
+     ->useGrupoQuery()
+     ->useGrupoLocalidadQuery()
+     ->filterByLocalidadId($this->getLugarExtraccion()?$this->getLugarExtraccion()->getLocalidadId() :null)
+     ->endUse()
+     ->endUse()
+     ->endUse()
+     ->groupById()
+     ->find();
+     
+     foreach ($estos as $u){
+     $emails[$u->getEmail()]=$u->getNombre();
+     }
+     
+     $body2="La Dirección de Ry SIA le informa que ha sido actualizada la base del Sist Prov de Información Ambiental con nuevos datos pertenecientes a su ejido.";
+     $m = $mailer->compose(
+     ProjectConfiguration::EMAIL,
+     $emails,
+     $subject.'- '.ProjectConfiguration::NOMBRE_ENTIDAD,
+     $body2
+     );
+     $m->addPart( nl2br( htmlentities( $body2 )), 'text/html' );
+     
+     try {
+     $mailer->send($m);
+     } catch (Exception $e) {
+     }
+     
+     }
+     */
     public function getProtocoloYe()
     {
         return $this->protocolo.'/'.$this->ye;
