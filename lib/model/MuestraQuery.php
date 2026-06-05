@@ -36,9 +36,9 @@ class MuestraQuery extends BaseMuestraQuery {
             if(count($tipos)>0){
                 $this->filterByTipoId($tipos,Criteria::IN);
             }
-//             if(!sfContext::getInstance()->getUser()->hasCredential('muestra_ver_todas')){
-//                 $this->filterByMostrar(true);
-//             }
+            if(!sfContext::getInstance()->getUser()->hasCredential('muestra_ver_todas')){
+                $this->filterByMostrar(true);
+            }
         }
     }
     

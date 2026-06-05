@@ -18,4 +18,20 @@ class indicadoresActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
   }
+  
+  public function executeMapa(sfWebRequest $request)
+  {
+      
+  }
+  
+  public function executeKml(sfWebRequest $request)
+  {
+      
+      if($kmlOutput = file_get_contents(ProjectConfiguration::guessRootDir().'/data/'.$request->getParameter('nombre').'.kml') ){ 
+        $this->getResponse()->setHttpHeader('Content-type','application/vnd.google-earth.kml+xml');
+        return $this->renderText( $kmlOutput );
+      }
+      $this->forward404();
+  }
+  
 }

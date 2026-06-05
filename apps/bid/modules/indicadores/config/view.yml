@@ -1,3 +1,13 @@
 indexSuccess:
   stylesheets: 
     - bid_indicadores_index
+
+mapaSuccess:
+  stylesheets: 
+    - ../ol/ol.css
+    - bid_mapaSuccess
+  javascripts: 
+    - ../ol/ol.js
+    - ../ol/ol-layerswitcher.js
+    - bid_mapaSuccess
+  
