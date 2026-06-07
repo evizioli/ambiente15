@@ -34,8 +34,33 @@ const styles = [
     */
   }),
 ];
-
-
+const estiloTexto= function(feature){
+  return   new ol.style.Text({ 
+              font: '10px Calibri,sans-serif', 
+              overflow:true,
+              text: feature.get('name'),
+              fill: new ol.style.Fill({
+                    color: '#000',
+                  }),
+                  stroke: new ol.style.Stroke({
+                    color: '#fff',
+                    width: 4,
+                  }) 
+            });
+};
+const funPol =function(feature){ 
+    return new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: 'yellow',
+          lineDash: [4],
+          width: 3,
+        }),
+        fill: new ol.style.Fill({
+          color: 'rgba(255, 255, 0, 0.1)',
+        }),
+        text: estiloTexto(feature) 
+      });  
+  };
 
 const image = new ol.style.Circle({
   radius: 5,
@@ -71,16 +96,7 @@ const styles2 = {
       color: 'rgba(255, 255, 0, 0.1)',
     }),
   }),
-  'Polygon': new ol.style.Style({
-    stroke: new ol.style.Stroke({
-      color: 'yellow',
-      lineDash: [4],
-      width: 3,
-    }),
-    fill: new ol.style.Fill({
-      color: 'rgba(255, 255, 0, 0.1)',
-    }),
-  }),
+  'Polygon': funPol,
   'GeometryCollection': new ol.style.Style({
     stroke: new ol.style.Stroke({
       color: 'magenta',
@@ -109,7 +125,17 @@ const styles2 = {
 };
 
 const styleFunction = function (feature) {
-  return styles2[feature.getGeometry().getType()];
+//  return styles2[feature.getGeometry().getType()];
+  const type = feature.getGeometry().getType();
+    const estiloOFuncion = styles2[type];
+
+    // Si lo que devuelve el diccionario es una función (como en el caso de Polygon)
+    if (typeof estiloOFuncion === 'function') {
+      return estiloOFuncion(feature); // La ejecutamos pasándole el feature actual
+    }
+    
+    // Si es un estilo normal (Point, LineString, etc.), lo devolvemos directo
+    return estiloOFuncion; 
 };
 
 $(document).ready(  function() {
