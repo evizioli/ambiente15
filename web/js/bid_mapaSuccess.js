@@ -36,6 +36,8 @@ const styles = [
 ];
 const estiloTexto= function(feature){
   return   new ol.style.Text({ 
+    offsetY: 3,
+
               font: '10px Calibri,sans-serif', 
               overflow:true,
               text: feature.get('name'),
@@ -61,6 +63,25 @@ const funPol =function(feature){
         text: estiloTexto(feature) 
       });  
   };
+const funPoint =function(feature){ 
+    return   new ol.style.Style({
+      image: image,
+      text: estiloTexto(feature)
+    });
+    /*
+    return  new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: 'yellow',
+          lineDash: [4],
+          width: 3,
+        }),
+        fill: new ol.style.Fill({
+          color: 'rgba(255, 255, 0, 0.1)',
+        }),
+        text: estiloTexto(feature) 
+      });  
+      */
+  };
 
 const image = new ol.style.Circle({
   radius: 5,
@@ -69,9 +90,7 @@ const image = new ol.style.Circle({
 });
 
 const styles2 = {
-  'Point': new ol.style.Style({
-    image: image,
-  }),
+  'Point': funPoint,
   'LineString': new ol.style.Style({
     stroke: new ol.style.Stroke({
       color: 'green',

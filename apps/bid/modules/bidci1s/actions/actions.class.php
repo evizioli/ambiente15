@@ -35,7 +35,8 @@ class bidci1sActions extends autoBidci1sActions
             }
             
         }
-        $query = $this->buildQuery();
+//         $query = $this->buildQuery()->ci1();
+        /*
         $query 
         ->select(array(
               'q','m','y',
@@ -60,11 +61,10 @@ class bidci1sActions extends autoBidci1sActions
         ->orderBy('m')
         ->orderBy('q')
          ;
-          
-        
-        $qc= clone $query;
-        $this->resultado=$query->find();
-        $this->total = $qc->count();
+          */
+//         $qc= clone $query;
+//         $this->resultado=$query->find();
+//         $this->total = $qc->count();
     }
     
 }
