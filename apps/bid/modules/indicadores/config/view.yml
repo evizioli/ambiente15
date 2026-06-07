@@ -1,7 +1,8 @@
 indexSuccess:
   stylesheets: 
     - bid_indicadores_index
-
+dataSuccess:
+  has_layout: false
 mapaSuccess:
   stylesheets: 
     - ../ol/ol.css

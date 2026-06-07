@@ -19,4 +19,15 @@
  */
 class BidG1I1Query extends BaseBidG1I1Query {
 
+    public function indicadorActividadPesquera()
+    {
+        return $this->where('actividad_pesquera and  extract(month from fecha) in (12, 1, 2)')->count() > 0;
+    }
+    
+    public function indicadorHembrasDesoveIntermareal() {
+        return $this->filterByAmbiente('i')->filterBySexo('h')->filterByMadurez('d')->count() > 0;
+    }
+    public function indicadorGrupos() {
+        return $this->select(array('sexo_madurez','s'))->groupBySexo()->groupByMadurez()->withColumn('sexo||madurez','sexo_madurez')->withColumn('count(*)','s');
+    }
 } // BidG1I1Query

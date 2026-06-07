@@ -41,12 +41,12 @@ class bidg1i1sActions extends autoBidg1i1sActions
         }
         $query = $this->buildQuery();
         $qcl= clone $query;
-        $this->actividad_pesquera  =$qcl->where('actividad_pesquera and  extract(month from fecha) in (12, 1, 2)')->count() > 0;
+        $this->actividad_pesquera  =$qcl->indicadorActividadPesquera();
         
         $qcl= clone $query;
-        $this->hembras_desove_intermareal =$qcl->filterByAmbiente('i')->filterBySexo('h')->filterByMadurez('d')->count() > 0;
+        $this->hembras_desove_intermareal =$qcl->indicadorHembrasDesoveIntermareal();
         
         $this->total = $query->count();
-        $this->grupos=$query->select(array('sexo_madurez','s'))->groupBySexo()->groupByMadurez()->withColumn('sexo||madurez','sexo_madurez')->withColumn('count(*)','s')->find();
+        $this->grupos=$query->indicadorGrupos()->find();
     }
 }

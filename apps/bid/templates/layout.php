@@ -65,7 +65,7 @@
             </li>
             
 
-           <li class="dropdown<?php if(  $sf_context->getModuleName()=='indicadores' && $sf_context->getActionName()!='index'):?> active<?php endif ?>">
+           <li class="dropdown<?php if(  $sf_context->getModuleName()=='indicadores' && $sf_context->getActionName()!='index' && $sf_context->getActionName()!='mapa'):?> active<?php endif ?>">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Indicadores<span class="caret"></span></a>
               <ul class="dropdown-menu">
         			<li><b>P.I.M.C.P.A.</b></li>          
@@ -83,7 +83,11 @@
         			<li<?php if($sf_context->getModuleName()=='bidg9i1s' && $sf_context->getActionName()=='indicador' ):?> class="active"<?php endif ?>><a href="<?php echo url_for('bidg9i1s/indicador')?>">Actividad de desove</a></li>          
    	           </ul>
             </li>
-            
+            <li<?php if($sf_context->getModuleName()=='indicadores' && $sf_context->getActionName()=='mapa' ):?> class="active"<?php endif ?>>
+			  <a href="<?php echo url_for('indicadores/mapa')?>" title="Mapa">
+			    Mapa
+			  </a>
+			</li>
 
           </ul>
           

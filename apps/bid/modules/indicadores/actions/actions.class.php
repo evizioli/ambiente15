@@ -21,7 +21,17 @@ class indicadoresActions extends sfActions
   
   public function executeMapa(sfWebRequest $request)
   {
+  }
+  
+  
+  public function executeData(sfWebRequest $request)
+  {
+      sfConfig::set('sf_web_debug', false);
       
+      
+      $f=$this->getUser()->getAttribute('data',array('desde'=>null,'hasta'=>null));
+      $this->desde=$f['desde'];
+      $this->hasta=$f['hasta'];
   }
   
   public function executeKml(sfWebRequest $request)

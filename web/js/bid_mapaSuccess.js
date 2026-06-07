@@ -1,4 +1,5 @@
 var anppv,pimcpa;
+var sAnppv,sPimcpa;
 
 const styles = [
   /* We are using two different styles for the polygons:
@@ -34,18 +35,105 @@ const styles = [
   }),
 ];
 
+
+
+const image = new ol.style.Circle({
+  radius: 5,
+  fill: null,
+  stroke: new ol.style.Stroke({color: 'red', width: 1}),
+});
+
+const styles2 = {
+  'Point': new ol.style.Style({
+    image: image,
+  }),
+  'LineString': new ol.style.Style({
+    stroke: new ol.style.Stroke({
+      color: 'green',
+      width: 1,
+    }),
+  }),
+  'MultiLineString': new ol.style.Style({
+    stroke: new ol.style.Stroke({
+      color: 'green',
+      width: 1,
+    }),
+  }),
+  'MultiPoint': new ol.style.Style({
+    image: image,
+  }),
+  'MultiPolygon': new ol.style.Style({
+    stroke: new ol.style.Stroke({
+      color: 'yellow',
+      width: 1,
+    }),
+    fill: new ol.style.Fill({
+      color: 'rgba(255, 255, 0, 0.1)',
+    }),
+  }),
+  'Polygon': new ol.style.Style({
+    stroke: new ol.style.Stroke({
+      color: 'yellow',
+      lineDash: [4],
+      width: 3,
+    }),
+    fill: new ol.style.Fill({
+      color: 'rgba(255, 255, 0, 0.1)',
+    }),
+  }),
+  'GeometryCollection': new ol.style.Style({
+    stroke: new ol.style.Stroke({
+      color: 'magenta',
+      width: 2,
+    }),
+    fill: new ol.style.Fill({
+      color: 'magenta',
+    }),
+    image: new ol.style.Circle({
+      radius: 10,
+      fill: null,
+      stroke: new ol.style.Stroke({
+        color: 'magenta',
+      }),
+    }),
+  }),
+  'Circle': new ol.style.Style({
+    stroke: new ol.style.Stroke({
+      color: 'red',
+      width: 2,
+    }),
+    fill: new ol.style.Fill({
+      color: 'rgba(255,0,0,0.2)',
+    }),
+  }),
+};
+
+const styleFunction = function (feature) {
+  return styles2[feature.getGeometry().getType()];
+};
+
 $(document).ready(  function() {
 
-      pimcpa  =   new ol.source.Vector({
-        url: urltoanppv+"?nombre=PIMCPA",
-        format: new ol.format.KML( { extractStyles: false } ),
-      });
+  pimcpa  =   new ol.source.Vector({
+    url: urltoKml+"?nombre=PIMCPA",
+    format: new ol.format.KML( { extractStyles: false } ),
+  });
 
-      anppv=   new ol.source.Vector({
-        url: urltoanppv+"?nombre=ANPPV",
-        format: new ol.format.KML( { extractStyles: false } ),
-      });
-      
+  anppv=   new ol.source.Vector({
+    url: urltoKml+"?nombre=ANPPV",
+    format: new ol.format.KML( { extractStyles: false } ),
+  });
+
+  sPimcpa  =   new ol.source.Vector({
+    url: urltoGml+"?area_protegida=PIMCPA",
+    format: new ol.format.GeoJSON(  ),
+  });
+
+  sAnppv=   new ol.source.Vector({
+    url: urltoGml+"?area_protegida=ANPPV",
+    format: new ol.format.GeoJSON(  ),
+  });
+
 /*      
       anppv.on('featuresloadend', function() {
         map.getView().fit( anppv.getExtent(), { padding: [10, 10, 10, 10] });
@@ -58,9 +146,6 @@ $(document).ready(  function() {
         mapPIMCPA.getView().fit( pimcpa.getExtent(), { padding: [10, 10, 10, 10] });
       });
       
-    source2=  new ol.source.Vector({
-    format: new ol.format.GML(),
-  });
   mapPIMCPA = new ol.Map({
         target: 'PIMCPA',
         controls: ol.control.defaults({ attributionOptions: { collapsible: false } }),
@@ -74,35 +159,18 @@ $(document).ready(  function() {
                })
           }),
           new ol.layer.Vector({
-                  type: 'base',
-                  visible: true,
-                  title: '',
-                  source: pimcpa,
-                  style: styles,
-                }),
-
-          
-                          /*  
+            type: 'base',
+            visible: true,
+            title: '',
+            source: pimcpa,
+            style: styles,
+          }),
           new ol.layer.Vector({
-                          title: '',
-                          source: source2,
-                          style: function(feature ){
-                              
-                              let size = feature.get('features').length;
-                  
-                              return new ol.style.Style({
-                                  image:  new ol.style.Icon({
-              //                                size: [36,30],
-                                              scale:  (1+size/100)*0.4,
-                          //                    crossOrigin: 'anonymous',
-//                                              src: urltofepng.replace('*','le')
-                                              src: urltofepng
-                                          }),
-                                  text: new ol.style.Text({ text: size>1? size.toString():'' })
-                              });
-                          }
-                      })
-                          */
+              title: '',
+              source: sPimcpa,                          
+              style: styleFunction,
+              visible: true
+          })
           
         ],
         view: new ol.View({
@@ -111,6 +179,30 @@ $(document).ready(  function() {
         })
     });
 
+      mapPIMCPA.on('singleclick', function (evt) {
+        const coordinate = evt.coordinate;
+        var mostrar='';
+        tipos={};
+        para_propietarios=[];
+        $.each(this.getFeaturesAtPixel(evt.pixel,{ hitTolerance: 3 }), function(i,e){
+
+          $.ajax({
+            url: urltoData,
+            dataType : "html",
+            data: { 
+              sitio_id: e.getId(), 
+              area: "PIMCPA"
+            },
+            
+          }).done(function( data, textStatus, jqXHR ) {
+            $( "#data-pimcpa" ).html( data );
+          });
+
+        });
+      });
+      
+
+    
     mapANPPV = new ol.Map({
             target: 'ANPPV',
             controls: ol.control.defaults({ attributionOptions: { collapsible: false } }),
@@ -132,27 +224,12 @@ $(document).ready(  function() {
                     }),
 
               
-                              /*  
               new ol.layer.Vector({
-                              title: '',
-                              source: source2,
-                              style: function(feature ){
-                                  
-                                  let size = feature.get('features').length;
-                      
-                                  return new ol.style.Style({
-                                      image:  new ol.style.Icon({
-                  //                                size: [36,30],
-                                                  scale:  (1+size/100)*0.4,
-                              //                    crossOrigin: 'anonymous',
-    //                                              src: urltofepng.replace('*','le')
-                                                  src: urltofepng
-                                              }),
-                                      text: new ol.style.Text({ text: size>1? size.toString():'' })
-                                  });
-                              }
-                          })
-                              */
+                title: '',
+                source: sAnppv                ,                          
+                style: styleFunction,                         
+                visible: true
+              })
               
             ],
             view: new ol.View({
