@@ -25,13 +25,6 @@ const styles = [
         color: 'orange',
       }),
     }),
-/*
-        geometry: function (feature) {
-      // return the coordinates of the first ring of the polygon
-      const coordinates = feature.getGeometry().getCoordinates()[0];
-      return new  ol.style.MultiPoint(coordinates);
-    },
-    */
   }),
 ];
 const estiloTexto= function(feature){
@@ -68,19 +61,6 @@ const funPoint =function(feature){
       image: image,
       text: estiloTexto(feature)
     });
-    /*
-    return  new ol.style.Style({
-        stroke: new ol.style.Stroke({
-          color: 'yellow',
-          lineDash: [4],
-          width: 3,
-        }),
-        fill: new ol.style.Fill({
-          color: 'rgba(255, 255, 0, 0.1)',
-        }),
-        text: estiloTexto(feature) 
-      });  
-      */
   };
 
 const image = new ol.style.Circle({
@@ -94,13 +74,13 @@ const styles2 = {
   'LineString': new ol.style.Style({
     stroke: new ol.style.Stroke({
       color: 'green',
-      width: 1,
+      width: 5,
     }),
   }),
   'MultiLineString': new ol.style.Style({
     stroke: new ol.style.Stroke({
       color: 'green',
-      width: 1,
+      width: 5,
     }),
   }),
   'MultiPoint': new ol.style.Style({
@@ -224,27 +204,27 @@ $(document).ready(  function() {
         })
     });
 
-      mapPIMCPA.on('singleclick', function (evt) {
-        const coordinate = evt.coordinate;
-        var mostrar='';
-        tipos={};
-        para_propietarios=[];
-        $.each(this.getFeaturesAtPixel(evt.pixel,{ hitTolerance: 3 }), function(i,e){
-
-          $.ajax({
-            url: urltoData,
-            dataType : "html",
-            data: { 
-              sitio_id: e.getId(), 
-              area: "PIMCPA"
-            },
-            
-          }).done(function( data, textStatus, jqXHR ) {
-            $( "#data-pimcpa" ).html( data );
-          });
+    mapPIMCPA.on('singleclick', function (evt) {
+        $( "#data-pimcpa" ).html( '' );
+        $.each(this.getFeaturesAtPixel(evt.pixel,{ hitTolerance: 3,             layerFilter: function (layer) {
+              // Only return true for layers that are NOT base layers
+              return layer.get('type') !='base';
+            } }), function(i,e){
+            $( "#data-pimcpa" ).append( '<hr><b>Sitio: '+e.get('name')+'</b><p>' );
+                
+            $.ajax({
+                url: urltoData,
+                dataType : "html",
+                data: { 
+                  sitio_id: e.getId(), 
+                },
+                
+            }).done(function( data, textStatus, jqXHR ) {
+                $( "#data-pimcpa" ).append( data+'</p>' );
+            });
 
         });
-      });
+    });
       
 
     
@@ -282,5 +262,29 @@ $(document).ready(  function() {
               zoom: 6
             })
         });
+
+        mapANPPV.on('singleclick', function (evt) {
+            $( "#data-anppv" ).html( '' );
+            $.each(this.getFeaturesAtPixel(evt.pixel,{ hitTolerance: 3,             layerFilter: function (layer) {
+                  // Only return true for layers that are NOT base layers
+                  return layer.get('type') !='base';
+                } }), function(i,e){
+                $( "#data-anppv" ).append( '<hr><b>Sitio: '+e.get('name')+'</b><p>' );
+                    
+                $.ajax({
+                    url: urltoData,
+                    dataType : "html",
+                    data: { 
+                      sitio_id: e.getId(), 
+                    },
+                    
+                }).done(function( data, textStatus, jqXHR ) {
+                    $( "#data-anppv" ).append( data+'</p>' );
+                });
+
+            });
+        });
+          
+
 });
 

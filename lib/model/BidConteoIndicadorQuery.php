@@ -36,6 +36,42 @@ class BidConteoIndicadorQuery extends BaseBidConteoIndicadorQuery {
     public function soloMamiferosCarnivoros() {
         return $this->filterByIndicador(BidConteoIndicadorPeer::MAMIFEROS_CARNIVOROS);
     }
+    
+    
+    public function ci3()
+    {
+        
+        return $this->soloMamiferosCarnivoros()
+            ->select(array( 'ye','crias'))->withColumn("date_part('year', fecha )",'ye')->groupBy('ye')->orderBy('ye')->withColumn('sum(crias_destetadas)','crias');
+    }
+    
+    public function ci2()
+    {
+        return $this->soloAvesPlayerasAnppv()->select(array(
+            'q','m','y',
+            'especie',
+            'especie_id',
+            'cantidad'
+        ))
+        ->withColumn('especie_id','especie_id')
+        ->withColumn('sum(cantidad)','cantidad')
+        ->withColumn("date_part( 'year', fecha)",'y')
+        ->withColumn("date_part( 'month', fecha)",'m')
+        ->withColumn("case when date_part( 'day', fecha)<16 then 1  else 2 end",'q')
+        ->useBidEspecieQuery()
+        ->orderByNombre()
+        ->groupByNombre()->withColumn('bid_especie.nombre','especie')
+        ->endUse()
+        ->groupByEspecieId()
+        ->groupBy('y')
+        ->groupBy('m')
+        ->groupBy('q')
+        ->orderBy('y')
+        ->orderBy('m')
+        ->orderBy('q')
+        ;
+    }
+    
     public function ci1()
     {
         return $this->soloAvesPlayerasPimcpa()->select(array(
@@ -63,4 +99,6 @@ class BidConteoIndicadorQuery extends BaseBidConteoIndicadorQuery {
         ;
         
     }
+    
+    
 } // BidConteoIndicadorQuery

@@ -1,8 +1,6 @@
-<?php use_helper('I18N', 'Date', 'Number') ?>
-
-  <?php if ($total==0): ?>
-    <p style="font-size: large;"><?php echo __('No result', array(), 'sf_admin') ?></p>
-  <?php else: ?>
+<?php if ($total>0): ?>
+	<?php use_helper('I18N', 'Date', 'Number') ?>
+	<hr><h4>Pulpo Colorado Patagónico (Enteroctopus megalocyathus)<br/><small class="text-muted">Indicador: Status reproductivo en el intermareal rocoso</small></h4>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -29,4 +27,4 @@
     </table>
     <p>Actividad pesquera en los meses de verano: <?php if($actividad_pesquera):?><span class="rojo">SE REGISTRÓ ACTIVIDAD</span><?php else: ?>no hay registro<?php endif ?></p>
     <p>Detección de hembras en desove o desovadas provenientes del intermareal: <?php if($hembras_desove_intermareal):?><span class="rojo">SE DETECTARON</span><?php else: ?>no se detectaron<?php endif ?></p>
-  <?php endif; ?>
+<?php endif; ?>

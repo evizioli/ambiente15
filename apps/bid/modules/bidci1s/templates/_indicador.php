@@ -1,9 +1,7 @@
-<?php use_helper('I18N', 'Date', 'Number') ?>
-
-  <?php if ($total==0): ?>
-    <p style="font-size: large;"><?php echo __('No result', array(), 'sf_admin') ?></p>
-  <?php else: ?>
-    <table class="table table-striped">
+<?php if ($total>0): ?>
+	<?php use_helper('I18N', 'Date', 'Number') ?>
+    <hr><h4>Abundancia de Aves Playeras PIMCPA</h4>
+     <table class="table table-striped">
       <thead>
         <tr>
           <th class="bs_admin_text">Especie</th>
@@ -30,4 +28,4 @@
         <?php endforeach; ?>
       </tbody>
     </table>
-  <?php endif; ?>
+<?php endif; ?>

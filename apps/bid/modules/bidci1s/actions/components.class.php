@@ -22,5 +22,14 @@ class bidci1sComponents extends sfComponents
         $qc= clone $q;
         $this->resultado=$q->find();
         $this->total = $qc->count();
+        
+        
+//         throw new Exception($this->total ); 
+//         echo '<hr>';
+//         echo '<hr>';
+//         echo $this->total ;
+//         echo '<hr>';
+//         echo '<hr>';
+//         die();
     }
 }

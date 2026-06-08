@@ -19,4 +19,7 @@
  */
 class BidG5I1Query extends BaseBidG5I1Query {
 
+    public function indicador() {
+        return $this->select(array('ye','crias'))->withColumn("date_part('year', fecha )",'ye')->groupBy('ye')->orderBy('ye')->withColumn('sum(crias_destetadas)','crias');
+    }
 } // BidG5I1Query

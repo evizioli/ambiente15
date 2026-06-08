@@ -27,7 +27,7 @@ class indicadoresActions extends sfActions
   public function executeData(sfWebRequest $request)
   {
       sfConfig::set('sf_web_debug', false);
-      
+      $this->sitio = BidSitioQuery::create()->findPk($request->getParameter('sitio_id'));
       
       $f=$this->getUser()->getAttribute('data',array('desde'=>null,'hasta'=>null));
       $this->desde=$f['desde'];

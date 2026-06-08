@@ -36,7 +36,7 @@ class bidg5i1sActions extends autoBidg5i1sActions
         }
         
         $query = $this->buildQuery();
-        $query->select('ye','crias')->withColumn("date_part('year', fecha )",'ye')->groupBy('ye')->orderBy('ye')->withColumn('sum(crias_destetadas)','crias');
+        $query->select(array('ye','crias'))->withColumn("date_part('year', fecha )",'ye')->groupBy('ye')->orderBy('ye')->withColumn('sum(crias_destetadas)','crias');
         $this->resultado= $query->find();
     }
 }
